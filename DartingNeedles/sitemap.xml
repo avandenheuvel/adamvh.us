@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://dartingneedles.org/</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/about.php</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/meetings/</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/classes/</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/contact.php</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/2014-Gallery.php</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/pdfs/DNQG%20Registration%202015.pdf</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://dartingneedles.org/index.php</loc>
+  <lastmod>2015-02-03T03:33:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

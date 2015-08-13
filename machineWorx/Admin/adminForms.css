@@ -1,0 +1,430 @@
+.link{
+	text-decoration: underline;
+	color:#000080;
+}
+
+#adminContainer{
+	position: relative;
+	color: #DDD;
+	width: 90%;
+	min-height:150px;
+	min-width:600px;
+	margin-left: 5%;
+	margin-right: 5%;
+} 
+
+#adminOptCont{
+	float: left;
+	width: 20%;
+}
+
+.adminOptions{
+	color: #DDD;
+}
+
+.error{
+	color: #FF0000;
+}
+
+a.adminOptions{
+	display: block;
+	width: 100%;
+	height: 28px;
+	font-size: 18px;
+	padding:1px;
+	margin-bottom: 5px;
+	min-width:110px;
+	text-align: center;
+	background-color: #DDD;
+	border-radius: 5px;
+	border: 2px solid #4DC3FF;
+}
+
+a.adminOptions:hover{
+	background-color: #4DC3FF;
+	color: #444;
+	text-decoration: none;
+	
+}
+
+#adminDataArea{
+	position: relative;
+	display:inline-block;
+	background-color: #DDD;
+	color: #444;
+	width: 78%;
+	margin-left:2%;
+	min-height:350px;
+	min-width: 400px;
+	border: solid 2px #4DC3FF;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#editContainer{
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	overflow:hidden;
+}
+
+#adminContainer, #adminDataArea{
+	top:15%;
+	height:80%;
+}
+
+#column1{
+	position:relative;
+	left:0%;
+	width: 40%;
+	margin: 0px;
+	float: left;
+	height: 100%;
+}
+
+#column2mid{
+	position: relative;
+	left:0%;
+	top:100px;
+	width: 20%;
+	height:auto;
+	float: left;
+}
+
+#column2right{
+	position: relative;
+	left:0%;
+	width: 40%;
+	float: right;
+	height: 100%;
+}
+
+#editContainer .button{
+	width:80%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#editContainer .radio{
+	display: inline;
+}
+
+.radGrpChkType{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: large;
+}
+
+.formButton{
+	display: block;
+	width:100%;
+	margin-left: 2%;
+}
+
+.formButton input{
+	display: inline;
+	width: 10%;
+	padding: 10px 10px;
+	min-width:70px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*.formButton #btnSubmit:hover{
+	background-color: #008000;
+	color: #ffffff;
+}
+
+.formButton #btnReset:hover{
+	background-color: #ff0000;
+	color: #ffffff;
+}*/
+
+.dropdown{
+	display:inline-block;
+	width: 100%;
+	height:50px;	
+}
+
+.txtInput{
+	display:inline-block;
+	width: 100%;
+	overflow: auto;
+	resize:auto;
+}
+
+.radio{
+	display: inline;
+}
+
+.radGrpChkType{
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.radGrpChkType:hover{
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.selectLarge {
+	width:100%;
+	height:100%;
+	min-height: 100px;
+}
+
+select:hover {
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.helpWindow{
+	display:none;
+}
+
+.helpLink:hover + .helpWindow {
+	display: block;
+	position:absolute;
+	left:0;
+}
+#createTab, #editTab {
+	display: block;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	background-color: #DDD;
+	border: 2px solid #444;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #444;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#createTab {	
+	background-color: #4DC3FF;
+}
+
+#editTab {
+	margin-left: 100px;	
+}
+
+#createUser {
+	display: block;
+	padding: 10px;
+	background-color: #DDD;
+	border: 2px solid #444;
+	left: 10px;
+	right: 10px;
+	top: 40px;
+	bottom: 10px;
+	position: absolute;
+	overflow-y: auto;
+}
+
+#profPic {
+	position: absolute;	
+}
+
+input[type=file]{
+	width: 200px;
+	position: absolute;
+	top: 250px;
+}
+
+#submit {
+	position: absolute;
+	bottom: 0px;
+	width: 70px;
+	right: 90px;
+	padding: 10px;
+}
+
+#reset {
+	position: absolute;
+	bottom: 0px;
+	width: 70px;
+	right: 10px;
+	padding: 10px;
+}
+
+#editUser {
+	display: none;	
+	background-color: #DDD;
+	border: 2px solid #444;
+	left: 10px;
+	right: 10px;
+	top: 40px;
+	bottom: 10px;
+	position: absolute;
+	overflow-y: auto;
+}
+
+#searchPage {
+	display: block;	
+}
+
+#editPage {
+	display: none;	
+}
+
+#ePage {
+	display: none;	
+}
+
+#userTable {
+	width: 100%;	
+}
+
+#userTable tr th {
+	width: 20%;	
+	text-align: center;
+}
+
+#sResults {
+	width: 100%;
+}
+
+#sResults table {
+	width: 100%;
+}
+
+#sResults table tr:hover {
+	background-color: #4DC3FF;
+}
+
+#sResults table tr td {
+	width: 20%;	
+	cursor: pointer;
+	text-align: center;
+}
+
+#statusDiv, #editStatus {
+	font-size: 18px;	
+	font-weight: bold;
+}
+
+#createUser fieldset {
+	width: 47%;
+	margin-top: 5px;	
+	position: absolute;
+	left: 2%;
+}
+
+#createUser #section {
+	width: 47%;	
+	position: absolute;
+	right: 2%;
+}
+
+#createUser #section fieldset {
+	width: 100%;
+	position: relative;
+	left: 0%;	
+}
+
+#createUser input{
+	margin-bottom: 5px;
+}
+
+#createUser input[type=text], #createUser input[type=password] {
+	display: block;	
+	width: 170px;
+}
+
+#searchPage label, #searchPage input {
+	display: inline;
+	margin: 5px;
+}
+
+#searchPage input {
+	width: 170px;	
+}
+
+table, tr, td, th {
+	border: none;	
+	border-collapse: collapse;
+	margin: 0;
+	padding: 2px;
+}
+
+#editPage input[type=button]{
+	background-color: #4DC3FF;
+	border: none;
+	border-radius: 4px;
+	color: #444;
+	font-weight: bold;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	width: 70px;
+	right: 90px;
+	padding: 10px;
+}
+
+#editPage input[type=button]:hover{
+	background-color: #444;
+	color: #DDD;
+}
+
+#editPage fieldset {
+	width: 47%;
+	margin-top: 5px;	
+	position: absolute;
+}
+
+#leftFields {
+	width: 47%; 
+	position: absolute; 
+	left: 2%;
+}
+
+#leftFields fieldset {
+	width: 100%; 
+	position: relative;
+}
+
+#leftFields input, #leftFields label {
+	display: block;	
+}
+
+#leftFields input {
+	width: 170px;	
+	margin-top: 0;
+}
+
+#editStatus {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;	
+}
+
+#info {
+	width: 100%;
+	height: 60px;
+	border: 2px solid #444;
+	border-radius: 4px;
+	position: absolute;	
+	top: 100px;
+	padding: 5px;
+}
+
+#backBtn {
+	position: absolute;
+	left: 0px;
+}
+
+#deleteBtn {
+	position: absolute;
+	left: 100%;
+	margin-left: -70px;
+}
+
+#editBtn {
+	position: absolute;
+	left: 100%;
+	margin-left: -150px;
+}
+>>>>>>> machineWorx/master

@@ -1,0 +1,221 @@
+/* BEGIN BASIC FORUM STYLES */
+
+#forumWrapper {
+	width: 100%;
+	padding-bottom:20px;
+	margin: 0 auto; 			/* center the page */
+}
+
+#content {
+	background-color: #444;
+	font-family: Arial;
+	padding:5px;
+	text-align: left;
+	width: 100%;				/* fill up the entire div */
+}
+
+.clearfloat {
+	clear: both;
+	line-height: 1px;
+	font-size: 1px;
+}
+
+/*#menu {
+	float: left;
+	border: 1px solid #000;
+	border-bottom: none;		/* avoid a double border 
+	clear: both;				 clear:both makes sure the content div doesn't float next to this one but stays under it 
+	width:100%;
+	height:20px;
+	padding: 0 30px;
+	margin-bottom:20px;
+	background-color: #FFF;
+	text-align: left;
+	font-size: 85%;
+}*/
+
+
+a:visited {
+	color: #FFFFFF;
+	
+}
+
+a:link{
+	text-decoration:underline;
+}
+
+a:hover {
+	background-color: #009FC1;
+	color: #F1F3F1;
+}
+
+#userbar {
+	background-color: #fff;
+	float: right;
+	width: 250px;
+}
+
+#footer {
+	clear: both;
+}
+
+/* begin table styles */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table a:link{
+	color:#c0c0c0;
+	text-decoration: underline;
+}
+
+table a:visited{
+	color:#c0c0c0;
+	text-decoration: underline;
+}
+
+table a:hover {
+	color:#FFFFFF;
+	text-decoration: underline;
+}
+
+th {
+	background-color:#00728B;
+	color: #F0F0F0;
+	font-size: large;
+	padding: 10px;
+}
+
+td {
+	padding: 5px;
+}
+
+/* Begin font styles */
+h1, #footer, h3, li {
+	font-family: Arial;
+	color: #F1F3F1;
+}
+
+h3 {
+	margin: 0; 
+	padding: 0;
+}
+
+/* Menu styles */
+.item {
+	background-color: #00728B;
+	border: 1px solid #032472;
+	color: #FFF;
+	font-family: Arial;
+	padding: 6px;
+	text-decoration: none;
+}
+
+.searchElement{
+	display:inline;
+	float: right;
+	padding:.5em;
+	padding:7px;
+	margin-right:1em;
+	margin-right:14px;
+}
+
+#searchbar {
+	width:50%;
+	float: right;
+	height: 100%;
+	list-style-type: none;
+	padding:.5em;
+	padding:7px;
+}
+
+#searchbar > select {
+	width: 100px;
+}
+
+#searchbar > input {
+	width: 200px;
+}
+
+#searchBtn {
+	width: 75px !important;
+	color: #fff !important;
+	background: #95a5a6;
+	border-radius: 4px;
+}
+
+.leftpart {
+	width: 70%;
+}
+
+.rightpart {
+	width: 30%;
+}
+
+.small {
+	font-size: 75%;
+	color: #373737;
+}
+
+.topic-post {
+	height: 100px;
+	overflow: auto;
+}
+
+.post-content {
+	padding: 30px;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+}
+
+#forum-menu {
+	position: relative;
+	width: 100%;
+	height: 3em;
+	border: 1px solid #00728b;
+	border-radius: 5px;
+	background: #ecf0f1;
+}
+
+#forum-navbar {
+	height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 5px;
+}
+
+#forum-navbar > li {
+	display: block;
+	float: left;
+	height: 100%;
+	padding: 1em 10px;	
+	border-right: 1px solid #bdc3c7;
+}
+	
+	#forum-navbar > li:last-child {
+		border: none;
+	}
+	
+#forum-navbar > li > a, #forum-navbar > li > a:visited {
+	display: block;
+	color: #7f8c8d;
+	text-decoration: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+#forum-navbar > li:hover, #forum-navbar > li:hover > a, #searchBtn:hover {
+	background-color: #6C7A89;
+	color: #ecf0f1; 
+}
+		
+		
+
+
+	
+

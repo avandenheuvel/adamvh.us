@@ -1,0 +1,26 @@
+Implement responsive content area
+
+Add user login / Create account
+	- Customer - Authentication..? Basic?
+	- Sales 
+
+Add lead management (request information)- 
+	- Lvl 1 basic overview: date received, open/closed, name, #...
+	- Lvl 2 details: items liked
+	
+Checkbox overlay to img gallery
+	- Build gallery(s) like dartingneedles quilt shows
+	- Ex: top left corner of each image check if you like
+		- Store link in db. table user -> like
+		- Add dropdown or free text field for notes
+	- 
+
+Add facebook link icon
+
+Add links to vendor websites - heat and glow...
+
+Add main content area to front page
+
+Implement CMS type picture/products area
+
+Session tracking on contact me page

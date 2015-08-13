@@ -1,0 +1,313 @@
+/*.container {
+    background-color: rgba(66,66,66,0.3);
+}*/
+
+.inlineHdr{
+	display:inline;
+}
+/*http://css3.bradshawenterprises.com/cfimg
+
+For "n" images You must define:
+a=presentation time for one image
+b=duration for cross fading
+Total animation-duration is of course t=(a+b)*n
+
+animation-delay = t/n or = a+b
+
+Percentage for keyframes:
+
+    0%
+    a/t*100%
+    (a+b)/t*100% = 1/n*100%
+    100%-(b/t*100%)
+    100%
+ */
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+	z-index:-1;	
+ 	position:fixed;
+	top:0px;
+	width:100%;
+ 	margin:0 auto;
+}
+#cf4a img {
+  position:absolute;
+  width:100%;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 16s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 16s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 16s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+/*Bootstrap modifications
+ * 
+ */
+.panel{
+	text-align:center;
+}
+
+.dropdown-menu{
+	text-align:center;
+}
+
+.jumbotron{
+	background:transparent;
+}
+/*
+ * Normal CSS
+ */
+body {
+	font-size: 21px;
+	font-size: 1.5rem;
+	font-family: Helvetica, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	color: #444;
+	/*background-image: url(http://adamvh.us/darboyStone/cover.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center-top;
+	/*background-size: 100%;
+	background-color:#3A3D0C;*/
+}
+
+.linkTile{
+	width:80%;
+  margin:auto;
+  margin-bottom: 15px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.linkTile:hover{
+  width:100%;
+}
+
+.tileButton{
+	width:100%;
+  border-radius: 0px;
+}
+
+.thumbnail{
+  margin-bottom: 0px;
+  padding: 0px;
+  border:0px;
+}
+.thumbnail > img{
+  width:100%;
+}
+
+.img-circle{
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.dropdown-menu{
+  width:100%;
+}
+
+.img-responsive{
+	margin: 0 auto;
+	margin-bottom:10px;
+}
+
+.php-file-tree{
+	font-size:18px;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+ul, ol {
+    padding-left: 10px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    vertical-align:top;
+}
+
+/*provide some space around the option buttons in the header*/
+.btn-primary {
+	margin:4px;
+}
+
+.vertical-center {
+  /*min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 50vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/*Used for displaying loading img*/
+.loader {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://adamvh.us/megtec/Pics/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+@media screen and ( min-height: 490px ){
+    .jumbotron{
+      /*background: blue;*/
+      min-height: 300px;
+    }
+}
+
+@media screen and ( min-height: 640px ){
+    .jumbotron{
+      /*background: green;*/
+      min-height: 440px;
+    }
+}
+
+@media screen and ( min-height: 1024px ){
+    .jumbotron{
+      /*background: yellow;*/
+      min-height: 700px;
+    }
+}
+
+@media screen and  (max-width: 300px) {/*Alternatively use width property*/
+    .php-file-tree{
+        background-color: rgba(55,55,55,0.3);
+    }
+    .php-file-tree A {
+	    font-size:24px;
+	}
+}
+
+//simple max-width query
+@media screen and ( min-height: 1000px ){
+    .jumbotron{
+      background: blue;
+    }
+}
+/**
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}**/

@@ -1,0 +1,401 @@
+/*
+	Main site style definitions.
+	Author: Austin Lemieux
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Default Tag Styles */
+
+html, body {
+	padding:0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #DDD;
+	color: #DDD;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;	
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 24px;	
+}
+
+h4 {
+	padding: 0;
+	margin:0 ;
+	margin-bottom: 10px;
+	font-size: 16px;	
+}
+
+#wrapper {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+/* Header styles */
+
+#header {
+	width: 100%;
+	position: relative;
+	height: 80px;
+	font-size: 44px;
+	top: 0px;
+	color: #DDD;
+	background-color: #444;
+	text-align: center;
+	padding: 18px;
+	border-bottom: 2px solid #4DC3FF;
+}
+
+#headText {
+	width: 300px;
+	font-size: 14px;
+	height: 30px;
+	text-align: right;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #DDD;	
+}
+
+#logArrow {
+	margin-left: 5px;	
+}
+
+#logOutBtn {
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 4px;
+	background-color: #4DC3FF;
+	color: #444;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 3px;
+}
+
+#logOutBtn:hover {
+	background-color: #DDD;	
+}
+
+#logBtn {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	top: 20px;
+	right: 10px;	
+	font-size: 24px;
+	color: #444;
+	background-color: #4DC3FF;
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#logBtn:hover {
+	background-color: #DDD;	
+}
+
+#logBox {
+	display: none;
+	background-color: #444;
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	width: 300px;
+	height: 120px;
+	color: #DDD;
+	font-size: 14px;
+	border: solid 2px #4DC3FF;
+	z-index: 1000;
+}
+
+#logBox input[type=submit]:hover {
+	background-color: #DDD;
+	color: #444;	
+}
+
+#logBox #username,#password {
+	position: absolute; 
+	width: 160px; 
+	height: 22px; 
+	right: 30px;
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+#logBox #logError {
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	width: 280px;
+	height: 20px;
+	font-size: 16px;
+	text-align: center;	
+}
+
+#logBox #username {
+	top: 35px;
+}
+
+#logBox #password {
+	top: 62px;	
+}
+
+#logBox #submit {
+	position: absolute;
+	bottom: 8px;
+	width: 50px;
+	height: 20px;
+	right: 30px;
+}
+
+#logBox #uLabel, #pLabel {
+	position: absolute; 
+	right: 195px; 
+	font-size: 16px;
+	font-weight:normal;
+	margin: 0px;
+}
+
+#logBox #uLabel{
+	top: 37px;
+}
+
+#logBox #pLabel {
+	top: 64px;
+}
+
+#headImg {
+	position: absolute; 
+	left: 10px;
+	top: 5px;	
+}
+
+#header a:link {
+	text-decoration: none;
+	color:#DDD;
+}
+
+#header a:visited {
+	text-decoration: none;
+	color:#DDD;
+}
+
+#header a:hover {
+	color: #DDD;
+	text-decoration:none;
+}
+
+#header a:active {
+	color: #DDD;
+	text-decoration: none;
+}
+
+.headerLink:link{
+	color:#000000;
+	text-align:center;
+	background-color:#CCCCCC;
+	font-size: 16px;
+	padding:10px;
+	width:100px;
+	float: right;
+	margin:10px;
+}
+
+.headerLink:hover{
+	background-color: #808080;
+	text-decoration: none;
+}
+
+.headerLink:visited{
+	color: #000000;
+}
+
+#spacer {
+	height: 40px;
+	width:100%
+}
+
+/* Body Styles*/
+
+#main {
+	position: relative;
+	width: 96%;
+	margin:2%;
+	padding: 20px;
+	background-color: #444;
+	border: 2px solid #4DC3FF; 
+	color: #DDD;
+}
+
+/* Footer Styles */
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 30px;
+	background-color: #444;
+	border-top: solid 2px #4DC3FF;
+	color: #DDD;	
+	font-size: 16px;
+	padding: 7px;
+	text-align: center;
+}
+
+/* Common Link Styles */
+
+a:link {
+	color:#444;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color:#444;
+}
+
+a:hover {
+	color: #4DC3FF;
+	text-decoration:none;
+}
+
+a:active {
+	color: #444;
+	text-decoration: none;
+}
+
+/* Form Styles */
+
+legend, label {
+	display: block;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+legend {
+	padding: 0;
+	position: absolute;
+	left: -2px;
+	top: -25px;
+	margin: 0;	
+}
+
+input[type=radio]+label, input[type=checkbox]+label{
+	display: inline;
+	font-size: 14px;
+}
+
+input[type=radio]{
+		
+}
+
+.txtLabel {
+	color: #444;
+	font-size: 16px;
+	display: inline;
+	font-weight:normal;	
+}
+
+fieldset {
+	position: relative;
+	border-radius: 5px;
+	border: 2px solid #444;
+	margin-top: 30px;
+}
+
+fieldset:hover, fieldset:focus {
+	border-color: #4DC3FF;
+}
+
+input[type=text], input[type=password], textarea {
+	border: 2px solid #444;
+	background-color: #DDD;
+	color: #444;
+}
+
+textarea {
+	padding: 5px;	
+	border-radius: 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=text]:hover, input[type=password]:hover, textarea:hover {
+	border-color: #4DC3FF;
+}
+
+input[type=submit],input[type=reset]{
+	background-color: #4DC3FF;
+	border: none;
+	border-radius: 4px;
+	color: #444;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type=submit]:hover,input[type=reset]:hover{
+	background-color: #444;
+	color: #DDD;
+}
+
+.error {
+	border-color: #F00;	
+}
+
+input[type=button] {
+	background-color: #DDD;
+	border: 2px solid #444;
+	border-radius: 4px;
+	color: #444;	
+}
+
+input[type=button]:hover {
+	border-color: #4DC3FF;
+}
+
+select {
+	background-color: #DDD;
+	border: 2px solid #444;
+	border-radius: 4px;
+	color: #444;
+}
+
+select:focus, select:hover {
+	border-color: #4DC3FF;	
+}
+
+/* Mobile Device Sheet */
+
+@media screen and (max-width: 480px){
+	/*body {
+		background-color: #0C0;	
+	}*/
+}

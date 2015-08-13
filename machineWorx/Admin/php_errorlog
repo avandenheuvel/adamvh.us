@@ -1,0 +1,3 @@
+[17-Jun-2015 16:13:20 America/Chicago] PHP Fatal error:  Allowed memory size of 201326592 bytes exhausted (tried to allocate 72 bytes) in /home/adamvh99/public_html/machineWorx/Admin/adminSubAssyEdit.php on line 60
+[17-Jun-2015 16:15:12 America/Chicago] PHP Fatal error:  Allowed memory size of 201326592 bytes exhausted (tried to allocate 72 bytes) in /home/adamvh99/public_html/machineWorx/Admin/adminSubAssyEdit.php on line 60
+[17-Jun-2015 16:16:55 America/Chicago] PHP Fatal error:  Allowed memory size of 201326592 bytes exhausted (tried to allocate 72 bytes) in /home/adamvh99/public_html/machineWorx/Admin/adminSubAssyEdit.php on line 60
