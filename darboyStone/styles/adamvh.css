@@ -188,10 +188,14 @@ body {
   margin:auto;
   margin-bottom: 15px;
   box-shadow: 10px 10px 5px grey;
+  -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
 }
 
 .linkTile:hover{
   width:100%;
+  -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
 }
 
 .tileButton{

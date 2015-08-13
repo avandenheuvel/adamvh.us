@@ -10,10 +10,6 @@
 	<title>
 		New Darboy Stone & Brick
 	</title>
-	<script src="http://adamvh.us/darboyStone/js/jquery.js" type="text/javascript"></script>
-	<script src="http://adamvh.us/darboyStone/js/bootstrap.js" type="text/javascript"></script>
-	<!--script src="http://adamvh.us/darboyStone/js/backgroundTransition.js" type="text/javascript"></script-->
-	<!--script src="http://adamvh.us/darboyStone/js/fade.js" type="text/javascript"></script-->
 
 
 	<link href="styles/bootstrap.css"  rel="stylesheet"/>
@@ -21,6 +17,13 @@
 	
 </head>
 <body>
+	<!--Background image fader-->
+	<div id="cf4a">
+		<img src="./img/cover.png"/>
+		<img src="./img/cover1.png"/>
+		<img src="./img/cover2.png"/>
+		<img src="./img/cover3.png"/>
+	</div>
 		
 	<?php
 		include("header.php");
@@ -40,7 +43,7 @@
 		  <div class="col-xs-12 col-sm-6 col-lg-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
-				  <button class="btn btn-default btn-sm dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 				    Fireplace
 				    <span class="caret"></span>
 				  </button>
@@ -118,7 +121,5 @@
 		 </div>
 		</div><!--End Thumbnail-->
 	</div><!--End Container-->
-	<script src="http://adamvh.us/darboyStone/js/jquery.js"></script>
-	<script src="http://adamvh.us/darboyStone/js/bootstrap.js"></script>
 </body>
 </html>

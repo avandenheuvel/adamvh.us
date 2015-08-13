@@ -29,13 +29,6 @@
     <![endif]-->
 
 </head>
-<!--Background image fader-->
-	<div id="cf4a">
-		<img src="./img/cover.png"/>
-		<img src="./img/cover1.png"/>
-		<img src="./img/cover2.png"/>
-		<img src="./img/cover3.png"/>
-	</div>
 
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
