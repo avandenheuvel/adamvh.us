@@ -9,16 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
 		New Darboy Stone & Brick
-	</title>
-	<script src="http://adamvh.us/darboyStone/js/jquery.js" type="text/javascript"></script>
-	<script src="http://adamvh.us/darboyStone/js/bootstrap.js" type="text/javascript"></script>
-	<!--script src="http://adamvh.us/darboyStone/js/backgroundTransition.js" type="text/javascript"></script-->
-	<!--script src="http://adamvh.us/darboyStone/js/fade.js" type="text/javascript"></script-->
-
-
-	<link href="styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="styles/adamvh.css" rel="stylesheet" />
-	
+	</title>	
 </head>
 <body>
 		
@@ -101,7 +92,6 @@
 	</div>
 </div>
 </div>
-<!-- jQuery Version 1.11.0 -->
-<script src="./js/jquery.js"></script>
-
+<script src="http://adamvh.us/darboyStone/js/jquery.js" type="text/javascript"></script>
+<script src="http://adamvh.us/darboyStone/js/bootstrap.js" type="text/javascript"></script>
 </body>

@@ -1,7 +1,12 @@
-<!--https://css-tricks.com/dynamic-page-replacing-content/-->
+<!DOCTYPE html>
+<html>
+<body>
 
-<div class="jumbotron">
-	<h3>Let's test the reaction of our background when changing pages</h3>
- 	<p>...</p>
- 	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+ </form>
+
+</body>
+</html> 

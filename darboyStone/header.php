@@ -31,6 +31,7 @@
 </head>
 
 <!-- Navigation -->
+<div class="row"></div>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     	
         <div class="container">
@@ -81,7 +82,5 @@
         <!-- /.container -->
     </nav>
   
-  	
-
-   </br>
+ </div><!--End Row--> 	
    

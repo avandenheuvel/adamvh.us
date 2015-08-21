@@ -159,6 +159,9 @@ Percentage for keyframes:
 .panel{
 	text-align:center;
 }
+.jumbotron{
+  margin-top: 60px;
+}
 
 .dropdown-menu{
 	text-align:center;
