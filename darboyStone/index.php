@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	//$_SESSION['Administrator']=1;
 	define('_ROOT',"./");
 ?>
 
@@ -14,6 +16,9 @@
 
 	<link href="styles/bootstrap.css"  rel="stylesheet"/>
 	<link href="styles/adamvh.css" rel="stylesheet" />
+	
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
 	
 </head>
 <body>

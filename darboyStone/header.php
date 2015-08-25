@@ -1,23 +1,9 @@
-<?php
-	session_start();
-	//$_SESSION['Administrator']=1;
-?>
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="">
-	<title>
-		New Darboy Stone & Brick
-	</title>
 	
-	<link href="styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="styles/adamvh.css" rel="stylesheet" />
-	<script src="http://adamvh.us/darboyStone/js/jquery.js" type="text/javascript"></script>
-	<script src="http://adamvh.us/darboyStone/js/bootstrap.js" type="text/javascript"></script>
 	<!--script src="http://adamvh.us/darboyStone/js/backgroundTransition.js" type="text/javascript"></script-->
 	<!--script src="http://adamvh.us/darboyStone/js/fade.js" type="text/javascript"></script-->
 
