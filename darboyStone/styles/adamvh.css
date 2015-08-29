@@ -159,6 +159,9 @@ Percentage for keyframes:
 .panel{
 	text-align:center;
 }
+.panel-info{
+  text-align: left;
+}
 .jumbotron{
   margin-top: 60px;
 }
@@ -265,6 +268,7 @@ ul, ol {
     /* inline-block space fix */
     margin-right:-4px;
     vertical-align:top;
+    background-color:pink;
 }
 
 /*provide some space around the option buttons in the header*/
@@ -273,8 +277,8 @@ ul, ol {
 }
 
 .vertical-center {
-  /*min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 50vh; /* These two lines are counted as one :-)       */
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;

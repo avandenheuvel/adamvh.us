@@ -3,6 +3,9 @@
 		$to = 'apvandenheuvel@yahoo.com'; // Use your own email address
 		$subject = 'Feedback from my site';
 		$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
+		$message .= 'Phone: ' . $_POST['phone'] . "\r\n\r\n";
+		$message .= 'Contact preference: ' . $_POST['preference'] . "\r\n\r\n";
+		$message .= 'Page Source: ' . $_POST['source'] . "\r\n\r\n";
 		$message .= 'Comments: ' . $_POST['comments'];
 	}
 ?>

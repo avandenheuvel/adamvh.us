@@ -39,7 +39,10 @@
 		<div class="jumbotron">
 			<h3>Welcome to the new Darboy Stone and Brick website</h3>
 		 	<p>...</p>
-		 	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		 	<form method="post" action="./contact.php">
+		  		<input type="hidden" name="source" value="Home" />
+		  		<input class="btn btn-primary btn-lg" type="submit" name="send" value="Request Info" />
+	 		</form>
 		</div>
 	</div>
 	
@@ -48,7 +51,7 @@
 		  <div class="col-xs-12 col-sm-6 col-lg-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				  	<button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 				    Fireplace
 				    <span class="caret"></span>
 				  </button>
@@ -60,7 +63,7 @@
 				  </ul>
 				</div>
 			    <a href="#" class="thumbnail">
-			      <img src="./img/cover1.png" alt="Granite">
+			      <img src="./img/fireplace.jpg" alt="Fireplace">
 			    </a>
 			 </div>
 		 </div>
