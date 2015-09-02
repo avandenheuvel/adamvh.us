@@ -19,8 +19,8 @@ if(!isset($_SESSION['user'])){
 	}
 	
 	if (isset($_POST['eMail']) && isset($_POST['password'])) {
-	    $db = mysqli_connect('localhost', 'adamvh99_Portal', 'apv0703','adamvh99_tech');
-	    $sql = sprintf("SELECT * FROM CustomerInfo WHERE eMail='%s'",
+	    $db = mysqli_connect('localhost', 'adamvh99_admin', 'apv0703','adamvh99_darboy');
+	    $sql = sprintf("SELECT * FROM user WHERE eMail='%s'",
 	        mysqli_real_escape_string($db, $_POST['eMail'])
 	    );
 	    $result = mysqli_query($db, $sql);
@@ -40,7 +40,9 @@ if(!isset($_SESSION['user'])){
 				//Add First and Last names
 	        } else {
 	            $message = 'Wrong password';
+	            $message = $message.$hash.' / '.$_POST['password'];
 				showForm($message);
+				
 				exit();
 	        }
 	    } else {
@@ -48,44 +50,69 @@ if(!isset($_SESSION['user'])){
 			showForm($message);
 			exit();
 	    }
+		header("Location: http://adamvh.us/darboyStone");
+		showForm($message);
 	    mysqli_close($db);
 	}
 }
 
 
 function showForm($message){
-	?>
-		<body>
+	?>	
+	
+	<!DOCTYPE html>
+
+	<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			New Darboy Stone & Brick
+		</title>
+	
+	
+		<link href="styles/bootstrap.css"  rel="stylesheet"/>
+		<link href="styles/adamvh.css" rel="stylesheet" />
+		
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+		
+	</head>
+		<body style="background-image: url('./img/qf2rj.gif'); background-size: 100%;">
 			
-			<div class="vertical-center">
-				<div class="container">
-					<div class="row row-centered">
-						<div class="col-lg-6 col-xs-10 col-centered">
-							<?php
-							echo "<h3>$message</h3>";
-							?>
-						</div>
-					</div>
-					<form name="userInput" method="post" action="" style="height: 0px; margin-bottom: 0px;">
-						<div class="row row-centered">
-							<div class="col-lg-6 col-xs-10 col-centered">
-							    <label for="eMail">User E-mail</label>
-							    	<input type="text" name="eMail" class="userInput form-control" required>
-							    <label for="password">Password</label>
-							    	<input type="password" name="password" class="userInput form-control" required>
-						    </div>
-					  	</div>
-					   </br>
-					  	<div class="row row-centered">
-					  		<div class="col-lg-6 col-xs-10 col-centered">
-						    	<input type="submit" method="post" value="Login" class="btn btn-success">
-						    </div>
-					   </div>
-					</form>
+			<?php
+				include("header.php");
+			?>
+			
+			<div class="container">
+			<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<?php
+					echo "<h3>$message</h3>";
+					?>
+				</div>
+				<div class="panel-body">
+				<form name="userInput" method="post" action="">
+				    <div class="form-group">
+				    	<label for="eMail">User E-mail</label>
+				    	<input type="text" name="eMail" class="userInput form-control" required>
+				    </div>
+				    <div class="form-group">
+				    	<label for="password">Password</label>
+				    	<input type="password" name="password" class="userInput form-control" required>
+				    </div>
+			    	<div class="form-group">
+			    		<input type="submit" method="post" value="Login" class="btn btn-success">
+			    	</div>
+				</form>
 				</div>
 			</div>
+		</div>
+		</div>
+		</div>
 		</body>
-		
+	</html>
 <?php
 	}
 ?>

@@ -29,21 +29,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo _ROOT . "./"?>">Darboy Stone & Brick</a>
+                <a class="navbar-brand" href="http://adamvh.us/darboyStone">Darboy Stone & Brick</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="<?php echo _ROOT . "./about.php"?>">About</a>
+                        <a href="http://adamvh.us/darboyStone/about.php">About</a>
                     </li>
-                    
-                    <li>
-                        <a href="<?php echo _ROOT . "./request"?>">Request Information</a>
-                    </li> 
                                        
                     <li>
-                        <a href="./contact.php">Contact</a>
+                        <a href="http://adamvh.us/darboyStone/contact.php">Contact</a>
                     </li>
                     <?php
                     	if($_SESSION['Administrator']==1){
@@ -54,6 +50,7 @@
 					            echo"<li><a href='./update.php'>Update</a></li>";
 					            echo"<li><a href='./Logout.php'>Logout</a></li>";
 					            echo"<li class='divider'></li>";
+								echo"<li><a href='./update.php'>Manage Leads</a></li>";
 					            echo"<li ><a href='./insert.php'>Add user</a></li>";
 								echo"<li ><a href='./select.php'>Administer users</a></li>";
 								

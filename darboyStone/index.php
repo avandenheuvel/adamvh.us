@@ -36,13 +36,15 @@
 	
 	<div class="container-fluid">
 	<div class="row">
-		<div class="jumbotron">
-			<h3>Welcome to the new Darboy Stone and Brick website</h3>
-		 	<p>...</p>
-		 	<form method="post" action="./contact.php">
-		  		<input type="hidden" name="source" value="Home" />
-		  		<input class="btn btn-primary btn-lg" type="submit" name="send" value="Request Info" />
-	 		</form>
+		<div class="jumbotron hidden-sm hidden-xs">
+			<div class="col-md-9"><h2>Welcome to the new Darboy Stone and Brick website</h2>
+				<p>Darboy Stone and Brick, Inc. has been a trusted provider to Northeast Wisconsin for more than 50 years.  Our roots as a masonry contractor and brick supplier have laid a solid foundation for our diverse product and service offerings.  Today, Darboy Stone and Brick is your complete source for all your home upgrades, including:  stone and brick; granite surfaces; fireplaces and home heating solutions; decorative landscape materials and custom laser etching.</p>
+				<form method="post" action="./contact.php">
+			  		<input type="hidden" name="source" value="Home" />
+			  		<input class="btn btn-primary btn-lg" type="submit" name="send" value="Request Info" />
+	 			</form>
+			</div>
+		 	<div class="col-md-3"><img src="./img/award-label.png" /></div>
 		</div>
 	</div>
 	

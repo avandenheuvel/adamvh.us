@@ -24,7 +24,7 @@
 		include"header.php";
 	?>
 	<div class="container">
-	<div class="row" style="margin-top:70px;">
+	<div class="row">
 	<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 	
 	<div class="panel panel-info">
@@ -67,7 +67,7 @@
 					  <label class="control-label" for="comments">Comments:</label>
 					  <textarea class="form-control" name="comments" id="comments"></textarea>
 					</div> 
-					  <input class="form-control" type="hidden" name="source" id="source" value="<?php echo $source;?>"/></input>
+					  <input type="hidden" name="source" id="source" value="<?php echo $source;?>"/></input>
 					
 					  <input class="btn btn-primary" submit" name="send" value="Send Message"></input>
 				
