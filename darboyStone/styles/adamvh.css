@@ -217,6 +217,14 @@ body {
     transition: all 1s;
 }
 
+.linkCircle{
+	width:85%;
+}
+
+.linkCircle img{
+	width:85%;
+}
+
 .tileButton{
 	width:100%;
   border-radius: 0px;
@@ -307,6 +315,11 @@ ul, ol {
 	height: 100%;
 	z-index: 9999;
 	background: url('http://adamvh.us/megtec/Pics/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.footer{
+  background-color: #2C3E50;
+  color:white;
 }
 
 @media screen and ( min-height: 490px ){

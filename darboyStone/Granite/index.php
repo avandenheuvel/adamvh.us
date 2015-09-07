@@ -30,98 +30,65 @@
 		<!--Thumbnail section-->
 		<div class="row">
 			<div class="col-md-8 sideBanner">
-				<img src="./img/Chocolate Bordeaux 7.jpg" />
+				<img src="./pictures/Chocolate Bordeaux 7.jpg" />
 			</div>
 			<div class="col-md-4">
-				<h2>Something really cool you should know about DS&B</h2>
-				<p>Lot's more words about said thing that's really cool.</p>
+				<h1>Granite</h1>
+				<p>Darboy Stone & Brick puts great effort to remain the premier provider of granite surfaces in Northeast Wisconsin.</p>
+				<p>Darboy Stone & Brick specializes in custom countertops, vanities, fireplace surrounds, wet bars, tub decks, sinks, and more! We offer the convenience of an onsite inventory of imported marble and granite slabs direct from the supplier. We offer the highest quality and largest selection available, giving you the opportunity to view and approve slabs before a home or business project is fabricated.</p>
 			</div>
 		</div>	
 		<div class="row">
 		  <div class="col-xs-12 col-sm-6 col-lg-3">
-		  		<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  	<button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Fireplace
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="#" class="thumbnail">
-			      <img src="../img/fireplace.jpg" alt="Fireplace">
-			    </a>
-			 </div>
+	  		<div class="panel panel-default linkCircle">
+	  			<div class="panel-heading">
+	  				<h3>Kitchen Idea Gallery</h3>
+	  			</div>
+	  			<img src="./pictures/Santa Cecelia square.png" class="img-circle" />
+	  			
+	  			<p>View some of our recent work!</p>
+			</div>
 		 </div>
 			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Granite
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="../Granite/graniteShowroom.php">Granite Showroom</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="./Granite" class="thumbnail">
-			      <img src="../img/cover2.png" alt="Brick">
-			    </a>
-			  </div>
-			 </div>
-			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Landscape
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="#" class="thumbnail">
-			      <img src="../img/cover3.png" alt="Fireplace">
-			    </a>
-			 </div>
+		 <div class="col-xs-12 col-sm-6 col-lg-3">
+	  		<div class="panel panel-default linkCircle">
+	  			<div class="panel-heading">
+	  				<h3>Granite Showroom</h3>
+	  			</div>
+	  			<img src="./pictures/granite_showroom square.png" class="img-circle" />
+	  			
+	  			<p>View granite samples</p>
+	  			<p>Visit our showroom to see all currently available granite samples</p>
+			</div>
+		 </div>
+		 
+		 <div class="col-xs-12 col-sm-6 col-lg-3">
+	  		<div class="panel panel-default linkCircle">
+	  			<div class="panel-heading">
+	  				<h3>Bathroom Idea Gallery</h3>
+	  			</div>
+	  			<img src="./pictures/Persian Brown square.png" class="img-circle" />
+	  			
+	  			<p>View some of our recent bathroom projects</p>
+			</div>
+		 </div>
+		 
+		 <div class="col-xs-12 col-sm-6 col-lg-3">
+	  		<div class="panel panel-default linkCircle">
+	  			<div class="panel-heading">
+	  				<a href="graniteFAQ.php"><h3>Granite FAQ</h3></a>
+	  			</div>
+	  			<img src="./pictures/star beach square.png" class="img-circle" />
+	  			
+	  			<p>Frequently asked questions about Granite</p>
+			</div>
 		 </div>
 			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Brick
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="#" class="thumbnail">
-			      <img src="../img/cover.png" alt="Landscape">
-			    </a>
-			 </div>
-		 </div>
-		</div><!--End Thumbnail-->
-		
-			
+		</div><!--End Thumbnail row-->
 			
 	</div><!--End Container-->
-    
+    <?php
+    	include("../footer.php");
+	?>
 </body>
 </html>
