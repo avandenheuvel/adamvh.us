@@ -97,14 +97,21 @@ Percentage for keyframes:
 #cf4a {
 	z-index:-1;	
  	position:fixed;
+  overflow:hidden;
 	top:0px;
-	width:100%;
+	min-width:100%;
+  min-height: 100%;
  	margin:0 auto;
 }
 #cf4a img {
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
   position:absolute;
-  width:100%;
-  left:0;
+  min-width:100%;
+  min-height: 100%;
+  margin:auto;
 }
 
 #cf4a img {
@@ -196,6 +203,7 @@ body {
 .linkTile{
 	width:80%;
   margin:15px auto;
+  margin-bottom: 30px;
   box-shadow: 5px 5px 5px grey;
   -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
@@ -203,6 +211,7 @@ body {
 
 .linkTile:hover{
   width:85%;
+  margin-bottom: 20px;
   box-shadow: 15px 15px 15px grey;
   -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
@@ -220,6 +229,10 @@ body {
 }
 .thumbnail > img{
   width:100%;
+}
+
+.sideBanner img{
+	width:100%;
 }
 
 .img-circle{

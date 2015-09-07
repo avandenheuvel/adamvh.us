@@ -14,42 +14,29 @@
 	</title>
 
 
-	<link href="styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="styles/adamvh.css" rel="stylesheet" />
+	<link href="../styles/bootstrap.css"  rel="stylesheet"/>
+	<link href="../styles/adamvh.css" rel="stylesheet" />
 	
-	<script src="js/jquery.js" type="text/javascript"></script>
-	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.js" type="text/javascript"></script>
 	
 </head>
 <body>
-
-	<!--Background image fader-->
-	<div id="cf4a">
-		<img src="./img/cover.png"/>
-		<img src="./img/cover1.png"/>
-		<img src="./img/cover2.png"/>
-		<img src="./img/cover3.png"/>
-	</div>
 		
 	<?php
-		include("header.php");
+		include("../header.php");
 	?>
-	
-	<div class="container-fluid">
-	<div class="row">
-		<div class="jumbotron hidden-sm hidden-xs">
-			<div class="col-md-9"><h2>Welcome to the new Darboy Stone and Brick website</h2>
-				<p>Darboy Stone and Brick, Inc. has been a trusted provider to Northeast Wisconsin for more than 50 years.  Our roots as a masonry contractor and brick supplier have laid a solid foundation for our diverse product and service offerings.  Today, Darboy Stone and Brick is your complete source for all your home upgrades, including:  stone and brick; granite surfaces; fireplaces and home heating solutions; decorative landscape materials and custom laser etching.</p>
-				<form method="post" action="./contact.php">
-			  		<input type="hidden" name="source" value="Home" />
-			  		<input class="btn btn-primary btn-lg" type="submit" name="send" value="Request Info" />
-	 			</form>
-			</div>
-		 	<div class="col-md-3"><img src="./img/award-label.png" /></div>
-		</div>
-	</div>
-	
+		<div class="container-fluid">
 		<!--Thumbnail section-->
+		<div class="row">
+			<div class="col-md-8 sideBanner">
+				<img src="./img/Chocolate Bordeaux 7.jpg" />
+			</div>
+			<div class="col-md-4">
+				<h2>Something really cool you should know about DS&B</h2>
+				<p>Lot's more words about said thing that's really cool.</p>
+			</div>
+		</div>	
 		<div class="row">
 		  <div class="col-xs-12 col-sm-6 col-lg-3">
 		  		<div class="panel panel-default linkTile">
@@ -66,7 +53,7 @@
 				  </ul>
 				</div>
 			    <a href="#" class="thumbnail">
-			      <img src="./img/fireplace.jpg" alt="Fireplace">
+			      <img src="../img/fireplace.jpg" alt="Fireplace">
 			    </a>
 			 </div>
 		 </div>
@@ -79,14 +66,14 @@
 				    <span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="./Granite/graniteShowroom.php">Granite Showroom</a></li>
+				    <li><a href="../Granite/graniteShowroom.php">Granite Showroom</a></li>
 				    <li><a href="#">Another action</a></li>
 				    <li><a href="#">Something else here</a></li>
 				    <li><a href="#">Separated link</a></li>
 				  </ul>
 				</div>
 			    <a href="./Granite" class="thumbnail">
-			      <img src="./img/cover2.png" alt="Brick">
+			      <img src="../img/cover2.png" alt="Brick">
 			    </a>
 			  </div>
 			 </div>
@@ -106,7 +93,7 @@
 				  </ul>
 				</div>
 			    <a href="#" class="thumbnail">
-			      <img src="./img/cover3.png" alt="Fireplace">
+			      <img src="../img/cover3.png" alt="Fireplace">
 			    </a>
 			 </div>
 		 </div>
@@ -126,17 +113,15 @@
 				  </ul>
 				</div>
 			    <a href="#" class="thumbnail">
-			      <img src="./img/cover.png" alt="Landscape">
+			      <img src="../img/cover.png" alt="Landscape">
 			    </a>
 			 </div>
 		 </div>
 		</div><!--End Thumbnail-->
+		
+			
+			
 	</div><!--End Container-->
-	<!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    
 </body>
 </html>
