@@ -93,8 +93,8 @@
 					make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 				}
 			}
-			echo '<a href="',$images_dir.$file,'" class="img-thumbnail" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
-			if($index % $images_per_row == 0) { echo '<div class="clear"></div>'; }
+			echo '<a href="',$images_dir.$file,'" class="img-thumbnail img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
+			//if($index % $images_per_row == 0) { echo '<div class="clear"></div>'; }
 		}
 		echo '<div class="clear"></div>';
 	}
@@ -103,5 +103,8 @@
 	}
 ?>
 </div>
+<?php
+	include("../footer.php");
+?>
 </body>
 </html>

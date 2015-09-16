@@ -1,4 +1,26 @@
+<script>
+	(function ($) {
+  $(document).ready(function(){
 
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
+</script>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -41,23 +63,23 @@
                     <li>
                         <a href="http://adamvh.us/darboyStone/contact.php">Contact</a>
                     </li>
-                    <?php
-                    	if($_SESSION['Administrator']==1){
-                    		echo"<li><a href='#'>Welcome: ".$_SESSION['FirstName']."</a></li>";
-                    		echo"<li class='dropdown'>";
-					          echo"<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>User Functions<span class='caret'></span></a>";
-					          echo"<ul class='dropdown-menu' role='menu'>";
-					            echo"<li><a href='./update.php'>Update</a></li>";
-					            echo"<li><a href='./Logout.php'>Logout</a></li>";
-					            echo"<li class='divider'></li>";
-								echo"<li><a href='./update.php'>Manage Leads</a></li>";
-					            echo"<li ><a href='./insert.php'>Add user</a></li>";
-								echo"<li ><a href='./select.php'>Administer users</a></li>";
-								
-                    	}else{
-                    		echo"<li><a href='./login.php'>Login</a></li>";
-                    	}
-					?>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Granite</a>
+                            </li>
+                            <li>
+                                <a href="">Stone</a>
+                            </li>
+                            <li>
+                                <a href="">Fireplace</a>
+                            </li>
+                            <li>
+                                <a href="">Landscape</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

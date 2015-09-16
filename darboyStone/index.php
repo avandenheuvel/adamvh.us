@@ -22,20 +22,29 @@
 	
 </head>
 <body>
-
+	<div class="frontOverlay"></div>
+	<div class="frontText">
+		<div class="frontHdr row-centered">
+			<a href="./Granite" class="col-md-3 col-xs-6">Granite</a>
+			<a href="./Fireplace" class="col-md-3 col-xs-6">Fireplace</a>
+			<a href="./landscape" class="col-md-3 col-xs-6">Landscape</a>
+			<a href="#" class="col-md-3 col-xs-6">Another</a>
+		</div>
+		<img src="img/DSandB_Logo.png"/>
+	</div>
 	<!--Background image fader-->
 	<div id="cf4a">
-		<img src="./img/cover.png"/>
-		<img src="./img/cover1.png"/>
-		<img src="./img/cover2.png"/>
-		<img src="./img/cover3.png"/>
+		<img src="./img/bg-fade_1.jpg"/>
+		<img src="./img/bg-fade_2.jpg"/>
+		<img src="./img/bg-fade_.JPG"/>
+		<img src="./img/bg-fade_4.JPG"/>
 	</div>
 		
 	<?php
-		include("header.php");
+		//include("header.php");
 	?>
 	
-	<div class="container-fluid">
+	<!--div class="container-fluid">
 	<div class="row">
 		<div class="jumbotron hidden-sm hidden-xs">
 			<div class="col-md-9"><h2>Welcome to the new Darboy Stone and Brick website</h2>
@@ -47,10 +56,10 @@
 			</div>
 		 	<div class="col-md-3"><img src="./img/award-label.png" /></div>
 		</div>
-	</div>
+	</div-->
 	
 		<!--Thumbnail section-->
-		<div class="row">
+		<!--div class="row">
 		  <div class="col-xs-12 col-sm-6 col-lg-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
