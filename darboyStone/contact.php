@@ -1,5 +1,6 @@
 <?php
 	$source=$_POST['source'];
+	define('_ROOT', './');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@
 	<div class="row">
 	<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 	
-	<div class="panel panel-info">
+	<div class="panel panel-info contactUs">
 		<div class="panel-heading">
 			<h4>Send us a request:</h4>
 		</div>

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	//$_SESSION['Administrator']=1;
-	define('_ROOT',"./");
+	define('_ROOT',"../../");
 ?>
 
 <!DOCTYPE html>
@@ -14,18 +14,38 @@
 	</title>
 
 
-	<link href="../styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="../styles/adamvh.css" rel="stylesheet" />
+	<link href="../../styles/bootstrap.css"  rel="stylesheet"/>
+	<link href="../../styles/adamvh.css" rel="stylesheet" />
 	
-	<script src="../js/jquery.js" type="text/javascript"></script>
-	<script src="../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../js/jquery.js" type="text/javascript"></script>
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
 	
 </head>
 <body>
 <?php
-	include("../header.php");
+	include("../../header.php");
 ?>
 <div class="container">
+	<div class="container">
+	<!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Granite
+                    <small>Kitchen Gallery</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="../../">Home</a></li>
+                    <li><a href="../../Granite">Granite</a></li>
+                    <li class="active">Kitchen Idea Gallery</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-xs-12 bannerContent">
+			<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
+			<p>Remember, granite is a product of nature. Every piece will exibit individual colors and characteristics
+				<a href="../../contact.php">Contact us</a> today or come on in to our <a href="../../showroom.php">showroom</a> to 
+				meet with a professional salesperson and view our current selection of granite.</p>
+		</div>
 <?php
     /* function:  generates thumbnail */
 	function make_thumb($src,$dest,$desired_width) {
@@ -93,7 +113,7 @@
 					make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 				}
 			}
-			echo '<a href="',$images_dir.$file,'" class="img-thumbnail img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
+			echo '<a href="',$images_dir.$file,'" class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
 			//if($index % $images_per_row == 0) { echo '<div class="clear"></div>'; }
 		}
 		echo '<div class="clear"></div>';

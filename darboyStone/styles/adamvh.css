@@ -5,6 +5,44 @@
 .inlineHdr{
 	display:inline;
 }
+*{
+	font-family: 'Merriweather', serif;
+}
+
+h1, h2{
+	font-family: 'Oswald', sans-serif;
+}
+ .breadcrumb>li>a{
+  color:black;
+  text-decoration: underline;
+}
+a{
+  color:whitesmoke;
+}
+a:hover{
+  color: whitesmoke;
+}
+p>a{
+  color:blue;
+}
+p>a:visited{
+  color:purple;
+}
+
+p>a:hover{
+  color: inherit;
+  text-decoration: underline;  
+}
+.topBannerRight>li>a{
+  color:#423F2E;
+  font-size: 120%;
+}
+
+.topBannerRight>li>a:hover{
+  color:whitesmoke;
+}
+
+
 /*http://css3.bradshawenterprises.com/cfimg
 
 For "n" images You must define:
@@ -95,6 +133,7 @@ Percentage for keyframes:
 }
 
 #cf4a {
+  
 	z-index:-1;	
  	position:fixed;
   overflow:hidden;
@@ -104,6 +143,7 @@ Percentage for keyframes:
  	margin:0 auto;
 }
 #cf4a img {
+  
   top: -9999px;
   bottom: -9999px;
   left: -9999px;
@@ -166,11 +206,11 @@ Percentage for keyframes:
  */
 
 .navbar{
-  background-color: black;
-  	filter: alpha(opacity=60); /* internet explorer */
-	-khtml-opacity: 0.60;      /* khtml, old safari */
-	-moz-opacity: 0.60;       /* mozilla, netscape */
-	opacity: 0.60;           /* fx, safari, opera */
+  background-color: #6D6455;
+  	filter: alpha(opacity=90); /* internet explorer */
+	-khtml-opacity: 0.90;      /* khtml, old safari */
+	-moz-opacity: 0.90;       /* mozilla, netscape */
+	opacity: 0.90;           /* fx, safari, opera */
   
 }
 
@@ -190,6 +230,23 @@ Percentage for keyframes:
 
 .dropdown-menu{
 	text-align:center;
+}
+.img-responsive{
+  text-align: center;
+}
+.img-responsive>img{
+  margin: 3%;
+  box-shadow: 5px 5px 5px grey;
+  -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+.img-responsive>img:hover{
+  transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+  box-shadow: 15px 15px 15x grey;
+  -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
 
 .jumbotron{
@@ -233,6 +290,7 @@ body {
 }
 
 .frontText{
+  
 	height:100%;
 	width:100%;
 	position:fixed;
@@ -241,21 +299,11 @@ body {
 	z-index:1 !important;
   color:whitesmoke;
 }
-
-.XL{
-  display: inline-block;
-  line-height: 80%;
-  font-size: 300%;
-  vertical-align:text-top;
-}
-.topBannerLeft{
+.frontText>img{
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.topBannerLeft>a>img{
-  max-width: 100%;
-   
+  top: 20%;
+  clear:left;
+  //transform: translateY(-150%);//may need to tweak this
 }
 
 .frontHdr{
@@ -289,23 +337,126 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  max-width: 80%;
+}
+.topInfo{
+  padding: 10px 0px;
+  background-color: #423F2E;
+  color:white;
+}
+.topInfo>div>p, .topInfo>div>a>p{
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 
+}
+
+.social{
+  display: inline-block;
+  padding: 0px 10px;
 }
 
 .topBanner{
   height: 150px;
-  background-color: grey;
+  background-image: url('http://adamvh.us/darboyStone/img/blurredBG.JPG');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
   text-align: center;
 }
-.topBanner>a{
-  margin: 30px
+
+.topBannerLeft{
+  height: 150px;
+}
+.topBannerLeft>a>img{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 100%;
+  text-align: left;
   
+}
+.topBannerRight{
+  width: 100%;
+  height: 150px;
+}
+.topBannerRight>li{
+  display: inline-block;
+  height: 100%;
+  width: 25%;
+  background: transparent none repeat scroll 0% 0%;
+  transition: all 1s;
+}
+.topBannerRight>li>a{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.topBannerRight>li:hover{
+  background-color: #6D6455;
+  transition: all 1s;
+  filter: alpha(opacity=50); /* internet explorer */
+	-khtml-opacity: 0.50;      /* khtml, old safari */
+	-moz-opacity: 0.50;       /* mozilla, netscape */
+	opacity: 0.50;           /* fx, safari, opera */
+}
+
+.bannerContent{
+  padding-bottom: 30px;
 }
 
 .bannerContent p, h1{
 	padding-left:30px;
 	padding-right:30px;
   text-align: left;
+}
+
+#myCarousel{
+  height:400px;
+}
+**/
+.carousel-caption{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(66, 63, 46, 0.5);
+    z-index: 1;
+}
+**/
+.carousel-control{
+  height:400px;
+}
+.carousel-inner img{
+  min-width: 100%;
+  height:400px;
+  overflow: hidden;
+}
+
+.bannerInfo{
+  text-align: center;
+  background-color: goldenrod;
+  color:white;
+  padding-bottom: 10.5px;
+}
+.bannerInfo h1{
+  font-family: merriweather;
+  text-align: center;
+}
+.bannerInfo>div{
+  padding: 0px 80px;
+}
+
+.contactUs{
+  margin-top: 20px;
+}
+
+.leftJustPanel{
+	text-align:left;
 }
 
 .linkTile{
@@ -318,8 +469,16 @@ body {
 }
 
 .linkTileModern{
-  margin:auto;
-  background-color: #8B8970;
+  background-image: url("http://adamvh.us/darboyStone/Granite/pictures/Cashmere White 4.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.linkTileModern h3{
+  margin-top: 2px;
 }
 
 
@@ -329,6 +488,12 @@ body {
   box-shadow: 15px 15px 15px grey;
   -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
+}
+.modalLink{
+  background-color: rgba(255,255,255,0.3);
+  text-align: center;
+  padding:10px;
+  top:420px;
 }
 
 .linkCircle .panel-heading{
@@ -350,6 +515,40 @@ body {
 	width:85%;
 }
 
+
+
+
+
+
+
+.linkCircle2{
+	width:85%;
+  text-align: left;
+  border: none;
+  border-radius: 0px;
+  background-color:pink;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.linkCircle2 .panel-heading{
+  background-color: pink;
+  border:none;
+  border-radius: 0px;
+  margin:5px 0px;
+}
+.linkCircle2>.panel-heading>a>h3{
+  margin-left:10px;
+}
+.linkCircle2>.panel-body{
+  background-color: ;
+}
+.linkCircle2 img{
+	width:25%;
+  float: left;
+  box-shadow: none;
+}
+
 .tileButton{
 	width:100%;
   border-radius: 0px;
@@ -362,6 +561,20 @@ body {
 }
 .thumbnail > img{
   width:100%;
+}
+.graniteRow{
+  padding:30px;
+  background-color: rgba(66,63,46,0.25);
+}
+.lgFirst{
+  display: inline;
+  margin-top: 30px;
+  width: 100%;
+}
+.lgFirst>p::first-letter{ 
+  margin-top: 5px; 
+float:left;  
+font-size:3.0em;
 }
 
 .sideBanner img{
@@ -434,22 +647,63 @@ ul, ol {
   display: flex;
   align-items: center;
 }
-
-/*Used for displaying loading img*/
-.loader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('http://adamvh.us/megtec/Pics/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .footer{
   background-color: white;
   color:#2C3E50;
 }
+
+footer a{
+  color:black;
+}
+footer a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .topBannerRight {
+  height:25px;
+    font-size: 110%;
+  }}
+  @media (max-width: 991px) {
+  .topBannerRight>li>a {
+    top:-1px;
+  }}
+
+  @media (max-width: 641px) {
+  .topBannerRight>li {
+    width:48%;
+    background-color: #423F2E;
+    margin: 1px;
+    border-radius: 5px;
+  }}
+  @media (max-width: 641px) {
+  .topBannerRight>li>a {
+    color:whitesmoke;
+  }}
+  @media(max-width:641px){
+  .bannerInfo>div{
+  padding: 0px 30px;
+  }
+  .bannerInfo>h1{
+    font-size: 200%;
+  }}
+  @media (max-width: 641px) {
+  .topInfo > div > a, .social{
+    font-size:80%;
+    text-align: center;
+  }}
+  @media (max-width: 991px) {
+  .page-header {
+    margin:8px;
+  }}
 
 @media screen and ( min-height: 490px ){
     .jumbotron{
@@ -487,10 +741,10 @@ ul, ol {
       background: blue;
     }
 }
-/**
+
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}**/
+    background-color:#423F2E;
+}
+.footer a{
+  color: whitesmoke;
+}

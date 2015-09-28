@@ -9,8 +9,8 @@
     $(function () {
         $(window).scroll(function () {
 
-            // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 100) {
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 300) {
                 $('.navbar').fadeIn();
             } else {
                 $('.navbar').fadeOut();
@@ -39,6 +39,36 @@
 </head>
 
 <!-- Navigation -->
+	<div class="container-fluid">
+		<div class="row topInfo">
+			<div class="col-sm-10 col-xs-12">
+				<a href="<?php echo _ROOT . "about.php"?>" class="col-xs-12 col-md-5"><p>&#10044; W3277 Creekview Lane-Appleton, WI 54915</p></a>
+				<a href="#" class="col-xs-12 col-md-3"><p>&#9743;  (920)734-2882 </p></a>
+				<a href="mailto:customerservice@darboystone.com" class="col-xs-12 col-md-4"><p>&#9993; customerservice@darboystone.com</p></a>
+			</div>
+			<div class="social col-sm-2 col-xs-12">
+				<a target="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420" title="follow me on facebook" href="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
+				<a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter30x30.png" border=0></a>
+				<a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+			</div>
+		</div>
+		<div class="row topBanner">
+			
+			<div class="col-xs-12 col-md-4">
+				<div class="topBannerLeft ">
+					<a href="../"><img src="<?php echo _ROOT . "img/DSandB_Logo.png"?>"/></a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-8">
+				<div class="topBannerRight ">
+					<li class="col-xs-3"><a href="<?php echo _ROOT . "Granite"?>">Granite</a></li>
+					<li class="col-xs-3"><a href="<?php echo _ROOT . "Brick"?>">Stone</a></li>
+					<li class="col-xs-3"><a href="<?php echo _ROOT . "Fireplace"?>">Fireplace</a></li>
+					<li class="col-xs-3"><a href="<?php echo _ROOT . "Landscape"?>">Landscape</a></li>
+				</div>
+			</div>
+		</div>
+
 <div class="row"></div>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     	
