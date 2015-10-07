@@ -28,7 +28,7 @@
 			<a href="./Granite" class="col-md-3 col-xs-6">Granite</a>
 			<a href="./Fireplace" class="col-md-3 col-xs-6">Fireplace</a>
 			<a href="./landscape" class="col-md-3 col-xs-6">Landscape</a>
-			<a href="#" class="col-md-3 col-xs-6">Another</a>
+			<a href="#" class="col-md-3 col-xs-6">Brick & Stone</a>
 		</div>
 		<img src="img/DSandB_Logo.png"/>
 	</div>

@@ -123,11 +123,14 @@
 				<h3>Darboy Stone & Brick</h3>
 				<p>W3277 Creekview Lane</p>
 				<p>Appleton, WI 54915</p>
+				<p>Phone:</p>
+				<p>Fax:</p>
+				<p>E-mail:</p>
 				<br>
 				<h3>Hours:</h3>
 				<p>Monday- 7:00AM-5:00PM</p>
 				<p>Tuesday- 7:00AM-5:00PM</p>
-				<p>Wednesday- 7:00AM-5:00PM</p>
+				<p>Wednesday- 7:00AM-7:00PM</p>
 				<p>Thursday- 7:00AM-5:00PM</p>
 				<p>Friday- 7:00AM-5:00PM</p>
 				<p>Saturday- 8:00AM-1:30PM</p>

@@ -55,88 +55,14 @@
 			</div>	
 		</div>
 		
-		    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide hidden-xs">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <!--li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li-->
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
-                	<img src="./pictures/Persian Brown 800x300.png"/>
-            	</div>
-                <div class="carousel-caption">
-                    <h2>Amber says I Need better Pictures!</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="./pictures/Steel Rock 800x300.png"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2>Amber says I Need better Pictures!</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="./pictures/Tropical Brown 800x300.png"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2>Amber says I Need better Pictures!</h2>
-                </div>
-            </div>
-            <!--div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="Pictures/A_Winner_DSC02405.JPG" style="min-width:500px;"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="Pictures/A_Winner_DSC02408.JPG" style="min-width:500px;"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div-->
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-        </header>
-        
-         <div class="row bannerInfo">
-		 	<h1>The Fox Valley's premier provider of Granite</h1>
-		 	<div class="col-xs-12 col-md-4">
-		 		<h3>Selection</h3>
-		 		<p>Our granite experts pre-select only premium grade granite. Second best is never good enough and any off grade material is rejected before it makes our display cases. We offer you, our customer, the opportunity to view the largest selection of granite in all of Northeast Wisconsin</p>
-	 		</div>
-		 	<div class="col-xs-12 col-md-4"><h3>Service</h3>
-		 		<p>Darboy Stone & Brick has more experience than any other granite company in the area.</p>
-		 	</div>
-		 	<div class="col-xs-12 col-md-4"><h3>Quality</h3>
-		 		<p>We employ state-of-the-art fabrication systems direct from Italy, allowing us to produce a professional job by utilizing the CNC Digitizing Technology which offers the precise fabrication of marble & granite projects including routing, profiling milling, honing & polishing. Our stone specialists can fabricate any size job from a single vanity to an entire kitchen design.</p>
-		 	</div>
-		 </div>
-			<!--Thumbnail section-->
+<!--Thumbnail section-->
 			<div class="row linkTileModern">
+				<?php
+					include_once("./generateThumb.php");
+				?>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3"data-toggle="modal" data-target="#showroomModal">Granite Showroom</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#showroomModal">Granite Showroom</a>
 				
 				<!-- Modal -->
 				<div id="showroomModal" class="modal fade" role="dialog">
@@ -146,34 +72,19 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
+				        <h4 class="modal-title">Granite Sample's</h4>
 				      </div>
-				      <div class="modal-body">
-				        <p>Some text in the modal.</p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				
-				  </div>
-				</div>
-				
-				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3"data-toggle="modal" data-target="#faqModal">Granite FAQ</a>
-				
-				<!-- Modal -->
-				<div id="faqModal" class="modal fade" role="dialog">
-				  <div class="modal-dialog">
-				
-				    <!-- Modal content-->
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
-				      </div>
-				      <div class="modal-body">
-				        <p>Some text in the modal.</p>
+				      <div class="modal-body row">
+				      	<div class="col-xs-12 bannerContent">
+							<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
+							<p>Remember, granite is a product of nature. Every piece will exibit individual colors and characteristics
+								<a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+								meet with a professional salesperson and view our current selection of granite.</p>
+						</div>
+				      	<?php
+				      		generate_Thumb('./graniteShowroom/imgThumb/', './graniteShowroom/img/');
+						?>
+				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -183,8 +94,11 @@
 				  </div>
 				</div>
 				
+				<!-- This one's just a link to the FAQ page-->
+				<a href="./graniteFAQ.php" class="modalLink col-xs-6 col-md-3">Granite FAQ</a>
+				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3"data-toggle="modal" data-target="#kitchenModal">Kitchen Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#kitchenModal">Kitchen Gallery</a>
 				
 				<!-- Modal -->
 				<div id="kitchenModal" class="modal fade" role="dialog">
@@ -196,17 +110,15 @@
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
 				        <h4 class="modal-title">Modal Header</h4>
 				      </div>
-				      <div class="modal-body">
-				      	<div class="panel panel-default linkCircle2">
-				  			<div class="panel-heading">
-				  				<img src="./pictures/Santa Cecelia square.png" class="img-circle" />
-				  				<h3>Kitchen Idea Gallery</h3>
-				  			</div>
-				  			<div class="panel-body">
-				  				<p>Browse some of our recent kitchen work to gain ideas for your own project!</p>
-				  				<a href="./graniteKitchen" class="btn btn-primary">Kitchen</a>
-			  				</div>
+				      <div class="modal-body row">
+				      	<div class="col-xs-12 bannerContent">
+							<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
+							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
+				      	<?php
+				      		generate_Thumb('./graniteKitchen/imgThumb/', './graniteKitchen/img/');
+						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
@@ -218,7 +130,7 @@
 				</div>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3"data-toggle="modal" data-target="#bathModal">Bathroom Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#bathModal">Bathroom Gallery</a>
 				
 				<!-- Modal -->
 				<div id="bathModal" class="modal fade" role="dialog">
@@ -310,6 +222,85 @@
 			 </div-->
 				 
 			</div><!--End Thumbnail row-->
+        
+         <div class="row bannerInfo">
+		 	<h1>The Fox Valley's premier provider of Granite</h1>
+		 	<div class="col-xs-12 col-md-4">
+		 		<h3>Selection</h3>
+		 		<p>Our granite experts pre-select only premium grade granite. Second best is never good enough and any off grade material is rejected before it makes our display cases. We offer you, our customer, the opportunity to view the largest selection of granite in all of Northeast Wisconsin</p>
+	 		</div>
+		 	<div class="col-xs-12 col-md-4"><h3>Service</h3>
+		 		<p>Darboy Stone & Brick has more experience than any other granite company in the area.</p>
+		 		
+		 	</div>
+		 	<div class="col-xs-12 col-md-4"><h3>Quality</h3>
+		 		<p>We employ state-of-the-art fabrication systems direct from Italy, allowing us to produce a professional job by utilizing the CNC Digitizing Technology which offers the precise fabrication of marble & granite projects including routing, profiling milling, honing & polishing. Our stone specialists can fabricate any size job from a single vanity to an entire kitchen design.</p>
+		 	</div>
+		 </div>
+			
+	<!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide hidden-xs">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <!--li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li-->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
+                	<img src="./pictures/Chocolate Bordeaux 10.png"/>
+            	</div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+                	<img src="./pictures/Super White 9.png"/>
+                </div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+                	<img src="./pictures/CQ Iceland.png"/>
+                </div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <!--div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+                	<img src="Pictures/A_Winner_DSC02405.JPG" style="min-width:500px;"/>
+                </div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+                	<img src="Pictures/A_Winner_DSC02408.JPG" style="min-width:500px;"/>
+                </div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div-->
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+        </header>
 		<div class="row graniteRow">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<div class="lgFirst">

@@ -4,7 +4,7 @@
 	define('_ROOT',"../../");
 ?>
 
-<!DOCTYPE html>
+<!--DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@
 ?>
 <div class="container">
 	<div class="container">
-	<!-- Page Heading/Breadcrumbs -->
+	<!-- Page Heading/Breadcrumbs>
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Granite
@@ -39,13 +39,14 @@
                     <li class="active">Granite Showroom</li>
                 </ol>
             </div>
-        </div>
-        <div class="col-xs-12 bannerContent">
-			<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
-			<p>Remember, granite is a product of nature. Every piece will exibit individual colors and characteristics
-				<a href="../../contact.php">Contact us</a> today or come on in to our <a href="../../showroom.php">showroom</a> to 
-				meet with a professional salesperson and view our current selection of granite.</p>
-		</div>
+        </div-->
+<div class="col-xs-12 bannerContent">
+	<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
+	<p>Remember, granite is a product of nature. Every piece will exibit individual colors and characteristics
+		<a href="../../contact.php">Contact us</a> today or come on in to our <a href="../../showroom.php">showroom</a> to 
+		meet with a professional salesperson and view our current selection of granite.</p>
+</div>
+<div class="">
 <?php
     /* function:  generates thumbnail */
 	function make_thumb($src,$dest,$desired_width) {
@@ -92,8 +93,8 @@
 	}
 				
 	/** settings **/
-	$images_dir = './img/';
-	$thumbs_dir = './imgThumb/';
+	$images_dir = './graniteShowroom/img/';
+	$thumbs_dir = './graniteShowroom/imgThumb/';
 	$thumbs_width = 200;
 	$images_per_row = 5;
 	
@@ -113,7 +114,7 @@
 					make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 				}
 			}
-			echo '<a href="',$images_dir.$file,'" class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
+			echo '<a href="',$images_dir.$file,'" class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3" target="_blank" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
 			//if($index % $images_per_row == 0) { echo '<div class="clear"></div>'; }
 		}
 		echo '<div class="clear"></div>';
@@ -123,8 +124,9 @@
 	}
 ?>
 </div>
+<!--
 <?php
 	include("../footer.php");
 ?>
-</body>
+</body-->
 </html>
