@@ -56,9 +56,9 @@
 		</div>
 		
 <!--Thumbnail section-->
-			<div class="row linkTileModern">
+			<div class="row linkTileModern" id="graniteBG">
 				<?php
-					include_once("./generateThumb.php");
+					include_once("../includes/generateThumb.php");
 				?>
 				
 				<!-- Trigger the modal with a button -->

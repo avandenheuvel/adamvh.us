@@ -8,15 +8,15 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <!--div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Check out this large image</h4>
-      </div>
+      </div-->
       <div class="modal-body">
       	<img id="lgImage"/>
-        <p>*Click the I like button below to add to your profile</p>
-        <p>Preferences will be shared with our sales staff if you use the <a href="../contact.php>">Contact us</a> button.</p>
-        <p id="testJS">File path</p>
+        <!--p>*Click the I like button below to add to your profile</p>
+        <p>Preferences will be shared with our sales staff if you use the <a href="../contact.php>">Contact us</a> button.</p-->
+        <!--p id="testJS">File path</p-->
       </div>
       <div class="modal-footer">
       	<button type="button" class="btn btn-success">I like</button>
@@ -28,8 +28,25 @@
 </div>
 	
 <?php
+
 if(!function_exists("generate_Thumb")){
-	function generate_Thumb($thumbFile, $largeFile){
+	/**
+	 * generate_Thumb
+	 * $thumbFile = file path of thumbnail files
+	 * $largeFile = file path of full sized images
+	 * $variableModal = 0 for standard image/large image relationship
+	 * 					1 used to trigger database query from dbQuery.php
+	 */
+	function generate_Thumb($thumbFile, $largeFile, $variableModal){
+			
+		/**
+		 * Installed this for testing only. Move it as an input parameter, but that will affect 
+		 * all calls to this function.
+		 */		
+		if ($variableModal==null){
+			$variableModal=0;
+		}
+		
 	    /* function:  generates thumbnail */
 		if(!function_exists("make_thumb")){
 			function make_thumb($src,$dest,$desired_width) {
@@ -88,9 +105,9 @@ if(!function_exists("generate_Thumb")){
 		$thumbs_width = 200;
 		$images_per_row = 5;
 		
-		/** generate photo gallery 
-		 * 	Photos stored in 2 separate folders with the same name
-		 * 
+		/** 
+		 * generate photo gallery 
+		 * Photos stored in 2 separate folders with the same name
 		 **/
 		$image_files = get_files($images_dir);
 		if(count($image_files)) {
@@ -104,12 +121,18 @@ if(!function_exists("generate_Thumb")){
 						make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 					}
 				}
-				echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 modalLink clickable" 
-				onclick="getImage(this); return false;" data-toggle="modal" data-target="#lgImageModal" rel="gallery">
-					<img src="',$thumbnail_image,'" /></a>';
-					echo '<a href="',$images_dir.$file,'" class="hidden" />lgImage</a>';
-				//echo '<a href="',$images_dir.$file,'" class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 " target="_blank" rel="gallery"><img src="',$thumbnail_image,'" /></a>';
-				//if($index % $images_per_row == 0) { echo '<div class="clear"></div>'; }
+				if($variableModal == FALSE){
+					//Create the standard image gallery modal
+					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 modalLink clickable" 
+						onclick="getImage(this); return false;" data-toggle="modal" data-target="#lgImageModal" rel="gallery">
+						<img src="',$thumbnail_image,'" /></a>';
+						echo '<a href="',$images_dir.$file,'" class="hidden" />lgImage</a>';//Used as a placeholder for the large image
+				}else{
+					//Create adjustable large image using img name as search term. Calls createModal function in dbQuery.php file
+					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 clickable" 
+						onclick="createModal(&quot; 1 &quot;)" return false;" rel="gallery">
+						<img src="',$thumbnail_image,'" /></a>';
+				}
 			}
 			echo '<div class="clear"></div>';
 		}
@@ -124,8 +147,6 @@ if(!function_exists("generate_Thumb")){
 		var fileName = el.firstElementChild.src;	
 		var filePath = el.nextSibling.href;
 		var filePathName = filePath.class;
-		//var fileName = el.getElementsByTagName('a')[0].getAttribute('href');
-		document.getElementById("testJS").innerHTML = filePath;
 		document.getElementById("lgImage").src=filePath;
 	}
 </script>

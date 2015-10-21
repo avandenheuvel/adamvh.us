@@ -205,6 +205,16 @@ Percentage for keyframes:
 	opacity: 0.90;           /* fx, safari, opera */
   
 }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: goldenrod;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: goldenrod;
+    color: #FFF;
+}
+.navbar-default .navbar-toggle {
+    border-color: goldenrod;
+}
 
 .dropdown{
   	filter: alpha(opacity=1); /* internet explorer */
@@ -212,6 +222,10 @@ Percentage for keyframes:
 	-moz-opacity: 1;       /* mozilla, netscape */
 	opacity: 1;           /* fx, safari, opera */
 
+}
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus{
+  background-color: goldenrod;
 }
 .panel{
 	text-align:center;
@@ -277,10 +291,10 @@ body {
 	top:0;
 	z-index:0 !important;
 	background-color:black;
-	filter: alpha(opacity=10); /* internet explorer */
-	-khtml-opacity: 0.10;      /* khtml, old safari */
-	-moz-opacity: 0.10;       /* mozilla, netscape */
-	opacity: 0.10;           /* fx, safari, opera */
+	filter: alpha(opacity=20); /* internet explorer */
+	-khtml-opacity: 0.20;      /* khtml, old safari */
+	-moz-opacity: 0.20;       /* mozilla, netscape */
+	opacity: 0.20;           /* fx, safari, opera */
 }
 
 .frontText{
@@ -397,10 +411,6 @@ body {
 .topBannerRight>li:hover{
   background-color: goldenrod;
   transition: all 1s;
-  filter: alpha(opacity=50); /* internet explorer */
-	-khtml-opacity: 0.50;      /* khtml, old safari */
-	-moz-opacity: 0.50;       /* mozilla, netscape */
-	opacity: 0.50;           /* fx, safari, opera */
 }
 .topBannerRight>li:hover a{
   color:black;
@@ -416,6 +426,10 @@ body {
 	padding-left:30px;
 	padding-right:30px;
   text-align: left;
+}
+
+.page-header{
+  margin: 5px 0px 5px 0px;
 }
 
 #myCarousel{
@@ -455,6 +469,9 @@ body {
 .bannerInfo>div{
   padding: 0px 80px;
 }
+.bannerInfo>div>a>img{
+  margin: 10px;
+}
 
 .contactUs{
   margin-top: 20px;
@@ -474,12 +491,21 @@ body {
 }
 
 .linkTileModern{
-  background-image: url("http://adamvh.us/darboyStone/Granite/pictures/Cashmere White 4.png"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 500px;
+}
+#brickBG{
+	  background-image: url("http://adamvh.us/darboyStone/Brick/pictures/P1030883_2064x800.png"); 
+
+}
+#graniteBG{
+	background-image: url("http://adamvh.us/darboyStone/Granite/pictures/Cashmere White 4.png");
+}
+#fireBG{
+	background-image: url("http://adamvh.us/darboyStone/Fireplace/pictures/021712124836.png");
 }
 
 .linkTileModern h3{
@@ -494,28 +520,49 @@ body {
   -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
 }
+.modal{
+  background-color: rgba(0,0,0,0.7);
+}
+.modal-body{
+  max-height: 350px;
+  padding: 15px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+}
 .modalLink{
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(0,0,0,0.3);
   text-align: center;
   padding:10px;
   top:0px;
 }
+.modal>div>.modal-content>.modal-body>a{
+  background-color: rgba(255,255,255,0.5);
+  margin-bottom: 0px;
+}
 
-#lgImageModal{
+#lgImageModal, #myModal{
   z-index: 10000;
+}
+
+#lgImageModal>div>.modal-content>.modal-footer{
+  background-color: transparent;
+  position: absolute;
+  top:0px;
+  right:0px;
+  
 }
 .clickable {
     cursor: pointer;
 }
 
 .modal .modal-body {
-    overflow-y: auto;
+  overflow-y: auto;
   overflow-x: hidden;
   max-height: 400px;
 }
 
 .modal-body>img{
-  width: 90%;
+  width: 100%;
   display: block;
   margin:auto;
 }
@@ -590,6 +637,27 @@ body {
   padding:30px;
   background-color: rgba(66,63,46,0.25);
 }
+.getStarted, .getStarted>div>h1, .getStarted>div>h4>a{
+  text-align: center;
+  color:goldenrod;
+}
+.getStarted span{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.getStarted>div>button,
+  .getStarted>div>button:visited{
+  background-color: transparent;
+  margin: 20px;
+  padding:10px 30px 10px 30px;
+  color:red;
+  border:2px solid red;
+  border-radius: 0px;
+}
+.getStarted>div>button:hover{
+  background-color: red;
+  color:white;
+}
 .lgFirst{
   display: inline;
   margin-top: 30px;
@@ -629,6 +697,17 @@ font-size:2.0em;
 
 ul, ol {
     padding-left: 10px;
+}
+
+.boldBullet{
+  font-weight: bold;
+  list-style-type: none;
+  font-size: large;
+}
+
+.noBullet{
+  list-style-type: none;
+  padding-left: 10px;
 }
 
 /**
@@ -680,15 +759,11 @@ ul, ol {
 }
 
 .footer{
-  background-color: white;
-  color:#2C3E50;
+  background-color: goldenrod;
+  color:white;
 }
 
-footer a{
-  color:black;
-}
 footer a:hover{
-  color: black;
   text-decoration: underline;
 }
 
@@ -700,11 +775,11 @@ footer a:hover{
   @media (max-width: 991px) {
   .topBannerRight>li>a {
     top:-1px;
+    color: #423F2E;
   }}
 
   @media (max-width: 641px) {
   .topBannerRight>li {
-    width:48%;
     background-color: #423F2E;
     margin: 1px;
     border-radius: 5px;
@@ -743,9 +818,9 @@ footer a:hover{
     max-height: 350px;
     }
   }
-@media (max-height:400px){
-    .modal .modal-body {
-    max-height: 250px;
+@media (max-height:350px){
+    .modal .modal-content {
+    /*max-height: 50%;*/
     }
   }
 

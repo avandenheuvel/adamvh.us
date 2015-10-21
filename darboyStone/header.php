@@ -48,7 +48,7 @@
 			</div>
 			<div class="social col-sm-2 col-xs-12">
 				<a target="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420" title="follow me on facebook" href="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
-				<a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter30x30.png" border=0></a>
+				<!--a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter30x30.png" border=0></a-->
 				<a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
 			</div>
 		</div>
@@ -60,11 +60,23 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-8">
-				<div class="topBannerRight ">
-					<li class="col-xs-3"><a href="<?php echo _ROOT . "Granite"?>">Granite</a></li>
+				<div class="topBannerRight">
+					<li><a href="<?php echo _ROOT . "about.php"?>">About</a></li>
+                    <li><a href="<?php echo _ROOT . "contact.php"?>">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="<?php echo _ROOT . "Granite"?>">Granite</a></li>
+                            <li><a href="<?php echo _ROOT . "Brick"?>">Stone</a></li>
+                            <li><a href="<?php echo _ROOT . "Fireplace"?>">Fireplace</a></li>
+                            <li><a href="<?php echo _ROOT . "Landscape"?>">Landscape</a></li>
+                        </ul>
+                    </li>
+					
+					<!--li class="col-xs-3"><a href="<?php echo _ROOT . "Granite"?>">Granite</a></li>
 					<li class="col-xs-3"><a href="<?php echo _ROOT . "Brick"?>">Stone</a></li>
 					<li class="col-xs-3"><a href="<?php echo _ROOT . "Fireplace"?>">Fireplace</a></li>
-					<li class="col-xs-3"><a href="<?php echo _ROOT . "Landscape"?>">Landscape</a></li>
+					<li class="col-xs-3"><a href="<?php echo _ROOT . "Landscape"?>">Landscape</a></li-->
 				</div>
 			</div>
 		</div>
@@ -97,16 +109,16 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">Granite</a>
+                                <a href="<?php echo _ROOT . "Granite"?>">Granite</a>
                             </li>
                             <li>
-                                <a href="">Stone</a>
+                                <a href="<?php echo _ROOT . "Brick"?>">Stone</a>
                             </li>
                             <li>
-                                <a href="">Fireplace</a>
+                                <a href="<?php echo _ROOT . "Fireplace"?>">Fireplace</a>
                             </li>
                             <li>
-                                <a href="">Landscape</a>
+                                <a href="<?php echo _ROOT . "Landscape"?>">Landscape</a>
                             </li>
                         </ul>
                     </li>
