@@ -54,11 +54,18 @@
 						inserts to stoves and custom surrounds.  Our showroom features one of the largest 
 						collections of fireplaces anywhere in Wisconsin. </p>
 					<p>Stop in and let our professional sales staff guide you through the many options available. </p>
-					<div id="output">AJAX Test area. This will be replaced...</div>
+					
+					<!--Installed for testing-->
+					<div id="output"></div>
+					
 					<script>
+					/*
+					 * Script for generating modal based on contents of the database
+					 */
 					function createModal(str) {
+						var fileName = str.firstElementChild.src;
 					    if (str.length == 0) {
-					        document.getElementById("output").innerHTML = "";
+					        document.getElementById("output").innerHTML = "Error loading: "+ fileName;
 					        return;
 					    } else {
 					        var xmlhttp = new XMLHttpRequest();
@@ -68,12 +75,27 @@
 					                $('#myModal').modal('show');
 					            }
 					        }
-					        xmlhttp.open("GET", "../includes/dbQuery.php?q=" + str, true);
+					        //Call to dbQuery.php
+					        xmlhttp.open("GET", "../includes/dbQuery.php?q=" + fileName, true);
 					        xmlhttp.send();
 					    }
 					}
+					/*
+					 * Calls the addModal.php function
+					 */
+					function addModal(){
+						var xmlhttp = new XMLHttpRequest();
+					        xmlhttp.onreadystatechange = function() {
+					            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/ {
+					                document.getElementById("output").innerHTML = xmlhttp.responseText;
+					                $('#addModal').modal('show');
+					            }
+					        }
+					        //Call to dbQuery.php
+					        xmlhttp.open("GET", "../includes/addModal.php?", true);
+					        xmlhttp.send();
+					}
 					</script>
-						<input type="button" onclick="createModal('1')" value="Ajax test"/>
 					
 				</div>
 			</div>	
@@ -110,6 +132,11 @@
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		if($_SESSION['Administrator']==1){
+				      			echo '<button type="button" onclick="addModal()" class="btn btn-default">New</button>';
+				      		}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
@@ -118,26 +145,26 @@
 				</div>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#brickGalleryModal">Brick Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#gasFireplaceModal">Gas Gallery</a>
 				
 				<!-- Modal -->
-				<div id="brickGalleryModal" class="modal fade" role="dialog">
+				<div id="gasFireplaceModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
 				    <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Brick Project Gallery</h4>
+				        <h4 class="modal-title">Gas Fireplace</h4>
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-							<p>Feel free to browse projects we've supplied brick for.</p>
+							<p>Feel free to browse these gas fireplace installations.</p>
 							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
 								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./brickGallery/imgThumb/', './brickGallery/img/');
+				      		generate_Thumb('./gas/imgThumb/', './gas/img/','0');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
@@ -170,7 +197,7 @@
 						</div>
 				      </div>
 				      <?php
-				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/');
+				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/','0');
 						?>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -201,7 +228,7 @@
 						</div>
 				      </div>
 				      <?php
-				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/');
+				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/','0');
 						?>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

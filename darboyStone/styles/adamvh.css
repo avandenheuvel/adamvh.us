@@ -540,7 +540,7 @@ body {
   margin-bottom: 0px;
 }
 
-#lgImageModal, #myModal{
+#lgImageModal, #myModal, #addModal{
   z-index: 10000;
 }
 

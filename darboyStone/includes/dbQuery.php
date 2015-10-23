@@ -1,5 +1,8 @@
 <?php
-$q = intval($_GET['q']);
+session_start();
+
+$q = strval($_GET['q']);
+//$q = intval($_GET['q']);
 
 $con = mysqli_connect('localhost','adamvh99_admin','apv0703','adamvh99_darboy');
 if (!$con) {
@@ -7,7 +10,7 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"adamvh99_darboy");
-$sql="SELECT * FROM modal WHERE id = '".$q."'";
+$sql="SELECT * FROM modal WHERE imgPath = '".$q."'";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_array($result);
 $heading = $row['heading'];
@@ -30,13 +33,15 @@ $image = $row['imgPath'];
 				meet with a professional salesperson and view our current selection of granite.</p>
 			<img src=<?=$image?> />
 			<p><?=$image?></p>
+			<p><?=$q?></p>
 		</div>
-      	<!--?php
-      		generate_Thumb('./graniteKitchen/imgThumb/', './graniteKitchen/img/');
-		?-->
-        <!--p>Some text in the modal.</p-->
       </div>
       <div class="modal-footer">
+      	<?php
+      		if($_SESSION['Administrator']==1){
+      			echo '<button type="button" class="btn btn-default">Update</button>';
+      		}
+      	?>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
