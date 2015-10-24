@@ -43,6 +43,7 @@ if(!function_exists("generate_Thumb")){
 	 * 					1 used to trigger database query from dbQuery.php
 	 */
 	function generate_Thumb($thumbFile, $largeFile, $variableModal){
+		//echo '<script type="text/javascript">alert("Data has been submitted to ' . $thumbFile . $largeFile . $variableModal . '");</script>';
 			
 		/**
 		 * Installed this for testing only. Move it as an input parameter, but that will affect 
@@ -116,6 +117,7 @@ if(!function_exists("generate_Thumb")){
 		 **/
 		$image_files = get_files($images_dir);
 		if(count($image_files)) {
+			echo '<script type="text/javascript">alert("There are ' . count($image_files) . ' " in " ' . $images_dir . '");</script>';
 			$index = 0;
 			foreach($image_files as $index=>$file) {
 				$index++;
@@ -126,13 +128,14 @@ if(!function_exists("generate_Thumb")){
 						make_thumb($images_dir.$file,$thumbnail_image,$thumbs_width);
 					}
 				}
-				if($variableModal == FALSE){
-					//Create the standard image gallery modal
+				if($variableModal == "0"){
+					//Create the standard image gallery modal thumbnails
 					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 modalLink clickable" 
 						onclick="getImage(this); return false;" data-toggle="modal" data-target="#lgImageModal" rel="gallery">
 						<img src="',$thumbnail_image,'" /></a>';
 						echo '<a href="',$images_dir.$file,'" class="hidden" />lgImage</a>';//Used as a placeholder for the large image
 				}else{
+					//echo '<script type="text/javascript">alert("variable modal false ' . $variableModal . '");</script>';
 					/*Create adjustable large image using img name as search term. Calls createModal function in dbQuery.php file
 					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 clickable" 
 						onclick="createModal(&quot; 1 &quot;)" return false;" rel="gallery">

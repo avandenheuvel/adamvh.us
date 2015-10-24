@@ -1,8 +1,11 @@
 <?php
 session_start();
 
+/**
+ * This is called from clicking a thumbnail image in a modal.
+ * dbQuery searches based on the file path 
+ */
 $q = strval($_GET['q']);
-//$q = intval($_GET['q']);
 
 $con = mysqli_connect('localhost','adamvh99_admin','apv0703','adamvh99_darboy');
 if (!$con) {
@@ -14,7 +17,7 @@ $sql="SELECT * FROM modal WHERE imgPath = '".$q."'";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_array($result);
 $heading = $row['heading'];
-$image = $row['imgPath'];
+$image = $row['lgImgPath'];
 ?>
 
 <!-- Modal -->

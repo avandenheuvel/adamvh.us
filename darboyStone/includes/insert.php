@@ -95,10 +95,14 @@
 		  }
 	  }
 		
+		function jsErrorAlert($msg){
+			echo '<script type="text/javascript">alert("ERROR: ' . $msg . '");</script>';
+		}
+		
 		function uploadImage(){
 			//http://www.w3schools.com/php/php_file_upload.asp
 			$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/darboyStone/Fireplace/wood/img/";
-			$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+			$target_file = $target_dir . ($_FILES["fileToUpload"]["name"]);
 			$uploadOk = 1;
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			// Check if image file is a actual image or fake image
@@ -114,23 +118,23 @@
 			}
 			// Check if file already exists
 			if (file_exists($target_file)) {
-			    echo "Sorry, file already exists.";
+			    jsErrorAlert("Sorry, file already exists.");
 			    $uploadOk = 0;
 			}
 			 // Check file size
 			if ($_FILES["fileToUpload"]["size"] > 500000) {
-			    echo "Sorry, your file is too large.";
+			    jsErrorAlert("Sorry, your file is too large.");
 			    $uploadOk = 0;
 			 }
 			// Allow certain file formats
 			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 			&& $imageFileType != "gif" ) {
-			    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+			    jsErrorAlert("Sorry, only JPG, JPEG, PNG & GIF files are allowed.");
 			    $uploadOk = 0;
 			}
 			// Check if $uploadOk is set to 0 by an error
 			if ($uploadOk == 0) {
-			    echo "Sorry, your file was not uploaded.";
+			    jsErrorAlert("Sorry, your file was not uploaded.");
 			// if everything is ok, try to upload file
 			} else {
 			    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
@@ -140,7 +144,11 @@
 			        echo "Sorry, there was an error uploading your file:" . $target_file . " to: " . $target_dir;
 			    }
 			}
-			return $uploadOK;
+			if($uploadOk == 1){
+				return $_FILES["fileToUpload"]["name"];
+			}else{
+				return FALSE;
+			}
     		}
 			
 		
@@ -148,29 +156,33 @@
 		 * Insert data from new modal into the database
 		 */
 		if($_POST['createWhat']=='modal'){//Hidden input indicating modal
-		
+			$fileName = uploadImage();
+			$link_dir = "http://adamvh.us/darboyStone/Fireplace/wood/";
+			$thumbLink = $link_dir . "imgThumb/" . $fileName;
+			$lgImgLink = $link_dir . "img/" . $fileName;
+			
 			if (isset($_POST['submit'])) {
 		    $ok = true;
 				
 		    if (!isset($_POST['heading']) || $_POST['heading'] === '') {
 		        $ok = false;
-				echo'heading not set';
+				jsErrorAlert("Required field missing.");
 		    } else {
 		        $heading = $_POST['heading'];
 		    }
 			
 			if (!isset($_POST['genDesc']) || $_POST['genDesc'] === '') {
 		        $ok = false;
-				echo'Description not set';
+				jsErrorAlert("Required field missing.");
 		    } else {
 		        $genDesc = $_POST['genDesc'];
 		    }
 			
 		    if (!isset($_POST['webLink']) || $_POST['webLink'] === '') {
 		        $ok = false;
-				echo'Website link not set';
+				jsErrorAlert("Required field missing.");
 		    } else {
-		        $weblink = $_POST['webLink'];
+		        $webLink = $_POST['webLink'];
 		    }
 			
 			// Connect to the DB
@@ -183,16 +195,18 @@
 				
 			mysqli_autocommit($db, FALSE);
 	
-	        $sql = sprintf("INSERT INTO modal (heading, genDesc, vendorLink) 
+	        $sql = sprintf("INSERT INTO modal (heading, imgPath, lgImgPath, genDesc, vendorLink) 
 	        VALUES (
-	          '%s', '%s', '%s'
+	          '%s', '%s', '%s', '%s', '%s'
 	        )", mysqli_real_escape_string($db, $heading),
+	        	mysqli_real_escape_string($db, $thumbLink),
+	        	mysqli_real_escape_string($db, $lgImgLink),
 	        	mysqli_real_escape_string($db, $genDesc),
-	        	mysqli_real_escape_string($db, $weblink));
+				mysqli_real_escape_string($db, $webLink));//$target file defined in img upload sequence above
 	        
 	        echo'<p>Query complete</p>';
 				
-			if ($db->query($sql) === TRUE && uploadImage()=="1") {
+			if ($db->query($sql) === TRUE && $basePath !== FALSE) {
 					echo "New record created successfully";
 					mysqli_commit($db);
 				} else {
