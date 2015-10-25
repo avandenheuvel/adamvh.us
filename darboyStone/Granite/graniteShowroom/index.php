@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	//$_SESSION['Administrator']=1;
 	define('_ROOT',"../../");
 ?>
 

@@ -763,8 +763,12 @@ ul, ol {
   color:white;
 }
 
-footer a:hover{
+.footer a:hover{
   text-decoration: underline;
+}
+
+.footer a{
+  margin: 20px;
 }
 
 @media (max-width: 991px) {
@@ -781,6 +785,7 @@ footer a:hover{
   @media (max-width: 641px) {
   .topBannerRight>li {
     background-color: #423F2E;
+    font-size: 10px;
     margin: 1px;
     border-radius: 5px;
   }}
@@ -861,9 +866,3 @@ footer a:hover{
     }
 }
 
-.footer {
-    background-color:#423F2E;
-}
-.footer a{
-  color: whitesmoke;
-}

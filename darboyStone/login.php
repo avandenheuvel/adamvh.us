@@ -77,7 +77,7 @@ function showForm($message){
 		<script src="js/bootstrap.js" type="text/javascript"></script>
 		
 	</head>
-		<body style="background-image: url('./img/qf2rj.gif'); background-size: 100%;">
+		<body>
 			
 			<?php
 				include("header.php");

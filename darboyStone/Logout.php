@@ -1,4 +1,5 @@
 <?php
+	define('_ROOT', "./");
 	session_start();
 	//End session
 	session_destroy();
@@ -33,7 +34,7 @@
 				<div class="row row-centered">
 					<div class=" text-center">
 						<h1>You are logged out</h1>
-						<a href=./ class="btn btn-primary">Login</a>
+						<a href="./" class="btn btn-primary">Login</a>
 					</div>
 				</div>
 			</body>

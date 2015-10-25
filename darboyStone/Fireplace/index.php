@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	$_SESSION['Administrator']=1;
 	define('_ROOT', "../");
 ?>
 
@@ -133,9 +132,11 @@
 				      </div>
 				      <div class="modal-footer">
 				      	<?php
-				      		if($_SESSION['Administrator']==1){
-				      			echo '<button type="button" onclick="addModal()" class="btn btn-default">New</button>';
-				      		}
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="addModal()" class="btn btn-default">New</button>';
+					      		}
+							}
 				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>

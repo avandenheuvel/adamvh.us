@@ -18,6 +18,11 @@ $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_array($result);
 $heading = $row['heading'];
 $image = $row['lgImgPath'];
+$genDesc = $row['genDesc'];
+$webLink = $row['webLink'];
+$bullet1 = $row['bullet1'];
+$bullet2 = $row['bullet2'];
+$bullet3 = $row['bullet3'];
 ?>
 
 <!-- Modal -->
@@ -32,11 +37,16 @@ $image = $row['lgImgPath'];
       </div>
       <div class="modal-body row">
       	<div class="col-xs-12 bannerContent">
-			<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-				meet with a professional salesperson and view our current selection of granite.</p>
+			<h4><?=$genDesc?></h4>
 			<img src=<?=$image?> />
-			<p><?=$image?></p>
-			<p><?=$q?></p>
+			<ul>
+				<li><?=$bullet1?></li>
+				<li><?=$bullet2?></li>
+				<li><?=$bullet3?></li>
+			</ul>
+			<a href=<?=webLink?>>VendorSite</a>
+			<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+				meet with a professional salesperson.</p>
 		</div>
       </div>
       <div class="modal-footer">

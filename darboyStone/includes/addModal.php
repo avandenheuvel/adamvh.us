@@ -11,7 +11,7 @@
       </div>
       <div class="modal-body row">
       	<div class="col-xs-12 bannerContent">
-			<p>Here is where a user can create a new modal object</p>
+			<p>Create a new modal object</p>
 			
 				<input type="hidden" id="createWhat"name="createWhat" value="modal" />
 			    <div class="form-group">
@@ -30,7 +30,17 @@
 				  <label class="control-label" for="fileToUpload">Picture to Upload:</label>
 				  <input class="form-control" type="file" name="fileToUpload" id="fileToUpload"></input>
 				</div>
-			 
+				<div class="form-group">
+				  <label class="control-label" for="webLink">Bullet 1:</label>
+				  <input class="form-control" type="text" name="bullet1" placeholder="Bullet point #1" id="bullet1"></input>
+				</div>
+				<div class="form-group">
+				  <label class="control-label" for="webLink">Bullet 2:</label>
+				  <input class="form-control" type="text" name="bullet2" placeholder="Bullet point #2" id="bullet2"></input>
+				</div><div class="form-group">
+				  <label class="control-label" for="webLink">Bullet 3:</label>
+				  <input class="form-control" type="text" name="bullet3" placeholder="Bullet point #3" id="bullet3"></input>
+				</div>
 		</div>
       </div>
       <div class="modal-footer">

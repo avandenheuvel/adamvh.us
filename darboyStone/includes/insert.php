@@ -20,6 +20,11 @@
 <body>
 	<?php
 	  include('../header.php');
+	  
+	  function jsErrorAlert($msg){
+		echo '<script type="text/javascript">alert("ERROR: ' . $msg . '");</script>';
+	  }
+	  
 		if ($_POST['createWhat']=="user"){	
 		  $eMail = '';
 		  $password = '';
@@ -95,9 +100,7 @@
 		  }
 	  }
 		
-		function jsErrorAlert($msg){
-			echo '<script type="text/javascript">alert("ERROR: ' . $msg . '");</script>';
-		}
+		
 		
 		function uploadImage(){
 			//http://www.w3schools.com/php/php_file_upload.asp

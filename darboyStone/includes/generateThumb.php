@@ -140,7 +140,7 @@ if(!function_exists("generate_Thumb")){
 					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 clickable" 
 						onclick="createModal(&quot; 1 &quot;)" return false;" rel="gallery">
 						<img src="',$thumbnail_image,'" /></a>';*/
-					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 clickable" 
+					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 modalLink clickable" 
 						onclick="createModal(this)" return false;" rel="gallery">
 						<img src="',$thumbnail_image,'" /></a>';
 					//NEED TO REPLACE CREATE MODAL PARAMETER WITH IMAGE SOURCE TO SEARCH ON.
