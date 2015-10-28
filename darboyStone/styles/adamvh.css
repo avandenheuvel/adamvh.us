@@ -208,6 +208,13 @@ Percentage for keyframes:
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: goldenrod;
 }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+  color: whitesmoke;
+  text-decoration: underline;
+}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: goldenrod;
     color: #FFF;
@@ -418,9 +425,6 @@ body {
   transition: all 1s;
 }
 
-.bannerContent{
-  padding-bottom: 30px;
-}
 
 .bannerContent p, h1{
 	padding-left:30px;
@@ -534,13 +538,18 @@ body {
   text-align: center;
   padding:10px;
   top:0px;
+  color: #69F46D;
+}
+.modalLink:hover{
+  color: #69F46D;
+  text-decoration: underline;
 }
 .modal>div>.modal-content>.modal-body>a{
   background-color: rgba(255,255,255,0.5);
   margin-bottom: 0px;
 }
 
-#lgImageModal, #myModal, #addModal{
+#lgImageModal, #myModal, #addModal, #updateModal{
   z-index: 10000;
 }
 

@@ -19,7 +19,7 @@ $row = mysqli_fetch_array($result);
 $heading = $row['heading'];
 $image = $row['lgImgPath'];
 $genDesc = $row['genDesc'];
-$webLink = $row['webLink'];
+$webLink = $row['vendorLink'];
 $bullet1 = $row['bullet1'];
 $bullet2 = $row['bullet2'];
 $bullet3 = $row['bullet3'];
@@ -44,16 +44,18 @@ $bullet3 = $row['bullet3'];
 				<li><?=$bullet2?></li>
 				<li><?=$bullet3?></li>
 			</ul>
-			<a href=<?=webLink?>>VendorSite</a>
+			<a href=<?=$webLink?> target="_blank">VendorSite</a>
 			<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
 				meet with a professional salesperson.</p>
 		</div>
       </div>
       <div class="modal-footer">
       	<?php
-      		if($_SESSION['Administrator']==1){
-      			echo '<button type="button" class="btn btn-default">Update</button>';
-      		}
+      		if(isset($_SESSION['Administrator'])){
+	      		if($_SESSION['Administrator']==1){
+	      			echo '<button type="button" onclick="updateModal(&quot;' . $q . '&quot;);" class="btn btn-default">Update</button>';
+	      		}
+			}
       	?>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>

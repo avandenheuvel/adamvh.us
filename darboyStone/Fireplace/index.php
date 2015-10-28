@@ -19,6 +19,7 @@
 	
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../includes/scripts.js" type="text/javascript"></script>
 	
 </head>
 <body>
@@ -57,44 +58,7 @@
 					<!--Installed for testing-->
 					<div id="output"></div>
 					
-					<script>
-					/*
-					 * Script for generating modal based on contents of the database
-					 */
-					function createModal(str) {
-						var fileName = str.firstElementChild.src;
-					    if (str.length == 0) {
-					        document.getElementById("output").innerHTML = "Error loading: "+ fileName;
-					        return;
-					    } else {
-					        var xmlhttp = new XMLHttpRequest();
-					        xmlhttp.onreadystatechange = function() {
-					            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/ {
-					                document.getElementById("output").innerHTML = xmlhttp.responseText;
-					                $('#myModal').modal('show');
-					            }
-					        }
-					        //Call to dbQuery.php
-					        xmlhttp.open("GET", "../includes/dbQuery.php?q=" + fileName, true);
-					        xmlhttp.send();
-					    }
-					}
-					/*
-					 * Calls the addModal.php function
-					 */
-					function addModal(){
-						var xmlhttp = new XMLHttpRequest();
-					        xmlhttp.onreadystatechange = function() {
-					            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/ {
-					                document.getElementById("output").innerHTML = xmlhttp.responseText;
-					                $('#addModal').modal('show');
-					            }
-					        }
-					        //Call to dbQuery.php
-					        xmlhttp.open("GET", "../includes/addModal.php?", true);
-					        xmlhttp.send();
-					}
-					</script>
+					
 					
 				</div>
 			</div>	

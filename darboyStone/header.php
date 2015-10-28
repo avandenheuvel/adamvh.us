@@ -56,7 +56,7 @@
 			
 			<div class="col-xs-12 col-md-4">
 				<div class="topBannerLeft ">
-					<a href="../"><img src="<?php echo _ROOT . "img/DSandB_Logo.png"?>"/></a>
+					<a href="<?php echo _ROOT?>"><img src="<?php echo _ROOT . "img/DSandB_Logo.png"?>"/></a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-8">

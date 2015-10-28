@@ -85,7 +85,7 @@
 								meet with a professional salesperson and view our current selection of brick.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./brickShowroom/imgThumb/', './brickShowroom/img/');
+				      		generate_Thumb('./brickShowroom/imgThumb/', './brickShowroom/img/','0');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
@@ -122,7 +122,7 @@
 						</div>
 				      </div>
 				      <?php
-				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/');
+				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/','0');
 						?>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -153,7 +153,7 @@
 						</div>
 				      </div>
 				      <?php
-				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/');
+				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/','0');
 						?>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

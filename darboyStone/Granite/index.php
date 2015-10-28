@@ -81,7 +81,7 @@
 								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./graniteShowroom/imgThumb/', './graniteShowroom/img/');
+				      		generate_Thumb('./graniteShowroom/imgThumb/', './graniteShowroom/img/','0');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
@@ -116,7 +116,7 @@
 								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./graniteKitchen/imgThumb/', './graniteKitchen/img/');
+				      		generate_Thumb('./graniteKitchen/imgThumb/', './graniteKitchen/img/','0');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
