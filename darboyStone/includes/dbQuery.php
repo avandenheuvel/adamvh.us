@@ -36,24 +36,23 @@ $bullet3 = $row['bullet3'];
         <h4 class="modal-title"><?= $heading ?></h4>
       </div>
       <div class="modal-body row">
-      	<div class="col-xs-12 bannerContent">
-			<h4><?=$genDesc?></h4>
-			<img src=<?=$image?> />
-			<ul>
-				<li><?=$bullet1?></li>
-				<li><?=$bullet2?></li>
-				<li><?=$bullet3?></li>
-			</ul>
-			<a href=<?=$webLink?> target="_blank">VendorSite</a>
-			<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-				meet with a professional salesperson.</p>
-		</div>
+		<h4><?=$genDesc?></h4>
+		<img src=<?=$image?> />
+		<ul>
+			<li><?=$bullet1?></li>
+			<li><?=$bullet2?></li>
+			<li><?=$bullet3?></li>
+		</ul>
+		<a href=<?=$webLink?> target="_blank">VendorSite</a>
+		<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+			meet with a professional salesperson.</p>
       </div>
       <div class="modal-footer">
       	<?php
       		if(isset($_SESSION['Administrator'])){
 	      		if($_SESSION['Administrator']==1){
 	      			echo '<button type="button" onclick="updateModal(&quot;' . $q . '&quot;);" class="btn btn-default">Update</button>';
+	      			echo '<button type="button" onclick="deleteModal(&quot;' . $q . '&quot;);" class="btn btn-danger">Delete</button>';
 	      		}
 			}
       	?>

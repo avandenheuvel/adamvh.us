@@ -1,4 +1,3 @@
-
 /*
  * Script for generating modal based on contents of the database
  */
@@ -53,6 +52,27 @@ function updateModal(str) {
         }
         //Call to dbSelect.php
         xmlhttp.open("GET", "../includes/dbSelect.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+/*
+ * Script for deleting modal
+ */
+function deleteModal(str) {
+	
+    if (str.length == 0) {
+        document.getElementById("output").innerHTML = "Error loading: ";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/{
+               document.getElementById("output").innerHTML = xmlhttp.responseText;
+                $('#deleteModal').modal('show');
+            }
+        }
+        //Call to dbSelect.php
+        xmlhttp.open("GET", "../includes/dbDelete.php?q=" + str, true);
         xmlhttp.send();
     }
 }

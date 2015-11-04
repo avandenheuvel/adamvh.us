@@ -19,6 +19,7 @@
 	
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../includes/scripts.js" type="text/javascript"></script>
 	
 </head>
 <body>
@@ -26,6 +27,30 @@
 	<?php
 		include("../header.php");
 	?>
+	<script>
+		//adjust modal body sizes
+		//http://stackoverflow.com/questions/14242227/bootstrap-modal-body-max-height-100
+		/*
+		var fit_modal_body;
+		
+		fit_modal_body = function(modal) {
+		  var body, bodypaddings, header, headerheight, height, modalheight;
+		  header = $(".modal-header", modal);
+		  footer = $(".modal-footer", modal);
+		  body = $(".modal-body", modal);
+		  modalheight = parseInt(modal.css("height"));
+		  headerheight = parseInt(header.css("height")) + parseInt(header.css("padding-top")) + parseInt(header.css("padding-bottom"));
+		  footerheight = parseInt(footer.css("height")) + parseInt(footer.css("padding-top")) + parseInt(footer.css("padding-bottom"));
+		  bodypaddings = parseInt(body.css("padding-top")) + parseInt(body.css("padding-bottom"));
+		  height = $(window).height() - headerheight - footerheight - bodypaddings - 150;
+		  return body.css({"max-height": "" + height + "px", 'height':'auto'});
+		};
+		
+		fit_modal_body($(".modal"));
+		$(window).resize(function() {
+		  return fit_modal_body($(".modal"));
+		});*/
+	</script>
 
 	<div class="container-fluid">
 		<!-- Page Heading/Breadcrumbs -->

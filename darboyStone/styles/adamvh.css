@@ -362,7 +362,7 @@ body {
 .topInfo>div>p, .topInfo>div>a>p{
   display: inline-block;
   padding: 0px 10px;
-  font-size: 
+  font-size: small;
 }
 
 .social{
@@ -516,6 +516,10 @@ body {
   margin-top: 2px;
 }
 
+.thumbrow{
+	margin-top:500px;
+	background-color:white;
+}
 
 .linkTile:hover{
   width:85%;
@@ -528,7 +532,6 @@ body {
   background-color: rgba(0,0,0,0.7);
 }
 .modal-body{
-  max-height: 350px;
   padding: 15px;
   overflow-y: auto;
   -webkit-overflow-scrolling:touch;
@@ -549,13 +552,13 @@ body {
   margin-bottom: 0px;
 }
 
-#lgImageModal, #myModal, #addModal, #updateModal{
+#lgImageModal, #myModal, #addModal, #updateModal, #deleteModal{
   z-index: 10000;
 }
 
 #lgImageModal>div>.modal-content>.modal-footer{
   background-color: transparent;
-  position: absolute;
+  //position: absolute;
   top:0px;
   right:0px;
   
@@ -563,17 +566,26 @@ body {
 .clickable {
     cursor: pointer;
 }
+.modal{
+  text-align: center;
+}
 
 .modal .modal-body {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 400px;
+  max-height: calc(100vh - 180px);
+  
+}
+.modal-dialog{
+  display:  inline-block;
 }
 
 .modal-body>img{
-  width: 100%;
   display: block;
   margin:auto;
+}
+#lgImageModal>div>div>div>img{
+  max-width: 100%;
 }
 
 .linkCircle .panel-heading{
@@ -822,21 +834,6 @@ ul, ol {
   .page-header {
     margin:8px;
   }}
-  @media (min-height:601px){
-    .modal .modal-body {
-    max-height: 400px;
-    }
-  }
-  @media (max-height:600px){
-    .modal .modal-body {
-    max-height: 350px;
-    }
-  }
-@media (max-height:350px){
-    .modal .modal-content {
-    /*max-height: 50%;*/
-    }
-  }
 
 @media screen and ( min-height: 490px ){
     .jumbotron{

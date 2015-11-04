@@ -58,8 +58,8 @@
 	</div-->
 	
 		<!--Thumbnail section-->
-		<!--div class="row">
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
+		<div class="row thumbrow">
+		  <div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
 				  	<button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -79,7 +79,7 @@
 			 </div>
 		 </div>
 			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
+		  <div class="col-xs-12 col-sm-6 col-md-3">
 		  	<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
 				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -99,7 +99,7 @@
 			  </div>
 			 </div>
 			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
+		  <div class="col-xs-12 col-sm-6 col-md-3">
 		  	<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
 				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -119,7 +119,7 @@
 			 </div>
 		 </div>
 			 
-		  <div class="col-xs-12 col-sm-6 col-lg-3">
+		  <div class="col-xs-12 col-sm-6 col-md-3">
 		  	<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
 				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -145,6 +145,14 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    /*
+	 * set margin of front page to 100%
+	 */
+	$(function(){
+		$(window).on("load resize", function(){
+			$(".thumbrow").css("marginTop",window.innerHeight);
+		});
+	});
     </script>
 </body>
 </html>

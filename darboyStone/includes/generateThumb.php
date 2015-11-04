@@ -13,20 +13,21 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <!--div class="modal-header">
+      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Check out this large image</h4>
-      </div-->
-      <div class="modal-body">
-      	<img id="lgImage"/>
+        <img id="lgImage"/>
+        <!--h4 class="modal-title">Check out this large image</h4-->
+      </div>
+      <!--div class="modal-body"-->
+      	
         <!--p>*Click the I like button below to add to your profile</p>
         <p>Preferences will be shared with our sales staff if you use the <a href="../contact.php>">Contact us</a> button.</p-->
         <!--p id="testJS">File path</p-->
-      </div>
-      <div class="modal-footer">
+      <!--/div>
+      <!--div class="modal-footer">
       	<button type="button" class="btn btn-success">I like</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+      </div-->
     </div>
 
   </div>
@@ -117,7 +118,7 @@ if(!function_exists("generate_Thumb")){
 		 **/
 		$image_files = get_files($images_dir);
 		if(count($image_files)) {
-			echo '<script type="text/javascript">alert("There are ' . count($image_files) . ' " in " ' . $images_dir . '");</script>';
+			//echo '<script type="text/javascript">alert("There are ' . count($image_files) . ' " in " ' . $images_dir . '");</script>';
 			$index = 0;
 			foreach($image_files as $index=>$file) {
 				$index++;
