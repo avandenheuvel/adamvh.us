@@ -51,6 +51,11 @@ $bullet3 = $row['bullet3'];
       	<?php
       		if(isset($_SESSION['Administrator'])){
 	      		if($_SESSION['Administrator']==1){
+	      			/**
+					 * Update and delete .js function located in scripts.js
+					 * Modal to be updated is decided from dbSelect.php
+					 * Modal to be deleted is straight to dbDelete.php
+					 */
 	      			echo '<button type="button" onclick="updateModal(&quot;' . $q . '&quot;);" class="btn btn-default">Update</button>';
 	      			echo '<button type="button" onclick="deleteModal(&quot;' . $q . '&quot;);" class="btn btn-danger">Delete</button>';
 	      		}

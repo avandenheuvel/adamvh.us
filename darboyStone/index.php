@@ -79,6 +79,12 @@
 		<img src="./img/bg-fade_.JPG"/>
 		<img src="./img/bg-fade_4.JPG"/>
 	</div>
+	
+	<div class="down-button">
+		<a>
+			<img src="./img/downArrow-75px.png" />
+		</a>
+	</div>
 		
 	<?php
 		//include("header.php");

@@ -3,39 +3,47 @@
 	define('_ROOT', "../");
 	
 	function deleteFiles($fileName){
-	  if (file_exists($filename)) {
-	    unlink($filename);
-	    echo 'File '.$filename.' has been deleted';
+	  //str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )
+	  	$subject=$fileName;
+		$search=["http://adamvh.us","imgThumb"];
+		$replace=[$_SERVER['DOCUMENT_ROOT'],"img"];
+		$imgLgFileName = str_replace($search, $replace, $subject);
+	  	
+		$search="http://adamvh.us";
+		$replace=$_SERVER['DOCUMENT_ROOT'];
+		$imgThumbFileName = str_replace($search, $replace, $subject);
+		
+	  if (file_exists($imgLgFileName)) {
+	  	
+	    unlink($imgThumbFileName);
+		unlink($imgLgFileName);
+	    $rtrnVal= 'File '.$imgThumbFileName.' and '.$imgLgFileName.' have been deleted';
+		
 	  } else {
-	    echo 'Could not delete '.$filename.', file does not exist';
+	    $rtrnVal= 'Could not delete '.$fileName.', file does not exist. imgThumbFileName root = '.$imgLgFileName;
+		
 	  }
+	  return $rtrnVal;
 	}
 	
-	echo '<script>alert("php in dbDelete started");</script>';
 	$q = strval($_GET['q']);
-	echo '<script>alert("db Delete called w/ param: " + $q);</script>';
-	//include('header.php');
-	
-	/*POST to get db reference
-	if(!isset($_SESSION['imgPath'])){
-		$fileToUpdate = $_SESSION['imgPath'];
-	}*/
+
 	$db = new mysqli('localhost', 'adamvh99_admin', 'apv0703','adamvh99_darboy');
 		/* check connection */
 		if ($db->connect_errno) {
 			printf("Connect failed: %s\n", $db->connect_error);
-			deleteFiles($q);
 			exit();
 		}else{
-	$sql = "Delete * 
-			FROM modal
-			WHERE imgPath = '".$q."'";
-
+			$sql = "DELETE
+					FROM modal
+					WHERE imgPath = '".$q."'";
+			$stsMsg=deleteFiles($q);//Return true on success, rollback if error
+			//Disabled for testing
+			//mysqli_query($db, $sql);
 		}
 	
 ?>
 <!-- Modal content-->
-    <!-- Modal -->
 <div id="deleteModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -46,14 +54,16 @@
       <div class="modal-body row">
       	<div class="col-xs-12 bannerContent">
 			<p>Modal object <?php echo $q;?> Deleted</p>
+			<p>SQL = <?=$sql?></p>
+			<p>Img sts = <?=$stsMsg?></p>
 		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
       </div>
     </div>
-    </div>
-    </div>
+</div>
+</div>
 <?php
 mysqli_close($db);
 ?>

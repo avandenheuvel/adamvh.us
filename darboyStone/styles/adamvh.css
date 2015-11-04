@@ -227,6 +227,13 @@ Percentage for keyframes:
 	background-color:rgba(0,0,0,0.5);
 }
 
+.down-button{
+	position:absolute;
+  width: 100%;
+	bottom:10px;
+	text-align:center;
+}
+
 .dropdown{
   	filter: alpha(opacity=1); /* internet explorer */
 	-khtml-opacity: 1;      /* khtml, old safari */
@@ -414,12 +421,12 @@ body {
 }
 
 .topBannerRight>li>a{
-  color:gold;
+  color:whitesmoke;
   font-size: 120%;
   transition: all 1s;
 }
 .topBannerRight>li:hover{
-  background-color: goldenrod;
+  background-color: rgba(214, 163, 36,0.4);
   transition: all 1s;
 }
 .topBannerRight>li:hover a{
@@ -561,15 +568,17 @@ body {
   text-align: center;
   padding:10px;
   top:0px;
-  color: #69F46D;
+  color: whitesmoke;
 }
 .modalLink:hover{
-  color: #69F46D;
+  color: whitesmoke;
   text-decoration: underline;
 }
 .modal>div>.modal-content>.modal-body>a{
   background-color: rgba(255,255,255,0.5);
   margin-bottom: 0px;
+  color: blue;
+  text-decoration:underline;
 }
 
 #lgImageModal, #myModal, #addModal, #updateModal, #deleteModal{
@@ -603,6 +612,7 @@ body {
 .modal-body>img{
   display: block;
   margin:auto;
+  max-width:95%;
 }
 #lgImageModal>div>div>div>img{
   max-width: 100%;
@@ -626,12 +636,6 @@ body {
 .linkCircle img{
 	width:85%;
 }
-
-
-
-
-
-
 
 .linkCircle2{
 	width:85%;
