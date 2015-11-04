@@ -223,6 +223,10 @@ Percentage for keyframes:
     border-color: goldenrod;
 }
 
+.homeNav{
+	background-color:rgba(0,0,0,0.5);
+}
+
 .dropdown{
   	filter: alpha(opacity=1); /* internet explorer */
 	-khtml-opacity: 1;      /* khtml, old safari */
@@ -293,30 +297,34 @@ body {
 .frontOverlay{
 	height:100%;
 	width:100%;
-	position:fixed;
+	position:absolute;
 	left:0;
 	top:0;
 	z-index:0 !important;
 	background-color:black;
-	filter: alpha(opacity=20); /* internet explorer */
-	-khtml-opacity: 0.20;      /* khtml, old safari */
-	-moz-opacity: 0.20;       /* mozilla, netscape */
-	opacity: 0.20;           /* fx, safari, opera */
+	filter: alpha(opacity=30); /* internet explorer */
+	-khtml-opacity: 0.30;      /* khtml, old safari */
+	-moz-opacity: 0.30;       /* mozilla, netscape */
+	opacity: 0.30;           /* fx, safari, opera */
 }
 
 .frontText{
   
 	height:100%;
 	width:100%;
-	position:fixed;
+	position:absolute;//11-3 Changed from fixed
 	left:0;
 	top:0;
 	z-index:1 !important;
   color:whitesmoke;
 }
 .frontText>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
   position: relative;
-  top: 20%;
+  top: 30%;
   clear:left;
   //transform: translateY(-150%);//may need to tweak this
 }
@@ -348,12 +356,7 @@ body {
     -ms-transform:scale(1,2); /* IE 9 */
     -o-transform:scale(1,2); /* Opera */
 }
-.frontText>img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-}
+
 .topInfo{
   padding: 10px 0px;
   background-color: #423F2E;
@@ -515,10 +518,27 @@ body {
 .linkTileModern h3{
   margin-top: 2px;
 }
-
-.thumbrow{
-	margin-top:500px;
+/**
+ * 	Some testing going on here
+ */
+.activity-section{
 	background-color:white;
+  text-align: center;
+}
+.fill-screen {
+    background-size: cover;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-position: center;
+}
+
+.content-filler {
+    min-height: 350px;
+}
+.fixed-attachment {
+    background-attachment: fixed;
 }
 
 .linkTile:hover{

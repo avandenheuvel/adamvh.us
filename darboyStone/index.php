@@ -21,16 +21,57 @@
 	
 </head>
 <body>
-	<div class="frontOverlay"></div>
 	<div class="frontText">
-		<div class="frontHdr row-centered">
-			<a href="./Granite" class="col-md-3 col-xs-6">Granite</a>
-			<a href="./Fireplace" class="col-md-3 col-xs-6">Fireplace</a>
-			<a href="./landscape" class="col-md-3 col-xs-6">Landscape</a>
-			<a href="./Brick" class="col-md-3 col-xs-6">Brick & Stone</a>
-		</div>
 		<img src="img/DSandB_Logo.png"/>
 	</div>
+	<div class="frontOverlay"></div>
+	
+	<nav class="navbar navbar-default navbar-fixed-top homeNav" role="navigation">
+    	
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                                       
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="<?php echo _ROOT . "Granite"?>">Granite</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo _ROOT . "Brick"?>">Stone</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo _ROOT . "Fireplace"?>">Fireplace</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo _ROOT . "Landscape"?>">Landscape</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
 	<!--Background image fader-->
 	<div id="cf4a">
 		<img src="./img/bg-fade_1.jpg"/>
@@ -57,8 +98,13 @@
 		</div>
 	</div-->
 	
+	<div class="container-fluid">
 		<!--Thumbnail section-->
-		<div class="row thumbrow">
+		<div class="row firstrow activity-section">
+		<div class="activity-element col-xs-12">
+                <h2>VALUE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
 		  <div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
@@ -139,20 +185,170 @@
 			 </div>
 		 </div>
 		</div><!--End Thumbnail-->
+<!--TESTING-->		
+
+        <section class="row">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover2.png)">
+            </div>
+        </section>
+
+        <section class="row activity-section">
+            <div class="activity-element col-md-4">
+                <img src="../../images/map.png" />
+                <h2>VALUE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="activity-element col-md-4">
+                <img src="../../images/pic.png" />
+                <h2>SELECTION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="activity-element col-md-4">
+                <img src="../../images/backpack.png" />
+                <h2>SERVICE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover.png)">
+            </div>
+        </section>
+
+        <div class="row getStarted activity-section">
+			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			  	<h1>Let's get started</h1>
+			  	<p>Contact a Darboy Stone and Brick Representative today</p>
+			  	<p>We will connect you with one of or professional design consultants</p>
+			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
+		  		<button class="btn btn-lg">Contact us</button>
+		  	</div>
+	 	 </div>
+    
+		<section class="row">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover3.png)">
+            </div>
+        </section>
+        
+		<!--Begin Maps-->
+		<div class="row activity-section">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Come on in to our Showroom!</h1>
+				</div>
+			</div>
+			<!-- Map Column -->
+			<div class="col-xs-8">
+			    <!-- Embedded Google Map -->
+			    <div id="map_wrapper">
+				    <div id="map_canvas" class="mapping">
+				    	<script>
+				 		//Map locations
+				    	jQuery(function($) {
+						    // Asynchronously Load the map API 
+						    var script = document.createElement('script');
+						    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+						    document.body.appendChild(script);
+						});
+						
+						function initialize() {
+						    var map;
+						    var bounds = new google.maps.LatLngBounds();
+						    var mapOptions = {
+						        mapTypeId: 'roadmap'
+						    };
+						                    
+						    // Display a map on the page
+						    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+						    map.setTilt(45);
+						        
+						    // Multiple Markers
+						    var markers = [
+						        ['Darboy Stone and Brick', 44.2513986,-88.3545062]
+						    ];
+						                        
+						    // Info Window Content
+						    var infoWindowContent = [
+						        ['<div class="info_content">' +
+						        '<h3>Darboy Stone and Brick</h3>' +
+						        '<h4>Showroom Hours:</h4>' + 
+						        '<p>Monday- 7:00AM-5:00PM</p>' +
+								'<p>Tuesday- 7:00AM-5:00PM</p>' +
+								'<p>Wednesday- 7:00AM-5:00PM</p>' +
+								'<p>Thursday- 7:00AM-5:00PM</p>' +
+								'<p>Friday- 7:00AM-5:00PM</p>' +
+								'<p>Saturday- 8:00AM-1:30PM</p>' + '</div>'],
+						    ];
+						        
+						    // Display multiple markers on a map
+						    var infoWindow = new google.maps.InfoWindow(), marker, i;
+						    
+						    // Loop through our array of markers & place each one on the map  
+						    for( i = 0; i < markers.length; i++ ) {
+						        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+						        bounds.extend(position);
+						        marker = new google.maps.Marker({
+						            position: position,
+						            map: map,
+						            title: markers[i][0]
+						        });
+						        
+						        // Allow each marker to have an info window    
+						        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+						            return function() {
+						                infoWindow.setContent(infoWindowContent[i][0]);
+						                infoWindow.open(map, marker);
+						            }
+						        })(marker, i));
+						
+						        // Automatically center the map fitting all markers on the screen
+						        map.fitBounds(bounds);
+						    }
+						
+						    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+						    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+						        this.setZoom(13);
+						        google.maps.event.removeListener(boundsListener);
+						    });
+						    
+						}
+						</script>
+				    </div>
+				</div>
+			</div><!--End column-->
+			<div class="col-xs-4">
+				<h3>Darboy Stone & Brick</h3>
+				<p>W3277 Creekview Lane</p>
+				<p>Appleton, WI 54915</p>
+				<p>Phone:</p>
+				<p>Fax:</p>
+				<p>E-mail:</p>
+				<br>
+				<h3>Hours:</h3>
+				<p>Monday- 7:00AM-5:00PM</p>
+				<p>Tuesday- 7:00AM-5:00PM</p>
+				<p>Wednesday- 7:00AM-7:00PM</p>
+				<p>Thursday- 7:00AM-5:00PM</p>
+				<p>Friday- 7:00AM-5:00PM</p>
+				<p>Saturday- 8:00AM-1:30PM</p>
+			</div>
+		</div><!--End Row-->
+		<!--End Maps-->
 	</div><!--End Container-->
 	<!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    /*
-	 * set margin of front page to 100%
-	 */
-	$(function(){
-		$(window).on("load resize", function(){
-			$(".thumbrow").css("marginTop",window.innerHeight);
+	    $('.carousel').carousel({
+	        interval: 5000 //changes the speed
+	    })
+	    /*
+		 * set margin of front page to 100%
+		 */
+		$(function(){
+			$(window).on("load resize", function(){
+				$(".firstrow").css("marginTop",window.innerHeight);
+				$(".fixed-attachment").css("minHeight",window.innerHeight);
+			});
 		});
-	});
     </script>
 </body>
 </html>
