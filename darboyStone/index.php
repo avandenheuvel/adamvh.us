@@ -20,14 +20,14 @@
 	<script src="js/bootstrap.js" type="text/javascript"></script>
 	
 </head>
-<body>
+<body id="top" data-spy="scroll" data-target=".navbar">
 	<div class="frontText">
 		<img src="img/DSandB_Logo.png"/>
 	</div>
 	<div class="frontOverlay"></div>
 	
 	<nav class="navbar navbar-default navbar-fixed-top homeNav" role="navigation">
-    	
+    	<a href="#top" class="pull-left"><img src="./img/DSandB_Logo-sm.png"></a>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,16 +40,20 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            	
                 <ul class="nav navbar-nav navbar-right">
+                    
                     <li>
-                        <a href="">About</a>
-                    </li>
-                                       
+                        <a href="#products">Products</a>
+                    </li>                   
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <li>
+                        <a href="#findUs">Find Us</a>
+                    </li>
+                    <!--li class="dropdown">
+                        <a href="#products" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="<?php echo _ROOT . "Granite"?>">Granite</a>
@@ -64,7 +68,7 @@
                                 <a href="<?php echo _ROOT . "Landscape"?>">Landscape</a>
                             </li>
                         </ul>
-                    </li>
+                    </li-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -81,7 +85,7 @@
 	</div>
 	
 	<div class="down-button">
-		<a>
+		<a href="#banner">
 			<img src="./img/downArrow-75px.png" />
 		</a>
 	</div>
@@ -105,10 +109,34 @@
 	</div-->
 	
 	<div class="container-fluid">
-		<!--Thumbnail section-->
-		<div class="row firstrow activity-section">
-		<div class="activity-element col-xs-12">
+				
+		<section id="banner" class="row firstrow activity-section">
+            <div class="activity-element col-sm-4">
+                <img src="../../images/map.png" />
                 <h2>VALUE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="activity-element col-sm-4">
+                <img src="../../images/pic.png" />
+                <h2>SELECTION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="activity-element col-sm-4">
+                <img src="../../images/backpack.png" />
+                <h2>SERVICE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </section>
+		
+        <section class="row">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/unilockCover.png)">
+            </div>
+        </section>
+
+        <!--Thumbnail section-->
+		<div id="products" class="row activity-section">
+		<div class="activity-element col-xs-12">
+                <h2>Our Products</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 		  <div class="col-xs-12 col-sm-6 col-md-3">
@@ -125,7 +153,7 @@
 				    <li><a href="#">Separated link</a></li>
 				  </ul>
 				</div>
-			    <a href="#" class="thumbnail">
+			    <a href="./Fireplace" class="thumbnail">
 			      <img src="./img/fireplace.jpg" alt="Fireplace">
 			    </a>
 			 </div>
@@ -146,7 +174,7 @@
 				  </ul>
 				</div>
 			    <a href="./Granite" class="thumbnail">
-			      <img src="./img/cover2.png" alt="Brick">
+			      <img src="./img/cover2.png" alt="Granite">
 			    </a>
 			  </div>
 			 </div>
@@ -165,8 +193,8 @@
 				    <li><a href="#">Separated link</a></li>
 				  </ul>
 				</div>
-			    <a href="#" class="thumbnail">
-			      <img src="./img/cover3.png" alt="Fireplace">
+			    <a href="./Landscape" class="thumbnail">
+			      <img src="./img/cover3.png" alt="Landscape">
 			    </a>
 			 </div>
 		 </div>
@@ -185,43 +213,19 @@
 				    <li><a href="#">Separated link</a></li>
 				  </ul>
 				</div>
-			    <a href="#" class="thumbnail">
-			      <img src="./img/cover.png" alt="Landscape">
+			    <a href="./Brick" class="thumbnail">
+			      <img src="./img/cover.png" alt="Brick">
 			    </a>
 			 </div>
 		 </div>
 		</div><!--End Thumbnail-->
-<!--TESTING-->		
-
+		
         <section class="row">
-            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover2.png)">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/CypressMoonlight.png)">
             </div>
         </section>
 
-        <section class="row activity-section">
-            <div class="activity-element col-md-4">
-                <img src="../../images/map.png" />
-                <h2>VALUE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="activity-element col-md-4">
-                <img src="../../images/pic.png" />
-                <h2>SELECTION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="activity-element col-md-4">
-                <img src="../../images/backpack.png" />
-                <h2>SERVICE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </section>
-
-        <section class="row">
-            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover.png)">
-            </div>
-        </section>
-
-        <div class="row getStarted activity-section">
+        <div id="contact" class="row getStarted activity-section">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
@@ -232,22 +236,22 @@
 	 	 </div>
     
 		<section class="row">
-            <div class="fill-screen fixed-attachment" style="background-image: url(./img/cover3.png)">
+            <div class="fill-screen fixed-attachment" style="background-image: url(./img/coverHome.png)">
             </div>
         </section>
         
 		<!--Begin Maps-->
-		<div class="row activity-section">
+		<div id="findUs" class="row activity-section">
 			<div class="row">
 				<div class="col-xs-12">
 					<h1>Come on in to our Showroom!</h1>
 				</div>
 			</div>
 			<!-- Map Column -->
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-sm-8">
 			    <!-- Embedded Google Map -->
 			    <div id="map_wrapper">
-				    <div id="map_canvas" class="mapping">
+				    <div id="map_canvas" class="mapping pointer-events: none;">
 				    	<script>
 				 		//Map locations
 				    	jQuery(function($) {
@@ -261,6 +265,8 @@
 						    var map;
 						    var bounds = new google.maps.LatLngBounds();
 						    var mapOptions = {
+						        scrollwheel: false,
+						        draggable: false,
 						        mapTypeId: 'roadmap'
 						    };
 						                    
@@ -322,14 +328,13 @@
 				    </div>
 				</div>
 			</div><!--End column-->
-			<div class="col-xs-4">
-				<h3>Darboy Stone & Brick</h3>
+			<div class="col-xs-12 col-sm-4 storeInfo">
+				<h3>Contact Info:</h3>
 				<p>W3277 Creekview Lane</p>
 				<p>Appleton, WI 54915</p>
 				<p>Phone:</p>
 				<p>Fax:</p>
 				<p>E-mail:</p>
-				<br>
 				<h3>Hours:</h3>
 				<p>Monday- 7:00AM-5:00PM</p>
 				<p>Tuesday- 7:00AM-5:00PM</p>
@@ -350,9 +355,30 @@
 		 * set margin of front page to 100%
 		 */
 		$(function(){
+			$(document).ready(function(){
+				$(".firstrow").css("marginTop",window.innerHeight);
+			});
 			$(window).on("load resize", function(){
 				$(".firstrow").css("marginTop",window.innerHeight);
 				$(".fixed-attachment").css("minHeight",window.innerHeight);
+			});
+			$('body').scrollspy({
+				target:'.navbar'
+			});
+		
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
 			});
 		});
     </script>

@@ -250,7 +250,7 @@
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
 			  	<p>We will connect you with one of or professional design consultants</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
-		  		<button class="btn btn-lg">Contact us</button>
+		  		<button onclick="showContactModal();" class="btn btn-lg">Contact us</button>
 		  	</div>
 	 	 </div>
     <?php

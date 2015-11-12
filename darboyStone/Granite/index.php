@@ -132,7 +132,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
+				        <h4 class="modal-title">Kitchen Project Gallery</h4>
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
@@ -160,14 +160,22 @@
 				<div id="bathModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
-				    <!-- Modal content-->
+				     <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
+				        <h4 class="modal-title">Bathroom Project Gallery</h4>
 				      </div>
-				      <div class="modal-body">
-				        <p>Some text in the modal.</p>
+				      <div class="modal-body row">
+				      	<div class="col-xs-12 bannerContent">
+							<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
+							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+								meet with a professional salesperson and view our current selection of granite.</p>
+						</div>
+				      	<?php
+				      		generate_Thumb('./graniteBathroom/imgThumb/', './graniteBathroom/img/','0');
+						?>
+				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

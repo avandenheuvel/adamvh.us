@@ -102,9 +102,9 @@
 		
 		
 		
-		function uploadImage(){
+		function uploadImage($fileDir){
 			//http://www.w3schools.com/php/php_file_upload.asp
-			$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/darboyStone/Fireplace/wood/img/";
+			$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/darboyStone/Fireplace/".$fileDir."/img/";
 			$target_file = $target_dir . ($_FILES["fileToUpload"]["name"]);
 			$uploadOk = 1;
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -131,7 +131,7 @@
 			 }
 			// Allow certain file formats
 			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-			&& $imageFileType != "gif" ) {
+			&& $imageFileType != "gif" && $imageFileType!="JPG") {
 			    jsErrorAlert("Sorry, only JPG, JPEG, PNG & GIF files are allowed.");
 			    $uploadOk = 0;
 			}
@@ -159,8 +159,9 @@
 		 * Insert data from new modal into the database
 		 */
 		if($_POST['createWhat']=='modal'){//Hidden input indicating modal
-			$fileName = uploadImage();
-			$link_dir = "http://adamvh.us/darboyStone/Fireplace/wood/";
+			$fileDir=$_POST['fileDir'];
+			$fileName = uploadImage($fileDir);
+			$link_dir = "http://adamvh.us/darboyStone/Fireplace/".$fileDir."/";//new was direct to wood dir
 			$thumbLink = $link_dir . "imgThumb/" . $fileName;
 			$lgImgLink = $link_dir . "img/" . $fileName;
 			
@@ -187,7 +188,24 @@
 		    } else {
 		        $webLink = $_POST['webLink'];
 		    }
-			
+			 if (!isset($_POST['bullet1']) || $_POST['bullet1'] === '') {
+		        $ok = false;
+				jsErrorAlert("Required field missing.");
+		    } else {
+		        $bullet1 = $_POST['bullet1'];
+		    }
+			 if (!isset($_POST['bullet2']) || $_POST['bullet2'] === '') {
+		        $ok = false;
+				jsErrorAlert("Required field missing.");
+		    } else {
+		        $bullet2 = $_POST['bullet2'];
+		    }
+			 if (!isset($_POST['bullet3']) || $_POST['bullet3'] === '') {
+		        $ok = false;
+				jsErrorAlert("Required field missing.");
+		    } else {
+		        $bullet3 = $_POST['bullet3'];
+		    }
 			// Connect to the DB
 	    	$db = new mysqli('localhost', 'adamvh99_admin', 'apv0703','adamvh99_darboy');
 			/* check connection */
@@ -198,18 +216,21 @@
 				
 			mysqli_autocommit($db, FALSE);
 	
-	        $sql = sprintf("INSERT INTO modal (heading, imgPath, lgImgPath, genDesc, vendorLink) 
+	        $sql = sprintf("INSERT INTO modal (heading, imgPath, lgImgPath, genDesc, vendorLink, bullet1, bullet2, bullet3) 
 	        VALUES (
-	          '%s', '%s', '%s', '%s', '%s'
+	          '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s'
 	        )", mysqli_real_escape_string($db, $heading),
 	        	mysqli_real_escape_string($db, $thumbLink),
 	        	mysqli_real_escape_string($db, $lgImgLink),
 	        	mysqli_real_escape_string($db, $genDesc),
-				mysqli_real_escape_string($db, $webLink));//$target file defined in img upload sequence above
+				mysqli_real_escape_string($db, $webLink),
+				mysqli_real_escape_string($db, $bullet1),
+				mysqli_real_escape_string($db, $bullet2),
+				mysqli_real_escape_string($db, $bullet3));//$target file defined in img upload sequence above
 	        
 	        echo'<p>Query complete</p>';
 				
-			if ($db->query($sql) === TRUE && $basePath !== FALSE) {
+			if ($db->query($sql) === TRUE && $fileName !== FALSE) {
 					echo "New record created successfully";
 					mysqli_commit($db);
 				} else {

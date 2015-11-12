@@ -1,9 +1,13 @@
+<?php
+	$q = strval($_GET['q']);
+?>
 <!-- Modal -->
 <div id="addModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <form action="../includes/insert.php" method="post" enctype="multipart/form-data">
+    	<input type="hidden" name="fileDir" value="<?=$q?>" /><!--New added whole line-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>

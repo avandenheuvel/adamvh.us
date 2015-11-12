@@ -8,6 +8,7 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<title>
 		New Darboy Stone & Brick
 	</title>
@@ -57,9 +58,6 @@
 					
 					<!--Installed for testing-->
 					<div id="output"></div>
-					
-					
-					
 				</div>
 			</div>	
 		</div>
@@ -98,7 +96,7 @@
 				      	<?php
 				      		if(isset($_SESSION['Administrator'])){
 					      		if($_SESSION['Administrator']==1){
-					      			echo '<button type="button" onclick="addModal()" class="btn btn-default">New</button>';
+					      			echo '<button type="button" onclick="addModal(&quot;wood &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
 					      		}
 							}
 				      	?>
@@ -110,7 +108,7 @@
 				</div>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#gasFireplaceModal">Gas Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#gasFireplaceModal">Gas</a>
 				
 				<!-- Modal -->
 				<div id="gasFireplaceModal" class="modal fade" role="dialog">
@@ -129,11 +127,18 @@
 								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./gas/imgThumb/', './gas/img/','0');
+				      		generate_Thumb('./gas/imgThumb/', './gas/img/','1');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="addModal(&quot;gas &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
@@ -141,30 +146,41 @@
 				  </div>
 				</div>
 				
+				
+				
+				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#stoneShowroomModal">Stone Showroom</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#contemporaryModal">Contemporary</a>
 				
 				<!-- Modal -->
-				<div id="stoneShowroomModal" class="modal fade" role="dialog">
+				<div id="contemporaryModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
 				    <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Cultured Stone showroom</h4>
+				        <h4 class="modal-title">Contemporary Fireplace</h4>
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-					        <p>Feel free to browse these sample images of some of the variety of cultured stone we supply.</p>
+							<p>Feel free to browse these gas fireplace installations.</p>
 							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-								meet with a professional salesperson and view our current selection of cultured stone.</p>
+								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
-				      </div>
-				      <?php
-				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/','0');
+				      	<?php
+				      		generate_Thumb('./contemporary/imgThumb/', './contemporary/img/','1');
 						?>
+				        <!--p>Some text in the modal.</p-->
+				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="addModal(&quot;contemporary &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
@@ -172,30 +188,41 @@
 				  </div>
 				</div>
 				
+				
+				
+				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#stoneGalleryModal">Stone Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#freeStandingModal">Free Standing</a>
 				
 				<!-- Modal -->
-				<div id="stoneGalleryModal" class="modal fade" role="dialog">
+				<div id="freeStandingModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
 				    <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Cultured Stone Project Gallery</h4>
+				        <h4 class="modal-title">Free Standing Fireplace</h4>
 				      </div>
 				      <div class="modal-body row">
-				        <div class="col-xs-12 bannerContent">
-							<p>Feel free to browse projects we've supplied cultured stone for.</p>
+				      	<div class="col-xs-12 bannerContent">
+							<p>Feel free to browse these gas fireplace installations.</p>
 							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-								meet with a professional salesperson and view our current selection of cultured Stone.</p>
+								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
-				      </div>
-				      <?php
-				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/','0');
+				      	<?php
+				      		generate_Thumb('./freeStanding/imgThumb/', './freeStanding/img/','1');
 						?>
+				        <!--p>Some text in the modal.</p-->
+				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="addModal(&quot;freeStanding &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
@@ -308,7 +335,7 @@
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
 			  	<p>We will connect you with one of or professional design consultants</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
-		  		<button class="btn btn-lg">Contact us</button>
+		  		<button onclick="showContactModal();"class="btn btn-lg">Contact us</button>
 		  	</div>
 	 	 </div>
     <?php

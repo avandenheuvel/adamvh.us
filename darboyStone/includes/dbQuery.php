@@ -36,16 +36,26 @@ $bullet3 = $row['bullet3'];
         <h4 class="modal-title"><?= $heading ?></h4>
       </div>
       <div class="modal-body row">
-		<h4><?=$genDesc?></h4>
-		<img src=<?=$image?> />
-		<ul>
-			<li><?=$bullet1?></li>
-			<li><?=$bullet2?></li>
-			<li><?=$bullet3?></li>
-		</ul>
-		<a href=<?=$webLink?> target="_blank">VendorSite</a>
-		<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-			meet with a professional salesperson.</p>
+		<div class="col-sm-6">
+			<h4 class="txtLeft"><?=$genDesc?></h4>
+			<ul class="txtLeft">
+				<li><?=$bullet1?></li>
+				<li><?=$bullet2?></li>
+				<li><?=$bullet3?></li>
+			</ul>
+			<a href=<?=$webLink?> class="txtLeft" target="_blank">VendorSite</a>
+		</div>
+		
+		<div class="col-sm-6">
+			<img src=<?=$image?> class="thumbnail modalImg" />
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12 txtLeft">
+				<p class="txtLeft"><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
+					meet with a professional salesperson.</p>
+			</div>
+		</div>
       </div>
       <div class="modal-footer">
       	<?php

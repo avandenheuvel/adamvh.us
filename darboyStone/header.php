@@ -25,18 +25,64 @@
 
 <html lang="en">
 <head>
-	
-	<!--script src="http://adamvh.us/darboyStone/js/backgroundTransition.js" type="text/javascript"></script-->
-	<!--script src="http://adamvh.us/darboyStone/js/fade.js" type="text/javascript"></script-->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<meta charset="UTF-8">	
 
 </head>
+
+<!--Contact Modal-->
+	<div id="contactModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Contact us</h4>
+	      </div>
+	      <div class="modal-body txtLeft row">	
+	      	<form role="form" method="post" action="<?php echo _ROOT . "acknowledge.php"?>">				
+				<div class="form-group">
+				  <label class="control-label" for="cName">Name:</label>
+				  <input class="form-control" type="text" name="cName" placeholder="Enter Name" id="name"></input>
+				</div>
+				<div class="form-group">
+				  <label class="control-label" for="email">Email:</label>
+				  <input class="form-control" type="email" name="email" placeholder="E-mail address" id="email"></input>
+				</div>
+				<div class="form-group"> 
+				  <label class="control-label" for="phone">Phone:</label>
+				  <input class="form-control" type="phone" name="phone" placeholder="Phone Number" id="phone"></input>
+				</div>
+				<div class="form-group"> 
+				  <label class="control-label" for="preference">Preferred method:</label></br>
+				  <label class="radio-inline"><input class="radio" type="radio" name="preference" value="phone">Phone</label>
+				  <label class="radio-inline"><input class="radio" type="radio" name="preference" value="email">E-mail</label>
+				</div>
+				
+				 <div class="form-group">
+				  <label for="sel1">Interest:<span class="hidden-xs">(Hold ctrl to select multiple)</span></label>
+				  <select class="form-control" id="sel1" multiple="multiple" name="interests" size="3">
+			    	  <option value="Brick">Brick</option>
+					  <option value="Fireplace">Fireplace</option>
+					  <option value="Landscape">Landscape</option>
+					  <option value="Granite">Granite</option>
+				  </select>
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label" for="comments">Comments:</label>
+				  <textarea class="form-control" name="comments" id="comments"></textarea>
+				</div> 
+				  <input type="hidden" name="source" id="source" value="<?php echo $source;?>"/></input>
+				
+				  <input class="btn btn-primary" type="submit" name="send" value="Send Message"></input>
+			
+			</form>
+			</div>
+			</div>
+			</div>
+			</div>
+<!--End Contact Modal-->
 
 <!-- Navigation -->
 	<div class="container-fluid">
@@ -62,7 +108,7 @@
 			<div class="col-xs-12 col-md-8">
 				<div class="topBannerRight">
 					<li><a href="<?php echo _ROOT . "about.php"?>">About</a></li>
-                    <li><a href="<?php echo _ROOT . "contact.php"?>">Contact</a></li>
+                    <li><a onclick="showContactModal(); return false;">Contact</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -103,7 +149,7 @@
                     </li>
                                        
                     <li>
-                        <a href="http://adamvh.us/darboyStone/contact.php">Contact</a>
+                        <a onclick="showContactModal(); return false;">Contact</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
