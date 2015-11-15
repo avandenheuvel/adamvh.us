@@ -264,7 +264,7 @@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
-                	<img src="./pictures/gasInsert.png"/>
+                	<img src="http://www.heatnglo.com/%7E/media/Images/Slideshow%20Slide%20Photos/HNG/PRIMO72_rotator_1400x500.ashx"/>
             	</div>
                 <div class="carousel-caption">
                     <h2></h2>
@@ -272,7 +272,7 @@
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="./pictures/contemporary.png"/>
+                	<img src="http://www.heatnglo.com/%7E/media/Images/Product%20Images/Outdoor%20Products%20Images/Fireplaces/Castlewood/HHT_Wood_Castlewood_Mesh_960x456.ashx?q=70"/>
                 </div>
                 <div class="carousel-caption">
                     <h2></h2>
@@ -280,7 +280,7 @@
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="./pictures/Wood.png"/>
+                	<img src="http://www.heatnglo.com/%7E/media/Images/Product%20Images/Outdoor%20Products%20Images/Fireplaces/Twilight_Modern/HHT-gasFP-TwilightModern-Exterior-960x456.ashx?q=70"/>
                 </div>
                 <div class="carousel-caption">
                     <h2></h2>
@@ -319,13 +319,16 @@
 		 		<h3>We are a proud distributor of high quality fireplaces and stoves. Feel free to visit
 		 			out partners websites.</h3>
 	 		</div>
-		 	<div class="col-xs-12 col-md-8">
+		 	<div class="col-xs-12 col-md-8 logo">
 		 		<a href="http://www.heatnglo.com" target="_blank"><img src="./pictures/kozyHeat.jpg" /></a>	
 		 		<a href="http://www.kozyheat.com/" target="_blank"><img src="./pictures/heatnGlow_Logo.jpg" /></a>
 		 		<a href="http://www.quadrafire.com/" target="_blank"><img src="./pictures/quadraFire.jpg" /></a>
 		 		<a href="http://www.kingsmanind.com/" target="_blank"><img src="./pictures/kingsman.png" /></a>	
 		 		<a href="http://www.regency-fire.com/Home.aspx " target="_blank"><img src="./pictures/regency.jpg" /></a>	
-		 						 				 				 		
+		 		<a href="http://www.heatilator.com/" target="_blank"><img src="./pictures/heatilator.jpg" /></a>
+		 		<a href="http://www.icc-rsf.com/en/rsf-woodburning-fireplaces" target="_blank"><img src="./pictures/rsf.jpg" /></a>
+		 		<a href="http://www.renaissancefireplaces.com/" target="_blank"><img src="./pictures/renaissance.jpg" /></a>
+		 		<a href="http://www.osburn-mfg.com/en" target="_blank"><img src="./pictures/osburn.jpg" /></a> 				 				 				 		
 		 	</div>
 		 </div>
         

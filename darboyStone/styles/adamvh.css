@@ -484,7 +484,20 @@ body {
   height:500px;
   overflow: hidden;
 }
-
+@media(max-width:1024px){
+  #myCarousel{
+    height:300px;
+  }
+  .carousel-control{
+    height:300px;
+  }
+  .carousel-inner img{
+    display: block;
+    height: 300px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
 .bannerInfo{
   text-align: center;
   background-color: goldenrod;
@@ -500,6 +513,9 @@ body {
 }
 .bannerInfo>div>a>img{
   margin: 10px;
+}
+.logo{
+	max-width:80%;
 }
 
 .contactUs{
@@ -526,15 +542,22 @@ body {
   background-size: cover;
   min-height: 500px;
 }
+@media(max-width:641px){
+  .linkTileModern{
+    min-height: 300px;
+  }
+}
 #brickBG{
-	  background-image: url("http://adamvh.us/darboyStone/Brick/pictures/P1030883_2064x800.png"); 
-
+  background-image: url("http://adamvh.us/darboyStone/Brick/pictures/P1030883_2064x800.png"); 
+  background-position: center; 
 }
 #graniteBG{
 	background-image: url("http://adamvh.us/darboyStone/Granite/pictures/Cashmere White 4.png");
+  background-position: center;
 }
 #fireBG{
 	background-image: url("http://adamvh.us/darboyStone/Fireplace/pictures/021712124836.png");
+  background-position: center;
 }
 
 .linkTileModern h3{
@@ -546,30 +569,39 @@ body {
 .activity-section{
 	background-color:white;
   text-align: center;
-  padding:60px 10px
+  padding:30px 10px
 }
 .fill-screen {
     background-size: cover;
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: center;
 }
-
-
 .fixed-attachment {
     background-attachment: fixed;
 }
-@media (max-width: 1024px){
+@media (max-width: 641px){
   .fixed-attachment{
     background-attachment: scroll;
+    width:100%;
+    min-height:0px !important;
   }
   .fill-screen{
     width: 100%;
-    height:auto;
+    min-height:200px !important;
     
   }
+}
+/*
+ * only for webkit  browsers
+ * Need to look further at Chrome function.
+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .fixed-attachment { 
+        background-attachment: scroll;
+    }
 }
 
 .linkTile:hover{
@@ -642,23 +674,26 @@ body {
   max-width: 100%;
 }
 
-.linkCircle .panel-heading{
-  color: white;
-  background-color: #2C3E50;
-  margin-bottom:15px;
-}
+
 
 .linkCircle{
 	width:85%;
-  background-color:#ECF0F1;
+  border: 0px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
-
+.linkCircle>p{
+  padding: 0px 10px;
+}
+.linkCircle>.btn{
+  background-color: goldenrod;
+  min-width: 100px
+}
 .linkCircle img{
 	width:85%;
+  box-shadow: unset;
+  border: 5px solid goldenrod;
 }
 
 .linkCircle2{

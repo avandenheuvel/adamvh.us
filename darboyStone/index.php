@@ -126,7 +126,9 @@
                 <h2>SERVICE</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
+            
         </section>
+        
 		
         <section class="row">
             <div class="fill-screen fixed-attachment" style="background-image: url(./img/unilockCover.png)">
@@ -139,7 +141,46 @@
                 <h2>Our Products</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-		  <div class="col-xs-12 col-sm-6 col-md-3">
+            
+            
+            
+            <div class="col-xs-12 col-sm-6 col-md-3">
+		  		<div class="panel panel-default linkCircle">
+			  		<img class="img-circle"src="./img/fireplace.jpg" />
+					<h3>Fireplace</h3>
+					<p>View our current gas, wood burning and contemporary fireplaces along with a collection of projects we've installed.</p>
+					<a class="btn btn-default" href="./Fireplace">Fireplace</a>
+				 </div>
+			 </div>
+			 <div class="col-xs-12 col-sm-6 col-md-3">
+		  		<div class="panel panel-default linkCircle">
+			  		<img class="img-circle"src="./img/landscape.JPG" />
+					<h3>Landscape</h3>
+					<p>Sample pictures of a wide variety of brick and stone landscape materials along with photos from some of our recent projects.</p>
+					<a class="btn btn-default" href="./Landscape">Landscape</a>
+				 </div>
+			 </div>
+			 <div class="col-xs-12 col-sm-6 col-md-3">
+		  		<div class="panel panel-default linkCircle">
+			  		<img class="img-circle"src="./img/brick.JPG" />
+					<h3>Brick & Stone</h3>
+					<p>View sample images of a wide variety of brick and stone options along with project galleries to help spark your creativity.</p>
+					<a class="btn btn-default" href="./Brick">Brick</a>
+				 </div>
+			 </div>
+			 <div class="col-xs-12 col-sm-6 col-md-3">
+		  		<div class="panel panel-default linkCircle">
+			  		<img class="img-circle"src="./img/granite.jpg" />
+					<h3>Granite</h3>
+					<p>Visit our granite page to view our large variety of granite available along with customer project galleries to inspire.</p>
+					<a class="btn btn-default" href="./Granite">Granite</a>
+				 </div>
+			 </div>
+		 
+		 
+		 
+		 
+		  <!--div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkTile">
 		  		<div class="dropdown">
 				  	<button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -217,7 +258,8 @@
 			      <img src="./img/cover.png" alt="Brick">
 			    </a>
 			 </div>
-		 </div>
+		 </div-->
+		 
 		</div><!--End Thumbnail-->
 		
         <section class="row">
@@ -332,9 +374,8 @@
 				<h3>Contact Info:</h3>
 				<p>W3277 Creekview Lane</p>
 				<p>Appleton, WI 54915</p>
-				<p>Phone:</p>
-				<p>Fax:</p>
-				<p>E-mail:</p>
+				<p>Phone:(920)734-2882</p>
+				<p>E-mail:customerservice@darboystone.com</p>
 				<h3>Hours:</h3>
 				<p>Monday- 7:00AM-5:00PM</p>
 				<p>Tuesday- 7:00AM-5:00PM</p>
