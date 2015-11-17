@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	define('_ROOT', "../");
+	$source = "Granite";
 ?>
 
 <!DOCTYPE html>
@@ -86,29 +87,42 @@
 				?>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#showroomModal">Granite Showroom</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#graniteShowroomModal">Granite Showroom</a>
 				
 				<!-- Modal -->
-				<div id="showroomModal" class="modal fade" role="dialog">
+				<div id="graniteShowroomModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
 				    <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Granite Sample's</h4>
+				      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Granite Showroom</h4>
+				        
+				      	<ul class="nav nav-tabs" data-tabs="tabs">
+						  <li class="active">
+						    <a href="#type" data-toggle="tab">Types</a>
+						  </li>
+						  <li><a href="#edge" data-toggle="tab">Edges</a></li>
+						</ul>
+						
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-							<p>Feel free to browse these sample images of granite pieces we've installed in the past</p>
-							<p>Remember, granite is a product of nature. Every piece will exibit individual colors and characteristics
-								<a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-								meet with a professional salesperson and view our current selection of granite.</p>
+					        <p>View our large selection of Granite</p>
 						</div>
-				      	<?php
-				      		generate_Thumb('./graniteShowroom/imgThumb/', './graniteShowroom/img/','0');
-						?>
-				        <!--p>Some text in the modal.</p-->
+						<div class="tab-content">
+							<div class="tab-pane active" id="type">
+								<?php
+						      		generate_Thumb('./graniteShowroom/graniteType/imgThumb/', './graniteShowroom/graniteType/img/','0');
+								?>
+							</div>
+							<div class="tab-pane" id="edge">
+								<?php
+						      		generate_Thumb('./graniteShowroom/graniteEdge/imgThumb/', './graniteShowroom/graniteEdge/img/','0');
+								?>
+							</div>
+						</div>
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

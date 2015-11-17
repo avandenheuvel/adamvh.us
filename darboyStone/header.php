@@ -61,7 +61,7 @@
 				
 				 <div class="form-group">
 				  <label for="sel1">Interest:<span class="hidden-xs">(Hold ctrl to select multiple)</span></label>
-				  <select class="form-control" id="sel1" multiple="multiple" name="interests" size="3">
+				  <select class="form-control" id="sel1" multiple="multiple" name="interests[]" size="3">
 			    	  <option value="Brick">Brick</option>
 					  <option value="Fireplace">Fireplace</option>
 					  <option value="Landscape">Landscape</option>

@@ -1,5 +1,5 @@
 <?php
-	define('_ROOT',"./");
+	define('_ROOT', "./");
 ?>
 
 <!DOCTYPE html>
@@ -8,15 +8,19 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link href="styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="styles/adamvh.css" rel="stylesheet" />
-	
-	<script src="js/jquery.js" type="text/javascript"></script>
-	
-	
 	<title>
 		New Darboy Stone & Brick
-	</title>	
+	</title>
+
+
+	<link href="./styles/bootstrap.css"  rel="stylesheet"/>
+	<link href="./styles/adamvh.css" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700|Merriweather' rel='stylesheet' type='text/css'>
+	
+	<script src="./js/jquery.js" type="text/javascript"></script>
+	<script src="./js/bootstrap.js" type="text/javascript"></script>
+	<script src="./includes/scripts.js" type="text/javascript"></script>
+	
 </head>
 <body>
 		
@@ -120,13 +124,11 @@
 				</div>
 			</div><!--End column-->
 			<div class="col-md-4">
-				<h3>Darboy Stone & Brick</h3>
+				<h3>Contact Info:</h3>
 				<p>W3277 Creekview Lane</p>
 				<p>Appleton, WI 54915</p>
-				<p>Phone:</p>
-				<p>Fax:</p>
-				<p>E-mail:</p>
-				<br>
+				<p>Phone:(920)734-2882</p>
+				<p>E-mail:customerservice@darboystone.com</p>
 				<h3>Hours:</h3>
 				<p>Monday- 7:00AM-5:00PM</p>
 				<p>Tuesday- 7:00AM-5:00PM</p>

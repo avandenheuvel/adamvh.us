@@ -44,7 +44,7 @@ if(!function_exists("generate_Thumb")){
 	 * 					1 used to trigger database query from dbQuery.php
 	 */
 	function generate_Thumb($thumbFile, $largeFile, $variableModal){
-		//echo '<script type="text/javascript">alert("Data has been submitted to ' . $thumbFile . $largeFile . $variableModal . '");</script>';
+		/*echo '<script type="text/javascript">alert("Data has been submitted to ' . $thumbFile . $largeFile . $variableModal . '");</script>';*/
 			
 		/**
 		 * Installed this for testing only. Move it as an input parameter, but that will affect 

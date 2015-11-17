@@ -387,11 +387,22 @@
 		</div><!--End Row-->
 		<!--End Maps-->
 	</div><!--End Container-->
-	<!-- Script to Activate the Carousel -->
     <script>
+    	/*Activate the carousel*/
 	    $('.carousel').carousel({
 	        interval: 5000 //changes the speed
 	    })
+	    
+	    /*Hide background when scrolled down. better on mobil*/
+		$(document).scroll(function() {
+		  var y = $(this).scrollTop();
+		  if (y > $(window).height()) {
+		    $('#cf4a').fadeOut();
+		  } else {
+		    $('#cf4a').fadeIn();
+		  }
+		});
+		
 	    /*
 		 * set margin of front page to 100%
 		 */

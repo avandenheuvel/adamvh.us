@@ -19,6 +19,7 @@
 	
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../includes/scripts.js" type="text/javascript"></script>
 	
 </head>
 <body>
@@ -111,19 +112,40 @@
 				    <!-- Modal content-->
 				    <div class="modal-content">
 				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      	<button type="button" class="close" data-dismiss="modal">&times;</button>
 				        <h4 class="modal-title">Cultured Stone showroom</h4>
+				        
+				      	<ul class="nav nav-tabs" data-tabs="tabs">
+						  <li class="active">
+						    <a href="#coronado" data-toggle="tab">Coronado</a>
+						  </li>
+						  <li><a href="#eldorado" data-toggle="tab">Eldorado</a></li>
+						  <li><a href="#owens" data-toggle="tab">Owens Corning</a></li>
+						</ul>
+						
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-					        <p>Feel free to browse these sample images of some of the variety of cultured stone we supply.</p>
-							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-								meet with a professional salesperson and view our current selection of cultured stone.</p>
+					        <p>View our large selection of culture stone from the worlds leading manufacturers</p>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane active" id="coronado">
+								<?php
+						      		generate_Thumb('./stoneShowroom/Coronado/imgThumb/', './stoneShowroom/Coronado/img/','0');
+								?>
+							</div>
+							<div class="tab-pane" id="eldorado">
+								<?php
+						      		generate_Thumb('./stoneShowroom/Eldorado/imgThumb/', './stoneShowroom/Eldorado/img/','0');
+								?>
+							</div>
+							<div class="tab-pane" id="owens">
+								<?php
+						      		generate_Thumb('./stoneShowroom/OwensCorning/imgThumb/', './stoneShowroom/OwensCorning/img/','0');
+								?>
+							</div>
 						</div>
 				      </div>
-				      <?php
-				      		generate_Thumb('./stoneShowroom/imgThumb/', './stoneShowroom/img/','0');
-						?>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
