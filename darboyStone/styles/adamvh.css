@@ -1,12 +1,27 @@
-/*.container {
-    background-color: rgba(66,66,66,0.3);
-}*/
+.productScroll{
+  display: inline-block;
+  overflow-x: scroll;  
+  width: 100%;
+}
+.productSelector{
+  width: 1000px;
+}
+.productSelector>a{
+  display: inline-block;
+}
 .txtLeft{
   text-align: left;
 }
 #myModal a{
   color: blue;
   text-decoration: underline;
+}
+.modal-header{
+  padding-bottom:0px
+}
+.modal-footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .modalImg{
 	width:100%;
@@ -246,6 +261,9 @@ Percentage for keyframes:
   color: whitesmoke;
   text-decoration: underline;
 }
+.navbar-default .navbar-nav > li > a{
+  text-align: center;
+}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: goldenrod;
     color: #FFF;
@@ -285,7 +303,14 @@ Percentage for keyframes:
 .panel-info{
   text-align: left;
 }
-
+.contactUs.panel{
+  padding-top: 0px;
+  border: #423F2E;
+}
+.contactUs>.panel-heading{
+  background-color: #423F2E;
+  border: #423F2E;
+}
 .dropdown-menu{
 	text-align:center;
 }
@@ -533,8 +558,13 @@ body {
 .bannerInfo>div>a>img{
   margin: 10px;
 }
-.logo{
-	max-width:80%;
+.logo>a>img{
+	max-width:20%;
+}
+@media(max-width: 641px){
+  .logo>a>img{
+    max-width:30%;
+  }
 }
 
 .contactUs{
@@ -644,8 +674,13 @@ body {
   padding:10px;
   top:0px;
   color: whitesmoke;
+  list-style: none;
 }
 .modalLink:hover{
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.modalLink a:focus{
   color: whitesmoke;
   text-decoration: underline;
 }
@@ -692,6 +727,15 @@ body {
 }
 #lgImageModal>div>div>div>img{
   max-width: 100%;
+  margin-bottom: 15px;
+}
+@media(min-width: 940px){
+  #lgImageModal>.modal-dialog{
+    width:80vw;
+  }
+  #lgImageModal>.modal-dialog>.modal-content>.modal-header>img{
+    height: calc(100vh - 110px);
+  }
 }
 
 
@@ -707,7 +751,7 @@ body {
   padding: 0px 10px;
 }
 .linkCircle>.btn{
-  background-color: goldenrod;
+  background-color: gray;
   min-width: 100px
 }
 .linkCircle img{
@@ -763,24 +807,24 @@ body {
 }
 .getStarted, .getStarted>div>h1, .getStarted>div>h4>a{
   text-align: center;
-  color:goldenrod;
+  color:gray;
 }
 .getStarted span{
   padding-right: 15px;
   padding-left: 15px;
 }
-.getStarted>div>button,
-  .getStarted>div>button:visited,
-  .getStarted>div>button:focus{
+.getStarted>div>a>button,
+  .getStarted>div>a>button:visited,
+  .getStarted>div>a>button:focus{
   background-color: transparent;
   margin: 20px;
   padding:10px 30px 10px 30px;
-  color:red;
-  border:2px solid red;
+  color:goldenrod;
+  border:2px solid goldenrod;
   border-radius: 0px;
 }
-.getStarted>div>button:hover{
-  background-color: red;
+.getStarted>div>a>button:hover{
+  background-color: goldenrod;
   color:white;
 }
 .lgFirst{

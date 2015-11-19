@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	define('_ROOT',"./");
+	$source = "home";
 ?>
 
 <!DOCTYPE html>
@@ -177,89 +178,6 @@
 				 </div>
 			 </div>
 		 
-		 
-		 
-		 
-		  <!--div class="col-xs-12 col-sm-6 col-md-3">
-		  		<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  	<button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Fireplace
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="./Fireplace" class="thumbnail">
-			      <img src="./img/fireplace.jpg" alt="Fireplace">
-			    </a>
-			 </div>
-		 </div>
-			 
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Granite
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="./Granite/graniteShowroom.php">Granite Showroom</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="./Granite" class="thumbnail">
-			      <img src="./img/cover2.png" alt="Granite">
-			    </a>
-			  </div>
-			 </div>
-			 
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Landscape
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="./Landscape" class="thumbnail">
-			      <img src="./img/cover3.png" alt="Landscape">
-			    </a>
-			 </div>
-		 </div>
-			 
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-		  	<div class="panel panel-default linkTile">
-		  		<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle tileButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Brick
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			    <a href="./Brick" class="thumbnail">
-			      <img src="./img/cover.png" alt="Brick">
-			    </a>
-			 </div>
-		 </div-->
-		 
 		</div><!--End Thumbnail-->
 		
         <section class="row">
@@ -273,7 +191,7 @@
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
 			  	<p>We will connect you with one of or professional design consultants</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
-		  		<button class="btn btn-lg">Contact us</button>
+		  		<a href="./contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>
 	 	 </div>
     
@@ -289,8 +207,11 @@
 					<h1>Come on in to our Showroom!</h1>
 				</div>
 			</div>
+		</div>
+			
+			<div class="row">
 			<!-- Map Column -->
-			<div class="col-xs-12 col-sm-8">
+			<div class="col-md-8">
 			    <!-- Embedded Google Map -->
 			    <div id="map_wrapper">
 				    <div id="map_canvas" class="mapping pointer-events: none;">
@@ -318,7 +239,8 @@
 						        
 						    // Multiple Markers
 						    var markers = [
-						        ['Darboy Stone and Brick', 44.2513986,-88.3545062]
+						        ['Darboy Stone and Brick', 44.2513986,-88.3545062],
+						        ['Antigo Fireplace', 45.169307, -89.147068]
 						    ];
 						                        
 						    // Info Window Content
@@ -332,6 +254,16 @@
 								'<p>Thursday- 7:00AM-5:00PM</p>' +
 								'<p>Friday- 7:00AM-5:00PM</p>' +
 								'<p>Saturday- 8:00AM-1:30PM</p>' + '</div>'],
+								
+								['<div class="info_content">' +
+						        '<h3>Antigo Fireplace</h3>' +
+						        '<h4>Showroom Hours:</h4>' + 
+						        '<p>Monday- 8:00AM-5:00PM</p>' +
+								'<p>Tuesday- 8:00AM-5:00PM</p>' +
+								'<p>Wednesday- 8:00AM-5:00PM</p>' +
+								'<p>Thursday- 8:00AM-5:00PM</p>' +
+								'<p>Friday- 8:00AM-5:00PM</p>' +
+								'<p>Saturday- 9:00AM-1:30PM</p>' + '</div>']
 						    ];
 						        
 						    // Display multiple markers on a map
@@ -361,37 +293,59 @@
 						
 						    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
 						    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-						        this.setZoom(13);
+						        this.setZoom(8);
 						        google.maps.event.removeListener(boundsListener);
 						    });
 						    
 						}
 						</script>
 				    </div>
-				</div>
+				</div><!--End Maps-->
 			</div><!--End column-->
-			<div class="col-xs-12 col-sm-4 storeInfo">
-				<h3>Contact Info:</h3>
-				<p>W3277 Creekview Lane</p>
-				<p>Appleton, WI 54915</p>
-				<p>Phone:(920)734-2882</p>
-				<p>E-mail:customerservice@darboystone.com</p>
-				<h3>Hours:</h3>
-				<p>Monday- 7:00AM-5:00PM</p>
-				<p>Tuesday- 7:00AM-5:00PM</p>
-				<p>Wednesday- 7:00AM-7:00PM</p>
-				<p>Thursday- 7:00AM-5:00PM</p>
-				<p>Friday- 7:00AM-5:00PM</p>
-				<p>Saturday- 8:00AM-1:30PM</p>
+			<div class="col-md-4">
+				<ul class="nav nav-tabs" data-tabs="tabs">
+				  <li class="active">
+				    <a href="#darboy" data-toggle="tab">Darboy Stone</a>
+				  </li>
+				  <li><a href="#antigo" data-toggle="tab">Antigo Fireplace</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="darboy">
+						<h3>Contact:</h3>
+						<p>W3277 Creekview Lane</p>
+						<p>Appleton, WI 54915</p>
+						<p>Phone:(920)734-2882</p>
+						<p>E-mail:customerservice@darboystone.com</p>
+						<h3>Hours:</h3>
+						<p>Monday- 7:00AM-5:00PM</p>
+						<p>Tuesday- 7:00AM-5:00PM</p>
+						<p>Wednesday- 7:00AM-7:00PM</p>
+						<p>Thursday- 7:00AM-5:00PM</p>
+						<p>Friday- 7:00AM-5:00PM</p>
+						<p>Saturday- 8:00AM-1:30PM</p>
+					</div>
+					<div class="tab-pane" id="antigo">
+						<h3>Contact:</h3>
+						<p>2655 Highway 45 North-Suite A</p>
+						<p>Antigo, WI 54409</p>
+						<p>Phone:(715)627-7882</p>
+						<h3>Showroom Hours:</h3> 
+				        <p>Monday- 8:00AM-5:00PM</p>
+						<p>Tuesday- 8:00AM-5:00PM</p>
+						<p>Wednesday- 8:00AM-5:00PM</p>
+						<p>Thursday- 8:00AM-5:00PM</p>
+						<p>Friday- 8:00AM-5:00PM</p>
+						<p>Saturday- 9:00AM-1:30PM</p>
+					</div>
+				</div>
 			</div>
 		</div><!--End Row-->
-		<!--End Maps-->
 	</div><!--End Container-->
     <script>
     	/*Activate the carousel*/
 	    $('.carousel').carousel({
 	        interval: 5000 //changes the speed
-	    })
+	    });
 	    
 	    /*Hide background when scrolled down. better on mobil*/
 		$(document).scroll(function() {
@@ -417,22 +371,23 @@
 			$('body').scrollspy({
 				target:'.navbar'
 			});
-		
-			$(function() {
-			  $('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000);
-			        return false;
-			      }
-			    }
-			  });
+			//Set up scoll to all a links that begin with #
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+				    e.preventDefault();
+			
+				    var target = this.hash;
+				    var $target = $(target);
+			
+				    $('html, body').stop().animate({
+				        'scrollTop': $target.offset().top
+				    }, 900, 'swing', function () {
+				        window.location.hash = target;
+				    });
+				});
 			});
 		});
+		
     </script>
 </body>
 </html>

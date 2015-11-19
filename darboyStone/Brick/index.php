@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	define('_ROOT', "../");
+	$source = "Brick";
 ?>
 
 <!DOCTYPE html>
@@ -266,13 +267,13 @@
             <span class="icon-next"></span>
         </a>
         </header>
-		<div class="row getStarted">
+		<div id="contact" class="row getStarted activity-section">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
 			  	<p>We will connect you with one of or professional design consultants</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
-		  		<button onclick="showContactModal();" class="btn btn-lg">Contact us</button>
+		  		<a href="../contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>
 	 	 </div>
     <?php

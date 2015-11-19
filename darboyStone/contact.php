@@ -26,7 +26,7 @@
 	?>
 	<div class="container">
 	<div class="row">
-	<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+	<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 	
 	<div class="panel panel-info contactUs">
 		<div class="panel-heading">
@@ -56,7 +56,7 @@
 					
 					 <div class="form-group">
 					  <label for="sel1">Interest:<span class="hidden-xs">(Hold ctrl to select multiple)</span></label>
-					  <select class="form-control" id="sel1" multiple="multiple" name="interests" size="3">
+					  <select class="form-control" id="sel1" multiple="multiple" name="interests[]" size="3">
 				    	  <option value="Brick">Brick</option>
 						  <option value="Fireplace">Fireplace</option>
 						  <option value="Landscape">Landscape</option>

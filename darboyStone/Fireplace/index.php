@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	define('_ROOT', "../");
+	$source = "Fireplace";
 ?>
 
 <!DOCTYPE html>
@@ -286,22 +287,6 @@
                     <h2></h2>
                 </div>
             </div>
-            <!--div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="Pictures/A_Winner_DSC02405.JPG" style="min-width:500px;"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
-                	<img src="Pictures/A_Winner_DSC02408.JPG" style="min-width:500px;"/>
-                </div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div-->
         </div>
 
         <!-- Controls -->
@@ -314,7 +299,6 @@
         </header>
         
         <div class="row bannerInfo">
-		 	<h1>The Fox Valley's premier Supplier of Fireplaces</h1>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>We are a proud distributor of high quality fireplaces and stoves. Feel free to visit
 		 			out partners websites.</h3>
@@ -332,13 +316,13 @@
 		 	</div>
 		 </div>
         
-		<div class="row getStarted">
+		<div id="contact" class="row getStarted activity-section">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
 			  	<p>We will connect you with one of or professional design consultants</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
-		  		<button onclick="showContactModal();"class="btn btn-lg">Contact us</button>
+		  		<a href="../contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>
 	 	 </div>
     <?php
