@@ -57,7 +57,7 @@
 						collections of fireplaces anywhere in Wisconsin. </p>
 					<p>Stop in and let our professional sales staff guide you through the many options available. </p>
 					
-					<!--Installed for testing-->
+					<!--This is used for bringing in the addModal-->
 					<div id="output"></div>
 				</div>
 			</div>	

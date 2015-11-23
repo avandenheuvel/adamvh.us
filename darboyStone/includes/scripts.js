@@ -67,6 +67,25 @@ function addModal(str){
         xmlhttp.open("GET", "../includes/addModal.php?q=" + fileDir, true);//Added file dir
         xmlhttp.send();
 }
+
+function JSuploadImage(str){
+	if (str.length == 0) {
+        alert("str empty");
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/{
+               document.getElementById("output").innerHTML = xmlhttp.responseText;
+               $('#addImgModal').modal('show');
+            }
+        }
+        //Call to dbSelect.php
+        xmlhttp.open("GET", "../includes/addImage.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+
 /*
  * Called after success of add Modal
  */
@@ -121,6 +140,28 @@ function deleteModal(str) {
         }
         //Call to dbSelect.php
         xmlhttp.open("GET", "../includes/dbDelete.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+/*
+ * Script for deleting an image
+ */
+function deleteImage() {
+	var str = document.getElementById("lgImage").src;
+	alert("delete Image: "+str);
+    if (str.length == 0) {
+        document.getElementById("output").innerHTML = "Error loading: ";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4)/* && xmlhttp.status == 200)*/{
+               document.getElementById("output").innerHTML = xmlhttp.responseText;
+                $('#deleteModal').modal('show');
+            }
+        }
+        //Call to dbSelect.php
+        xmlhttp.open("GET", "../includes/delete.php?q=" + str, true);
         xmlhttp.send();
     }
 }

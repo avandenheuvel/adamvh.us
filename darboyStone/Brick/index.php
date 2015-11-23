@@ -28,6 +28,9 @@
 	<?php
 		include("../header.php");
 	?>
+	
+	<!--This is used for bringing in the addModal-->
+	<div id="output"></div>
 
 	<div class="container-fluid">
 		<!-- Page Heading/Breadcrumbs -->
@@ -67,6 +70,8 @@
 					include_once("../includes/generateThumb.php");
 				?>
 				
+				
+				
 				<!-- Trigger the modal with a button -->
 				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#brickShowroomModal">Brick Showroom</a>
 				
@@ -92,6 +97,15 @@
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
+				      	
+				      	<?php
+				      		//include_once("../includes/uploadImg.php");
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/brickShowroom &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>

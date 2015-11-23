@@ -28,6 +28,14 @@
       	<button type="button" class="btn btn-success">I like</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div-->
+      <?php
+  		//include_once("../includes/uploadImg.php");
+  		if(isset($_SESSION['Administrator'])){
+      		if($_SESSION['Administrator']==1){
+      			echo '<button type="button" onclick="deleteImage()" class="btn btn-danger">Delete</button>';//Updated added parameter to add modal was blank
+      		}
+		}
+  		?>
     </div>
 
   </div>
