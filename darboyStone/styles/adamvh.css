@@ -1,16 +1,37 @@
+.lsProductSelect{
+  margin-top: 20px;
+}
+.paverLogo{
+  max-width: 90%;
+  margin: 15px;
+}
+.productImg>img{
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  min-width: 75%;
+  max-width: 100%;
+}
+.productImg>h1{
+  text-align: center;
+}
+
 .imgWrap {
   position: relative;
-  display: inline;
+  display: inline-block;
 }
 .imgWrap>img{
 	padding:3px;
 }
-	
-.imgDescription {
+.imgDescription  {
   position: absolute;
+  width: 100%;
   color:goldenrod;
   text-align: center;
-  top: 0;
+  top: 30%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -25,14 +46,11 @@
   visibility: visible;
   opacity: 1;
 }
-.productImg>img{
-	max-width:100%;
-}
 
 .productDesc>h4, .productDesc>p{
   display: inline;
 }
-@media(min-width: 991px){
+@media(min-width: 500px){
   .productDesc{
     margin-top: 60px;
   }
@@ -58,9 +76,11 @@
     transition: all 1s;
 }
 .productSelector>a>img:hover{
-  width:110%;
-  -webkit-transition: all 1s; /* Safari */
-    transition: all 1s;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  -webkit-transition: all .5s; /* Safari */
+    transition: all .5s;
 }
 @media(max-width: 641px){
   .productSelector>a>img{
@@ -656,6 +676,10 @@ body {
   .linkTileModern{
     min-height: 300px;
   }
+}
+#landscapeBG{
+	background-image: url("http://adamvh.us/darboyStone/Landscape/pictures/Brussels-Sierra, Pine Hall Pathaways-Cocoa.JPG"); 
+	background-position: center; 
 }
 #brickBG{
   background-image: url("http://adamvh.us/darboyStone/Brick/pictures/P1030883_2064x800.png"); 

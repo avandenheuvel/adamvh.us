@@ -146,16 +146,31 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="coronado">
 								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Coronado &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
 						      		generate_Thumb('./stoneShowroom/Coronado/imgThumb/', './stoneShowroom/Coronado/img/','0');
 								?>
 							</div>
 							<div class="tab-pane" id="eldorado">
 								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Eldorado &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
 						      		generate_Thumb('./stoneShowroom/Eldorado/imgThumb/', './stoneShowroom/Eldorado/img/','0');
 								?>
 							</div>
 							<div class="tab-pane" id="owens">
 								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/OwensCorning &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
 						      		generate_Thumb('./stoneShowroom/OwensCorning/imgThumb/', './stoneShowroom/OwensCorning/img/','0');
 								?>
 							</div>
@@ -193,6 +208,14 @@
 				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/','0');
 						?>
 				      <div class="modal-footer">
+				      	<?php
+				      		//include_once("../includes/uploadImg.php");
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneGallery &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>

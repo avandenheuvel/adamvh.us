@@ -29,9 +29,6 @@
 	
 ?>
 <!-- Modal content-->
-<script>
-	$('#lgImage').modal('hide');
-</script>
 <div id="deleteModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
