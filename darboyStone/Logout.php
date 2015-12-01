@@ -28,18 +28,16 @@
 	<?php
 		include("header.php");
 	?>
-	<div class="vertical-center">
-		<div class="container">
-			<body>
-				<div class="row row-centered">
-					<div class=" text-center">
-						<h1>You are logged out</h1>
-						<a href="./" class="btn btn-primary">Login</a>
-					</div>
+	<div class="container">
+		<body>
+			<div class="row row-centered">
+				<div class="text-center">
+					<h1>You are logged out</h1>
+					<a href="./" class="btn btn-primary">Home</a>
 				</div>
-			</body>
-		</div>
-	</div>
+			</div>
+		</body>
+	</div>	
 </body>
 </html>
 

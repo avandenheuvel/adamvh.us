@@ -28,6 +28,9 @@
 	<?php
 		include("../header.php");
 	?>
+	<!--This is used for bringing in the addModal-->
+	<div id="output"></div>
+	
 	<script>
 		//adjust modal body sizes
 		//http://stackoverflow.com/questions/14242227/bootstrap-modal-body-max-height-100
@@ -114,11 +117,21 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="type">
 								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Granite/graniteShowroom/graniteType &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
 						      		generate_Thumb('./graniteShowroom/graniteType/imgThumb/', './graniteShowroom/graniteType/img/','0');
 								?>
 							</div>
 							<div class="tab-pane" id="edge">
 								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Granite/graniteShowroom/graniteEdge &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
 						      		generate_Thumb('./graniteShowroom/graniteEdge/imgThumb/', './graniteShowroom/graniteEdge/img/','0');
 								?>
 							</div>
@@ -160,6 +173,14 @@
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		//include_once("../includes/uploadImg.php");
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="JSuploadImage(&quot;Granite/graniteKitchen &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
@@ -192,6 +213,14 @@
 				        <!--p>Some text in the modal.</p-->
 				      </div>
 				      <div class="modal-footer">
+				      	<?php
+				      		//include_once("../includes/uploadImg.php");
+				      		if(isset($_SESSION['Administrator'])){
+					      		if($_SESSION['Administrator']==1){
+					      			echo '<button type="button" onclick="JSuploadImage(&quot;Granite/graniteBathroom &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      		}
+							}
+				      	?>
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>

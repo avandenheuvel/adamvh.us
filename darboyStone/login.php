@@ -1,5 +1,7 @@
 <?php
   session_start();
+  define('_ROOT', './');
+  
 
 $message = '';
 if(!isset($_SESSION['user'])){
@@ -111,6 +113,9 @@ function showForm($message){
 		</div>
 		</div>
 		</div>
+		<?php
+			include('./footer.php');
+		?>
 		</body>
 	</html>
 <?php

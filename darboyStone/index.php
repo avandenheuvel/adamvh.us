@@ -16,9 +16,14 @@
 
 	<link href="styles/bootstrap.css"  rel="stylesheet"/>
 	<link href="styles/adamvh.css" rel="stylesheet" />
+	<link href="styles/animate.css" rel="stylesheet" />
 	
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/wow.min.js"></script>
+	  <script>
+	  	new WOW().init();
+	  </script>
 	
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar">
@@ -112,21 +117,26 @@
 	<div class="container-fluid">
 				
 		<section id="banner" class="row firstrow activity-section">
-            <div class="activity-element col-sm-4">
-                <img src="../../images/map.png" />
+			<div class="wow slideInLeft col-xs-12" data-wow-delay="1s" data-wow-duration="1s">
+				<h1>Welcome To Darboy Stone & Brick - Your Idea Store!</h1>
+			</div>
+            <!--div class="activity-element col-sm-4">
                 <h2>VALUE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Supplying high quality: Brick, Stone, Granite, Fireplace and Landscape products at a great price</p>
             </div>
             <div class="activity-element col-sm-4">
-                <img src="../../images/pic.png" />
                 <h2>SELECTION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>Stop into our showroom to see the vast array of products and options we carry.</p>
             </div>
             <div class="activity-element col-sm-4">
-                <img src="../../images/backpack.png" />
                 <h2>SERVICE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
+                <p>Our friendly, knowledgable sales staff and experienced installers make it easy to turn your ideas into reality.</p>
+            </div-->
+            <div class="down-button2">
+				<a href="#products">
+					<img src="./img/downArrow-75px.png" />
+				</a>
+			</div>
             
         </section>
         
@@ -138,14 +148,11 @@
 
         <!--Thumbnail section-->
 		<div id="products" class="row activity-section">
-		<div class="activity-element col-xs-12">
+			<div class="wow slideInDown activity-element col-xs-12">
                 <h2>Our Products</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4>We proudly supply North East Wisconsin with a large variety of high quality products. Please visit our product pages to learn more about our offerings or see some fine examples to inspire your next project.</h4>
             </div>
-            
-            
-            
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="wow slideInLeft col-xs-12 col-sm-6 col-md-3"  data-wow-duration="2s" data-wow-delay="1s">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/fireplace.jpg" />
 					<h3>Fireplace</h3>
@@ -153,7 +160,7 @@
 					<a class="btn btn-default" href="./Fireplace">Fireplace</a>
 				 </div>
 			 </div>
-			 <div class="col-xs-12 col-sm-6 col-md-3">
+			 <div class="wow slideInLeft col-xs-12 col-sm-6 col-md-3" data-wow-duration="1.5s" data-wow-delay="0.5s">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/landscape.JPG" />
 					<h3>Landscape</h3>
@@ -161,7 +168,7 @@
 					<a class="btn btn-default" href="./Landscape">Landscape</a>
 				 </div>
 			 </div>
-			 <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="wow slideInRight col-xs-12 col-sm-6 col-md-3"  data-wow-duration="1.5s" data-wow-delay="0.5s">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/brick.JPG" />
 					<h3>Brick & Stone</h3>
@@ -169,7 +176,7 @@
 					<a class="btn btn-default" href="./Brick">Brick</a>
 				 </div>
 			 </div>
-			 <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="wow slideInRight col-xs-12 col-sm-6 col-md-3"  data-wow-duration="2s" data-wow-delay="1s">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/granite.jpg" />
 					<h3>Granite</h3>
@@ -177,7 +184,11 @@
 					<a class="btn btn-default" href="./Granite">Granite</a>
 				 </div>
 			 </div>
-		 
+		 	<div class="down-button2">
+				<a href="#contact">
+					<img src="./img/downArrow-75px.png" />
+				</a>
+			</div>
 		</div><!--End Thumbnail-->
 		
         <section class="row">
@@ -185,7 +196,7 @@
             </div>
         </section>
 
-        <div id="contact" class="row getStarted activity-section">
+        <div id="contact" class="wow slideInUp row getStarted activity-section">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
@@ -193,6 +204,11 @@
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
 		  		<a href="./contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>
+		  	<div class="down-button2">
+				<a href="#findUs">
+					<img src="./img/downArrow-75px.png" />
+				</a>
+			</div>
 	 	 </div>
     
 		<section class="row">
@@ -203,7 +219,7 @@
 		<!--Begin Maps-->
 		<div id="findUs" class="row activity-section">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 wow pulse" data-wow-delay="1s">
 					<h1>Come on in to our Showroom!</h1>
 				</div>
 			</div>
@@ -389,5 +405,8 @@
 		});
 		
     </script>
+<?php 
+	include("./footer.php");
+?>
 </body>
 </html>

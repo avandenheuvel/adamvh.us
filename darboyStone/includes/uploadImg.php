@@ -28,7 +28,7 @@ function uploadImage($fileDir){
 	    $uploadOk = 0;
 	}
 	 // Check file size
-	if ($_FILES["fileToUpload"]["size"] > 500000) {
+	if ($_FILES["fileToUpload"]["size"] > 1000000) {
 	    jsErrorAlert("Sorry, your file is too large.");
 	    $uploadOk = 0;
 	 }
@@ -59,5 +59,4 @@ function uploadImage($fileDir){
 
 $dirIn=strval($_POST['fileDir']);
 uploadImage($dirIn);
-echo "<script>alert('php called')</script>";
 ?>

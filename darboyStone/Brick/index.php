@@ -228,16 +228,17 @@
          <div class="row bannerInfo">
 		 	<h1>The Fox Valley's premier provider of Stone & Brick</h1>
 		 	<div class="col-xs-12 col-md-4">
-		 		<h3>Point 1</h3>
-		 		<p>This is for Mark to fill in... Afterall... He's the wordsmith</p>
+		 		<h3>Maintenance Free</h3>
+		 		<p>Brick never needs painting or cleaning. It doesn't rot, fade, peel or dent. Save money on maintenance and avoid headaches by choosing brick.</p>
 	 		</div>
 		 	<div class="col-xs-12 col-md-4">
-		 		<h3>Point 2</h3>
-		 		<p>I'm sure we can find another compelling reason to list here.</p>
+		 		<h3>Energy Efficient</h3>
+		 		<p>Brick is a proven insulator. It is slow to lose or absorb heat, reducing your heating and cooling bill.</p>
 		 		
 		 	</div>
-		 	<div class="col-xs-12 col-md-4"><h3>Point 3</h3>
-		 		<p>Three bullet points seems to fit well in the layout... Need more or less... Let me know.</p>
+		 	<div class="col-xs-12 col-md-4">
+		 		<h3>Increase Value</h3>
+		 		<p>On average, brick homes command at least 6% more than other home styles.  So, when a brick house sells, the return on investment almost always proves to be a wise one.</p>
 		 	</div>
 		 </div>
 			

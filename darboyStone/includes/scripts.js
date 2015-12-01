@@ -67,7 +67,6 @@ function addModal(str){
         xmlhttp.open("GET", "../includes/addModal.php?q=" + fileDir, true);//Added file dir
         xmlhttp.send();
 }
-
 function JSuploadImage(str){
 	if (str.length == 0) {
         alert("str empty");

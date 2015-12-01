@@ -364,6 +364,12 @@ Percentage for keyframes:
 	text-align:center;
   z-index: 10000;
 }
+.down-button2{
+  position:relative;
+  display: inline-block;
+  bottom:-100px;
+  width:100%;
+}
 
 .dropdown{
   	filter: alpha(opacity=1); /* internet explorer */
@@ -379,10 +385,15 @@ Percentage for keyframes:
 .panel{
 	text-align:center;
 	box-shadow: 3px 10px 10px 3px rgba(0,0,0,0.15);
-	padding:15px 0px;
+	margin:15px 0px;
 }
+
 .panel-info{
   text-align: left;
+  border-color: #423F2E;
+}
+.panel-info > .panel-heading{
+  background-color: #423F2E
 }
 .contactUs.panel{
   padding-top: 0px;
@@ -581,6 +592,14 @@ body {
 	padding-right:30px;
   text-align: left;
 }
+#banner>div>h1{
+  text-align: center;
+}
+
+.text-center>h1{
+  text-align: center;
+  padding-top: 20px;
+}
 
 .page-header{
   margin: 5px 0px 5px 0px;
@@ -705,6 +724,10 @@ body {
   text-align: center;
   padding:30px 10px
 }
+.activity-element>h1{
+	text-align:center;
+  padding-top: 40px;
+}
 .fill-screen {
     background-size: cover;
     -webkit-background-size: cover;
@@ -822,15 +845,13 @@ body {
     height: calc(100vh - 110px);
   }
 }
-
-
-
 .linkCircle{
 	width:85%;
   border: 0px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  padding: 30px 0px
 }
 .linkCircle>p{
   padding: 0px 10px;
@@ -996,7 +1017,6 @@ ul, ol {
     /* inline-block space fix */
     margin-right:-4px;
     vertical-align:top;
-    background-color:pink;
 }
 
 /*provide some space around the option buttons in the header*/
