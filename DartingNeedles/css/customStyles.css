@@ -44,6 +44,13 @@
 .navbar-default .navbar-link:hover {
 	color: #794878;
 }
+.promo{
+	max-height:300px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 0px;
+}
 
 
 @media (max-width: 767px) {

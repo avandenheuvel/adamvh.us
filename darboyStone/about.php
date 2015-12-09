@@ -9,9 +9,11 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta charset="UTF-8">
+	<meta name="description" content="Come visit Our showroom. We're Northeast Wisconsin's leading supplier of: Granite, Fireplaces, Landscaping products Stone and Brick materials" />
+	<meta name="keywords" content="Granite, Landscape, Fireplace, Showroom, Brick, Stone"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - About us
 	</title>
 
 
@@ -64,6 +66,8 @@
 						    var map;
 						    var bounds = new google.maps.LatLngBounds();
 						    var mapOptions = {
+						    	scrollwheel: false,
+						        draggable: false,
 						        mapTypeId: 'roadmap'
 						    };
 						                    
@@ -175,8 +179,65 @@
 				</div>
 			</div>
 		</div><!--End Row-->
+		
 	</div><!--End container-->
+	<div class="row">
+		 	 <!-- Header Carousel -->
+		    <header id="myCarousel" class="carousel slide">
+		        <!-- Indicators -->
+		        <ol class="carousel-indicators">
+		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		            <li data-target="#myCarousel" data-slide-to="1"></li>
+		            <li data-target="#myCarousel" data-slide-to="2"></li>
+		            <!--li data-target="#myCarousel" data-slide-to="3"></li>
+		            <li data-target="#myCarousel" data-slide-to="4"></li-->
+		        </ol>
+		
+		        <!-- Wrapper for slides -->
+		        <div class="carousel-inner">
+		            <div class="item active">
+		                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
+		                	<img src="img/IMG_2084.JPG"/>
+		            	</div>
+		                <div class="carousel-caption">
+		                    <h2>Granite Showroom</h2>
+		                </div>
+		            </div>
+		            <div class="item">
+		                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+		                	<img src="img/IMG_2088.JPG"/>
+		                </div>
+		                <div class="carousel-caption">
+		                    <h2>Burning fireplace's</h2>
+		                </div>
+		            </div>
+		            <div class="item">
+		                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
+		                	<img src="img/IMG_2109.JPG"/>
+		                </div>
+		                <div class="carousel-caption">
+		                    <h2>Large inventory</h2>
+		                </div>
+		            </div>
+		        </div>
+		
+		        <!-- Controls -->
+		        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		            <span class="icon-prev"></span>
+		        </a>
+		        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		            <span class="icon-next"></span>
+		        </a>
+		        </header>
+	        </div>
 	<?php
 		include("./footer.php");
 	?>
 </body>
+	<!-- Script to Activate the Carousel -->
+	<script>
+	$('.carousel').carousel({
+	    interval: 5000 //changes the speed
+	})
+	</script>
+</html>

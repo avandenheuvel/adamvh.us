@@ -19,7 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../css/customStyles.css" rel="stylesheet" /><!--http://twbscolor.smarchal.com/-->
+    <link href="../css/customStyles.css" rel="stylesheet"><!--http://twbscolor.smarchal.com/-->
 
     <!-- Custom Fonts -->
     <link href="../font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -53,7 +53,7 @@
         <div class="row" id="top">
             <div class="col-lg-12">
                 <h1 class="page-header">Darting Needles
-                    <small>Upcoming class schedule</small>
+                    <small>Past classes offered</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="../index.php">Home</a>
@@ -90,6 +90,31 @@
 	        				<td>March 15th</td>
 	        				<td>Weeks Ringle</td>
 	        				<td>Transparency Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-stitchandflip" href="#stitchandflip"></span>
+	        				<td>June 14th</td>
+	        				<td>Jacquie Gering</td>
+	        				<td>Stitch and Flip Improvisation</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-sliceandinsert" href="#sliceandinsert"></span>
+	        				<td>June 15th</td>
+	        				<td>Jacquie Gering</td>
+	        				<td>Slice and Insert Improvisation</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-bustrip" href="#bustrip"></span>
+	        				<td>August 15th</td>
+	        				<td>-</td>
+	        				<td>Guild Bus Trip</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-flowers" href="#flowers"></span>
+	        				<td>September 20th</td>
+	        				<td>Juanita Yeager</td>
+	        				<td>Flowers on a Grand Scale</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-piecing" href="#piecing"></span>
+	        				<td>October 18th</td>
+	        				<td>Lee Heinrich</td>
+	        				<td>Advanced Piecing</td>
 	    				</tr>
 	    				<!--span class="nav"><tr class="clickableRow nav-stitchandflip" href="#stitchandflip"></span>
 	        				<td>June 14th</td>
@@ -161,7 +186,7 @@
             </div>
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/#" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/#" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
@@ -178,7 +203,7 @@
             </div>
             <div class="col-md-6">
                 <!--a href="program_2015-02-20_lecture_Sue Hoffman.php"-->
-                    <img class="img-responsive img-hover" src="Pictures/feb22.jpg" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/feb22.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
@@ -190,7 +215,7 @@
 			<div class="col-md-1"></div>	
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/mar14.png" alt="">
+                    <img class="img-responsive img-hover promo promo" src="Pictures/mar14.png" alt="">
                 </a>
             </div>
             
@@ -218,7 +243,7 @@
             </div>
             <div class="col-md-6">
                 <!--a href="program_2015-02-20_lecture_Sue Hoffman.php"-->
-                    <img class="img-responsive img-hover" src="Pictures/Mar15.png" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/Mar15.png" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
@@ -226,7 +251,112 @@
         <!-- /.row -->
 
         <hr>
+		<!-- Project--> 
+        <div class="row" id="stitchandflip">
+        	<div class="col-md-1"></div>
+        	<div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jun14.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>Stitch and Flip Improvisation</h3>
+                <h4>Sunday, June 14th</h4>
+                <p>Jaquie Gering</p>
+                <p>Learn basic stitching and flipping, multiple stitch and flip variations, as well as how to manipulate the blocks to make an original stitch and flip quilt
+					</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- /.row -->
+        
+        <hr>
+        
+        <!-- Project Template--> 
+        <div class="row" id="sliceandinsert">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Slice and Insert Improvisation</h3>
+                <h4>Monday, June 15th</h4>
+                <p>Learn the basic technique and a new adaptation, a foolproof strategy for matching inserts, simple techniques for adding complexity to a design as well as how to work with even width and wedge shaped inserts. 
+					</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jun15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        
+        <hr>
+        <!-- /.row -->
+        
+        <!-- Project--> 
+        <div class="row" id="bustrip">
+        	<div class="col-md-1"></div>
+        	<div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/aug15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>Bus Trip</h3>
+                <h4>Saturday, August 15th</h4>
+                <h5>Be Prepared for and action packed day</h5>
+                <ul>
+                	<li>We’ll start at the Wisconsin Museum of Quilts</li>
+                	<li>Pack a lunch & eat at the park or grab lunch on Main Street in Cedarburg</li>
+                	<li>Shop at 5 Quilt Shops</li>
+                	<ul>
+                		<li>Ye Olde Schoolhouse</li>
+                		<li>Material Matters</li>
+                		<li>Patched Works</li>
+                		<li>Bigsby’s Sewing Center</li>
+                		<li>TBD Surprise!</li>
+                	</ul>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <!-- /.row -->
+        
+        <!-- Project Template--> 
+        <div class="row" id="flowers">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Flowers on a Grand Scale</h3>
+                <h4>Sunday, September 20th</h4>
+                <p>Juanita Yeager</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/sept20.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <!-- /.row -->
 		
+        <!-- Project--> 
+        <div class="row" id="piecing">
+        	<div class="col-md-1"></div>
+        	<div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/oct.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>Advanced Piecing</h3>
+                <h4>Sunday, October 18th</h4>
+                <p>Take your piecing skills to the next level and sew more complex designs. Traditional quilt blocks are like piecing boot camp, perfect for honing your technique and increasing your accuracy, so we’ll spend the day making several of the blocks from Lee’s book </p>
+                <p></p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
 		
         
         <!--Button to return to top of page-->

@@ -1,7 +1,9 @@
 <?php
 	if (isset($_POST['send'])) {
-		$to = 'apvandenheuvel@yahoo.com'; // Use your own email address
-		$subject = 'Feedback from my site';
+		$to = 'customerservice@darboystone.com'; // Use your own email address
+		$headers = 'From: noreply@darboystone.com'. "\r\n" .
+   					'Bcc: apvandenheuvel@yahoo.com';
+		$subject = 'Web request';
 		$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
 		$message .= 'Phone: ' . $_POST['phone'] . "\r\n\r\n";
 		$message .= 'Contact preference: ' . $_POST['preference'] . "\r\n\r\n";
@@ -23,7 +25,7 @@
 <body>
 	<?php
 	date_default_timezone_set("America/Chicago");
-	$success = mail($to, $subject, $message);
+	$success = mail($to, $subject, $message, $headers);
 	if (isset($success) && $success) { ?>
 		<script>
 			alert("Thank you! Your message has been sent")

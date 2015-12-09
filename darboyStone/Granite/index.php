@@ -9,8 +9,11 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Darboy Stone and Brick. Suppliers of Fine Granite products for use in your home or buisness" />
+	<meta name="keywords" content="Granite Countertops, Granite Bathroom, Granite Kitchen"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - Granite
 	</title>
 
 
@@ -305,7 +308,7 @@
 		 		<p>Our granite experts pre-select only premium grade granite. Second best is never good enough and any off grade material is rejected before it makes our display cases. We offer you, our customer, the opportunity to view the largest selection of granite in all of Northeast Wisconsin</p>
 	 		</div>
 		 	<div class="col-xs-12 col-md-4"><h3>Service</h3>
-		 		<p>Darboy Stone & Brick has more experience than any other granite company in the area.</p>
+		 		<p>Darboy Stone & Brick has more experience installing granite than any other granite company in the area. Kitchens, bathrooms, bars, commercial or residential. No job is too big or too small and we have the know how to get the job done right!</p>
 		 		
 		 	</div>
 		 	<div class="col-xs-12 col-md-4"><h3>Quality</h3>
@@ -381,7 +384,7 @@
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
-			  	<p>We will connect you with one of or professional design consultants</p>
+			  	<p>Or, come <a href="./about">visit us</a> to see our current selection of product offerings</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
 		  		<a href="../contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>

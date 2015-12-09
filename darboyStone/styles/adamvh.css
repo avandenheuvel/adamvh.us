@@ -150,6 +150,9 @@ p>a:visited{
   color:purple;
 }
 
+#contact a {
+  color:goldenrod;
+}
 p>a:hover{
   color: inherit;
   text-decoration: underline;  
@@ -533,7 +536,7 @@ body {
 
 .topBanner{
   height: 150px;
-  background-image: url('http://adamvh.us/darboyStone/img/blurredBG.JPG');
+  background-image: url('http://darboyStone.com/img/blurredBG.JPG');
   background-repeat:no-repeat;
   background-size:100% 100%;
   text-align: center;
@@ -697,19 +700,19 @@ body {
   }
 }
 #landscapeBG{
-	background-image: url("http://adamvh.us/darboyStone/Landscape/pictures/Brussels-Sierra, Pine Hall Pathaways-Cocoa.JPG"); 
+	background-image: url("http://darboyStone.com/Landscape/pictures/Brussels-Sierra, Pine Hall Pathaways-Cocoa.JPG"); 
 	background-position: center; 
 }
 #brickBG{
-  background-image: url("http://adamvh.us/darboyStone/Brick/pictures/P1030883_2064x800.png"); 
+  background-image: url("http://darboyStone.com/Brick/pictures/P1030883_2064x800.png"); 
   background-position: center; 
 }
 #graniteBG{
-	background-image: url("http://adamvh.us/darboyStone/Granite/pictures/Cashmere White 4.png");
+	background-image: url("http://darboyStone.com/Granite/pictures/Cashmere White 4.png");
   background-position: center;
 }
 #fireBG{
-	background-image: url("http://adamvh.us/darboyStone/Fireplace/pictures/021712124836.png");
+	background-image: url("http://darboyStone.com/Fireplace/pictures/021712124836.png");
   background-position: center;
 }
 

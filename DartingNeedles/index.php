@@ -145,10 +145,10 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> 2015 Program List</h4>
+                        <h4><i class="fa fa-fw fa-gift"></i> 2016 Program List</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Darting needles members meet on the third Monday of each month. Meetings often include guest speakers or fun group activities. Classes are also scheduled throughout the year. Feel free to browse our upcoming class and meeting schedules.</p>
+                        <p>Darting needles members meet on the <strong>third Monday of each month.</strong> Meetings often include guest speakers or fun group activities. Classes are also scheduled throughout the year. Feel free to browse our upcoming class and meeting schedules.</p>
                         <a href="./meetings" class="btn btn-default">Meetings</a>
                         <a href="./classes" class="btn btn-default">Classes</a>
                     </div>

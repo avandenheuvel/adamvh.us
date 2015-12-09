@@ -9,8 +9,10 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Darboy Stone and Brick. Suppliers of Brick, Cultured Stone and Limestone products" />
+	<meta name="keywords" content="Brick, Cultured Stone, Limestone, Keystone"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - Brick & Stone
 	</title>
 
 
@@ -309,7 +311,7 @@
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
-			  	<p>We will connect you with one of or professional design consultants</p>
+			  	<p>Or, come <a href="../about.php">visit us</a> to see our current selection of product offerings</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
 		  		<a href="../contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>

@@ -19,7 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../css/customStyles.css" rel="stylesheet" /><!--http://twbscolor.smarchal.com/-->
+    <link href="../../css/customStyles.css" rel="stylesheet" /><!--http://twbscolor.smarchal.com/-->
 
     <!-- Custom Fonts -->
     <link href="../font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
         
         <div class="row">
         	<div class="col-md-8">
-        		<p>Meetings are held at 7:00PM on the third Monday of each month at <a href="../contact.php">First United Methodist Church</a></p>
+        		<h3>Meetings are held at 7:00PM on the third Monday of each month at <a href="../contact.php">First United Methodist Church</a></h3>
         		<table class="table table-hover">
         			<thead>
         				<tr>
@@ -76,50 +76,64 @@
 	        			</tr>
         			</thead>
         			<tbody>
-        				
-	    				
-	    				<span class="nav"><tr class="clickableRow nav-zentangle" href="#zentangle"></span>
-	        				<td>May 18th</td>
-	        				<td>Cathy Staeven</td>
-	        				<td>Zentangle </td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-tallgrass" href="#tallgrass"></span>
-	        				<td>June 15th</td>
-	        				<td>Jacquie Gering</td>
-	        				<td>Quilting Modern:  Honoring Tradition</td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-bungalow" href="#bungalow"></span>
-	        				<td>July 20th</td>
-	        				<td>Judy Gauthier</td>
-	        				<td>Scrap Quilts</td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-showandtell" href="#showandtell"></span>
-	        				<td>August 17th</td>
-	        				<td>-</td>
-	        				<td>Show & Tell from our Bus Trip Adventure!</td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-trunk" href="#trunk"></span>
-	        				<td>September 21st</td>
-	        				<td>Juanita Yeager</td>
-	        				<td>Lecture & Trunk Show</td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-vintage" href="#vintage"></span>
-	        				<td>October 19th</td>
-	        				<td>Lee Heinrich</td>
-	        				<td>Vintage Quilt Revival: Putting a Fresh Spin on Classic Designs</td>
-	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-"" href="#"></span>
-	        				<td>November 16th</td>
-	        				<td>-</td>
-	        				<td>Holiday Party</td>
-	    				</tr>
 	    				<!--Template
-	    				<span class="nav"><tr class="clickableRow nav-"" href="#"></span>
+	    				<span class="nav"><tr class="clickableRow nav-" href="#"></span>
 	        				<td>Date</td>
 	        				<td>Instr</td>
 	        				<td>Topic</td>
 	    				</tr>
 	    				-->
+	    				<span class="nav"><tr class="clickableRow nav-quiltBingo" href="#quiltBingo"></span>
+	        				<td>January</td>
+	        				<td>-</td>
+	        				<td>Quilt Bingo</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-mosaic" href="#mosaic"></span>
+	        				<td>February 15th</td>
+	        				<td>Patricia Sanabria-Frederich</td>
+	        				<td>Mosaic Tile Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-bull" href="#bull"></span>
+	        				<td>March 20th</td>
+	        				<td>Mark Lipinski</td>
+	        				<td>Trunk show & Lecture</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-paintingSilk" href="#paintingSilk"></span>
+	        				<td>April 18th</td>
+	        				<td>Sandy Melroy</td>
+	        				<td>Painting on Silk</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-potrait" href="#potrait"></span>
+	        				<td>May 16th</td>
+	        				<td>Laurie Ceesay</td>
+	        				<td>Portrait Quilt & trunk show</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-barn" href="#barn"></span>
+	        				<td>June 20th</td>
+	        				<td>Suzi Parron</td>
+	        				<td>Barn Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-feedSacks" href="#feedSacks"></span>
+	        				<td>July 18th</td>
+	        				<td>Donna Wisnoski</td>
+	        				<td>The HIstory of Feed Sacks</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-potluck" href="#potluck"></span>
+	        				<td>August</td>
+	        				<td>-</td>
+	        				<td>Potluck & Rummage Sale</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-creativity" href="#creativity"></span>
+	        				<td>Sept 19th</td>
+	        				<td>Rayna Gillman</td>
+	        				<td>Pushing Creativity</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-history" href="#history"></span>
+	        				<td>October 17</td>
+	        				<td>Gail Barber</td>
+	        				<td>A History Lesson in Quilting</td>
+	    				</tr>
+	    				
     				</tbody>
         		</table>
         	</div>
@@ -160,123 +174,161 @@
             </div>
             <div class="col-md-1"></div>
         </div>
-        <!-- /.row -->
-        
-        <!-- Project Template--> 
-        
-        <!-- Project--> 
-        <div class="row" id="zentangle">
-        	<div class="col-md-1"></div>
-        	<div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/may18.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Zentangle</h3>
-                <h4>Monday, May 18th</h4>
-                <p>Cathy Staeven</p>
-                <p>Apply Zentangle’s relaxing methods of creating beautiful images from repetitive patterns and transfer it to quilting. It has been known to increase focus, reduce stress and provides artistic satisfaction and creativity. Even if you don’t consider yourself creative or artistic, you can create something beautiful the first time you try it.</p>
-                <p>Enjoy learning the basics, seeing work and get some hands on practice!</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <!-- /.row -->
-        
-        <!-- Project Template--> 
-        <div class="row" id="tallgrass">
+         -->
+        <div class="row" id="quiltBingo">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Quilting Modern</h3>
-                <h4>Monday, June 15th</h4>
-                <p>Honoring Tradition with Jacquie Gering</p>
-                <p>Jacquie shares her journey from being a maker, to becoming a quilter, and now a modern quilter, designer and author.  Jacquie tells about her Mennonite roots, how her family inspires and influences her work, and shows through her quilts how she has developed her unique voice in modern quilting.  Learn what makes a quilt modern from one of the leaders of the modern quilting movement.</p>
+                <h3>Quilt Bingo</h3>
+                <h4>Monday, January 18th</h4>
+                <ul>
+                	<li>
+                		Enjoy catching up after the Holidays with old friends and get to know some new ones! It will be fast and fun!
+                	</li>
+                	<li>
+                		Bring a fat quarter for an additional card
+                	</li>
+                </ul>
             </div>
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/jun15.png" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/jan18.png" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
         </div>
-        <hr>
-        <!-- /.row -->
-		
-        <!-- Project--> 
-        <div class="row" id="bungalow">
-        	<div class="col-md-1"></div>
-        	<div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/jul20.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Bungalow Quilts</h3>
-                <h4>Monday, July 20th</h4>
-                <p>Judy Gauthier </p>
-                <p>Judy developed a book and templates for the “real” scrap quilter.  Every book on the market today teaches quilters to make scrap quilts using precuts such as 2 1/2 inch strips or 5 or 10 inch squares.  They also teach you how to use things like new fat quarters.  To her, these are not scraps. She has developed a template system that allows you to make quilts out of “real scraps”.  Come learn about using up your scraps and the adventures of being a quilt shop owner!</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <!-- /.row -->
-        
-        <!-- Project Template--> 
-        <div class="row" id="showandtell">
+        <div class="row" id="mosaic">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Show and Tell</h3>
-                <h4>Monday, August17th</h4>
-                <p>Show and tell from our bus trip adventure!</p>
+                <h3>Mosaic Tile Quilts</h3>
+                <h4>Monay, February 15th</h4>
+                <p>Patricia Sanabria-Frederich</p>
+                <p>Lecture about mosaic tile quilts</p>
             </div>
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/aug17.png" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/feb15.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
         </div>
-        <hr>
-        <!-- /.row -->
-        
-        <!-- Project--> 
-        <div class="row" id="trunk">
-        	<div class="col-md-1"></div>
-        	<div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/sep21.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Lecture and Trunk Show</h3>
-                <h4>Monday, September 21st</h4>
-                <p>Juanita Yeager</p>
-                <p>Juanita is known for her dramatic use of color and large scale compositions.  Her work is diverse, ranging from realistic, to abstract.  She admits that most of her designs could be accomplished on canvas with paint, but she loves working with cloth, scissors, needles and thread. Her art quilts have been written about and featured in many local and nationally distributed magazines, books and television broadcast.  The images are light fast and permanent.  The cloth is layered with a batting and machine quilted.</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <!-- /.row -->
-        
-        <!-- Project Template--> 
-        <div class="row" id="vintage">
+        <div class="row" id="bull">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Vintage Quilt Revival:</h3>
-                <h4>Monday, October 19th</h4>
-                <p>Putting a Fresh Spin on Classic Designs with Lee Heinrich</p>
-                <p>Lee Heinrich is a quilt designer, author, and blogger. Lee is a co-author of  “Vintage Quilt Revival: 22 Modern Designs from Classic Blocks.”  Lee also has her own line of quilt patterns, and her work has appeared in magazines such as Fons & Porter’s Easy Quilts, Quilt Magazine, and Quiltmaker. Lee loves the burgeoning area of “modern traditionalism” and wants to help quilters think outside the grid when it comes to traditional blocks. Her blog can be found at <a href="http://freshlypieced.com"> freshlypieced.com<a/></p>
+                <h3>Trunk Show and Lecture</h3>
+                <h4>Monday, March 21st</h4>
+                <p>Mark Lipinski</p>
+                <p>Bull in a China Shop or The Unexpected Journey of an Out of Control Quilter Traveling the World and What He Encountered Along the Way: A Trunk Show & Lecture </p>
             </div>
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/oct19.png" alt="">
+                    <img class="img-responsive img-hover promo" src="Pictures/mar21.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
         </div>
-        <hr>
-        <!-- /.row -->
+        <div class="row" id="paintingSilk">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Painting on Silk</h3>
+                <h4>Monday, April 18th</h4>
+                <p>Guest speaker</p>
+                <p>Painting on Silk and Incorporating in Quilting.  Hands on Meeting!</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/apr18.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="potrait">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Portrait Quilt and trunk Show</h3>
+                <h4>Monday, May 15th</h4>
+                <p>Laurie Ceesay</p>
+                <p>Join Laurie for a portrait quilt and trunk show.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/may16.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="barn">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Barn Quilts</h3>
+                <h4>Monday, June 20th</h4>
+                <p>Suzi Parron</p>
+                <p>Barn Quilts and the American Quilt Trail Movement</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jun20.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="feedSacks">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>The History of Feed Sacks</h3>
+                <h4>Monsay, July 18th</h4>
+                <p>Donna Wisnoski</p>
+                <p>Join Donna for a lively discussion about the history of feed sacks</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jul18.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="potluck">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Potluck and Rummage Sale</h3>
+                <h4>Monday, August 15th</h4>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/aug15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="creativity">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Pushing Creativity with ‘what if’</h3>
+                <h4>Monday, September 19th</h4>
+                <p>Rayna Gillman</p>
+                <p>Two powerful words that can push the boundaries of your work and increase creative courage. A look at this artist's journey from traditional to self-expression.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/sep19.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="history">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Quiltmakers and Their Influences on Our Lives: A History Lesson</h3>
+                <h4>Monday, October 17</h4>
+                <p>Gail Garber</p>
+                <p>This light and lively lecture traces through some of Gail’s quilting past, with emphasis on friends who have had a strong influence on her quilts. It shows the progression from Gail’s early quilting days as a traditional quilter, through her experimentation phase, and culminates in the contemporary art quilts for which she is now known.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/oct17.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
         
         <!--Button to return to top of page-->
         <div class="scroll-top page-scroll nav">

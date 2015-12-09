@@ -10,8 +10,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
+	<meta name="description" content="Darboy Stone and Brick. Suppliers of Gas, Woodburning, Contemporary and Free Standing fireplace products" />
+	<meta name="keywords" content="Gas Insert, Wood Insert, Fireplace, Natural Gas Fireplace, Woodburning Fireplace, Contemporary Fireplace"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - Fireplace
 	</title>
 
 
@@ -237,16 +239,16 @@
 		 	<h1>The Fox Valley's premier provider of Fireplaces</h1>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Gas</h3>
-		 		<p>This is for Mark to fill in... Afterall... He's the wordsmith</p>
+		 		<p>The perfect blend of efficiency and convenience. With a large variety of burning fireplaces in our showroom, you're sure to find the model that's perfect for your home.</p>
 	 		</div>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Wood</h3>
-		 		<p>I'm sure we can find another compelling reason to list here.</p>
+		 		<p>It's hard to beat a rustic natural wood fire. New construction, inserts, upgrades or free standing firebox options are all available. Stop into our showroom or browse our website to view the many options available. </p>
 		 		
 		 	</div>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Contemporary</h3>
-		 		<p>Three bullet points seems to fit well in the layout... Need more or less... Let me know.</p>
+		 		<p>New models offer the flexibility to integrate into just about any room adding a modern look and supplying your room with a rich warmth that you'd expect from a gas fireplace.</p>
 		 	</div>
 		 </div>
 			
@@ -320,7 +322,7 @@
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
-			  	<p>We will connect you with one of or professional design consultants</p>
+			  	<p>Or, come <a href="../about.php">visit us</a> to see our current selection of product offerings</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
 		  		<a href="../contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>

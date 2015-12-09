@@ -9,8 +9,11 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msvalidate.01" content="FE7369052563170F4A78451614CD5EC3" />
+	<meta name="description" content="Darboy Stone and Brick Home - Northeast Wisconsin's leading supplier of Brick and Stone, Granite, Fireplaces and Landscaping products" />
+	<meta name="keywords" content="Brick, Stone, Landscape, Fireplace"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - Home
 	</title>
 
 
@@ -200,7 +203,7 @@
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
-			  	<p>We will connect you with one of or professional design consultants</p>
+			  	<p>Or, come <a href="./about.php">visit us</a> to see our current selection of product offerings</p>
 			  	<h4><a href="mailto:customerservice@darboystone.com">&#9993; e-mail</a><span>|</span><a>&#9743;  (920)734-2882</a></h4>
 		  		<a href="./contact.php"><button class="btn btn-lg">Contact us</button></a>
 		  	</div>

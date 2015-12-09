@@ -8,8 +8,11 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Darboy Stone and Brick. Granite Frequently Asked Questions" />
+	<meta name="keywords" content="Granite FAQ"/> 
 	<title>
-		New Darboy Stone & Brick
+		Darboy Stone & Brick - Granite FAQ
 	</title>
 
 
