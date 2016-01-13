@@ -151,8 +151,9 @@
                         <span class="period">Non-Members</span>
                     </div>
                     <li class="list-group-item">
-                    	<h5>Discounts and many more benefits available for members</h5>
-                    	<a href="../pdfs/DNQG Registration 2015.pdf" class="btn btn-primary">Sign Up!</a>
+                    	<h5>Discounts and many more benefits available for members. For more information contact: <i class="fa fa-envelope-o"></i> 
+                    <a href="mailto:kimfoxquilts@gmail.com">Kimberly Fox</a></h5>
+                    	<!--a href="../pdfs/DNQG Registration 2016.docx" class="btn btn-primary">Sign Up!</a-->
                 </div>
         	</div>
         </div>

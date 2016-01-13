@@ -22,7 +22,7 @@
 	  include('../header.php');
 	  
 	  function jsErrorAlert($msg){
-		echo '<script type="text/javascript">alert("ERROR: ' . $msg . '");</script>';
+		echo '<script type="text/javascript">alert("Alert: ' . $msg . '");</script>';
 	  }
 	  
 		if ($_POST['createWhat']=="user"){	
@@ -104,7 +104,7 @@
 		
 		function uploadImage($fileDir){
 			//http://www.w3schools.com/php/php_file_upload.asp
-			$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/darboyStone/Fireplace/".$fileDir."/img/";
+			$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/Fireplace/".$fileDir."/img/";
 			$target_file = $target_dir . ($_FILES["fileToUpload"]["name"]);
 			$uploadOk = 1;
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -161,7 +161,7 @@
 		if($_POST['createWhat']=='modal'){//Hidden input indicating modal
 			$fileDir=$_POST['fileDir'];
 			$fileName = uploadImage($fileDir);
-			$link_dir = "http://adamvh.us/darboyStone/Fireplace/".$fileDir."/";//new was direct to wood dir
+			$link_dir = "http://darboyStone.com/Fireplace/".$fileDir."/";//new was direct to wood dir
 			$thumbLink = $link_dir . "imgThumb/" . $fileName;
 			$lgImgLink = $link_dir . "img/" . $fileName;
 			
@@ -170,39 +170,36 @@
 				
 		    if (!isset($_POST['heading']) || $_POST['heading'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
+				jsErrorAlert("Heading missing");
 		    } else {
 		        $heading = $_POST['heading'];
 		    }
 			
 			if (!isset($_POST['genDesc']) || $_POST['genDesc'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
+				jsErrorAlert("Description missing");
 		    } else {
 		        $genDesc = $_POST['genDesc'];
 		    }
 			
 		    if (!isset($_POST['webLink']) || $_POST['webLink'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
+				jsErrorAlert("Vendor Link missing");
 		    } else {
 		        $webLink = $_POST['webLink'];
 		    }
 			 if (!isset($_POST['bullet1']) || $_POST['bullet1'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
 		    } else {
 		        $bullet1 = $_POST['bullet1'];
 		    }
 			 if (!isset($_POST['bullet2']) || $_POST['bullet2'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
 		    } else {
 		        $bullet2 = $_POST['bullet2'];
 		    }
 			 if (!isset($_POST['bullet3']) || $_POST['bullet3'] === '') {
 		        $ok = false;
-				jsErrorAlert("Required field missing.");
 		    } else {
 		        $bullet3 = $_POST['bullet3'];
 		    }
@@ -240,7 +237,7 @@
 			}
 			
 	        mysqli_close($db);
-				
+			header('Location: ' . $_SERVER['HTTP_REFERER']);	
 		    }else{
 		    	echo'<p>Something was wrong with your form</p>';
 		    }

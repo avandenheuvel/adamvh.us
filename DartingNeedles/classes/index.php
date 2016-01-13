@@ -100,6 +100,31 @@
 	        				<td>Sandy Melroy</td>
 	        				<td>Painting on Silk</td>
 	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-portrait" href="#portrait"></span>
+	        				<td>May 15th</td>
+	        				<td>Laurie Ceesay</td>
+	        				<td>Portrait Quilt</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-freeForm" href="#freeForm"></span>
+	        				<td>September 17 & 18</td>
+	        				<td>Rayna Gillman</td>
+	        				<td>Free-Form Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-designVariations" href="#designVariations"></span>
+	        				<td>September 19th</td>
+	        				<td>Rayna Gillman</td>
+	        				<td>Endless Design Variations</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-freeForm" href="#freeForm"></span>
+	        				<td>October 15 & 16</td>
+	        				<td>Gail Garber</td>
+	        				<td>Designing with Free-Form Shapes</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-stars" href="#stars"></span>
+	        				<td>September 17th</td>
+	        				<td>Gail Garber</td>
+	        				<td>Sensational Stars</td>
+	    				</tr>
 	    				<!--Template
 	    				<span class="nav"><tr class="clickableRow nav-" href="#"></span>
 	        				<td>Date</td>
@@ -117,18 +142,18 @@
                     </div>
                     <div class="panel-body">
                         <span class="price"><sup>$</sup>25<sup>00</sup></span>
-                        <span class="period">Members</span>
+                        <span class="period">Members <i>Unless otherwise noted</i></span>
                     </div>
                     <div class="panel-body">
                         <span class="price"><sup>$</sup>35<sup>00</sup></span>
-                        <span class="period">Non-Members</span>
+                        <span class="period">Non-Members <i>Add $10 for special pricing</i></span>
                     </div>
                     <li class="list-group-item">
-                    	<h5>Discounts and many more benefits available for members</h5>
-                    	<a href="../pdfs/DNQG Registration 2015.pdf" class="btn btn-primary">Sign Up!</a>
+                    	<h5>Discounts and many more benefits available for members. For more information contact: <i class="fa fa-envelope-o"></i> 
+                    <a href="mailto:kimfoxquilts@gmail.com">Kimberly Fox</a></h5>
+                    	<!--a href="../pdfs/DNQG Registration 2016.docx" class="btn btn-primary">Sign Up!</a-->
                 </div>
-                <p>For more information contact: <i class="fa fa-envelope-o"></i> 
-                    <a href="mailto:kimfoxquilts@gmail.com">Kimberly Fox</a>
+                <p>
                 </p>
         	</div>
         </div>
@@ -240,6 +265,94 @@
         </div>
         <hr>
         
+        <div class="row" id="portrait">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Contemporary Portrait Quilt</h3>
+                <h4>Sunday, May 15th</h4>
+                <p>Laurie Ceesay</p>
+                <p>$25 for Members</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/may15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        
+        <div class="row" id="freeForm">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Create Your Own Free Form Quilt </h3>
+                <h4>Saturday and Sunday September 17&18</h4>
+                <p>Rayna Gillman</p>
+                <p>Is your creative muse on vacation? Take your own creative journey with no rules & no rulers (almost).</p> 
+				<p>Free-cut strips, sew together and create an original quilt as you slice, dice, and combine elements in a variety of ways. Ahhhhh...stress free sewing that's better than being on the beach!</p>
+				<p>$60 for Members</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/sept17.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        
+        <div class="row" id="designVariations">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Endless Design Variations</h3>
+                <h4>Monday, September 19th</h4>
+                <p>Rayna Gillman</p>
+                <p>You'll discover simple and exciting variations on strips, squares, and rectangles.  Using "what if?" to guide you, you'll quickly and easily create one-of-a-kind units to use in endless combinations for your own original quilt.</p>
+                <p>$30 for Members</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/sept19.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        
+        <div class="row" id="freeForm">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Goose is Loose – Designing with Free-form Shapes</h3>
+                <h4>Saturday & Sunday - October 15 & 16</h4>
+                <p>Gail Garber</p>
+                <p>It introduces the student to original design in free-form shapes. Learn the drafting and piecing techniques for flying geese in the round, loose curves, or swirls. It is sew easy to do; students are often surprised at the simplicity of the technique, taught with no scary math words!</p>
+                <p>$60 for Members</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/oct15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <div class="row" id="stars">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Sensational Stars</h3>
+                <h4>Monday October 17th</h4>
+                <p>Gail Garber</p>
+                <p>Design your own circular stars in different settings. Students will learn drafting and paper foundation piecing techniques as well as tips for glorious color selection. By the afternoon, you’ll be stitching together your one-of-a-kind celestial masterpiece!</p>
+                <p>$30 for Members</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/oc17.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
 		<!-- Project Template 
         <div class="row" id="idfor Autoscroll function">
         	<div class="col-md-1"></div>

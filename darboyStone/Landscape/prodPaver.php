@@ -3,9 +3,11 @@
 	<!--Selector-->
 	<div class="productScroll">
 		<div class="productSelector">
-			<a onclick="showProduct('holland','productDisplayPaver'); return false;"><img src="./pavers/wausau/Holland/PAVER PATIO.png"/></a>
+			<a onclick="showProduct('enduracolor','productDisplayPaver'); return false;"><img src="pavers/unilock/enduracolor.jpg"/></a>
+			<a onclick="showProduct('classic','productDisplayPaver'); return false;"><img src="pavers/unilock/unilock_classic.jpg"/></a>
+			<!--a onclick="showProduct('holland','productDisplayPaver'); return false;"><img src="./pavers/wausau/Holland/PAVER PATIO.png"/></a>
 			<a onclick="showProduct('munich','productDisplayPaver'); return false;"><img src="pavers/wausau/Munich/MUNICH_CIRCLE_PAVER_CIRCLE.JPG"/></a>
-			<a onclick="showProduct('terraLok','productDisplayPaver'); return false;"><img src="pavers/wausau/Terra-Lok/TERRA- LOK TUMBLED PAVER SIDEWALK BROWN TAN BLEND.JPG"/></a>
+			<a onclick="showProduct('terraLok','productDisplayPaver'); return false;"><img src="pavers/wausau/Terra-Lok/TERRA- LOK TUMBLED PAVER SIDEWALK BROWN TAN BLEND.JPG"/></a-->
 			<a onclick="showProduct('englishEdge','productDisplayPaver'); return false;"><img src="pavers/pine hall/english edge/pinehall_english_edge.jpg"/></a>
 			<a onclick="showProduct('old','productDisplayPaver'); return false;"><img src="pavers/pine hall/old/pinehall_old_series.jpg"/></a>
 			<a onclick="showProduct('rumbled','productDisplayPaver'); return false;"><img src="pavers/pine hall/rumbled/pinehall_rumbled.jpg"/></a>
@@ -16,9 +18,186 @@
 	</div><!--End Selector-->
 	<div id="productDisplayPaver">
 		<div id="productPlaceholder">
-			<h1>Select a product from above to view details</h1>
+			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
+				<h1><a href="http://unilock.com/" target="_blank"><img src="./pavers/unilock/unilock_logo.png" /></a></h1>
+			</div>
+			<div class="col-sm-6 col-md-8 col-xs-12 productDesc">
+				<p>Our Unilock products deliver on style because our technologies allow us to make the most unique products on the market. EnduraColor Plus is the defining difference when it comes to superior wear resistance and color longevity. EnduraColor Plus is not a coating or secondary treatment, but rather a proprietary blended layer of nature’s highest performing minerals (which never fade) that have been embedded right into the surface of each stone during the manufacturing process. This ensures that the surface will not fade, crack, peel or delaminate, and the beauty of your project will last a lifetime.</p></br>
+			</div>
 		</div>
-		<div id="holland" class="prodImg" style="display:none;">
+		
+		<div id="classic" class="prodImg" style="display:none;">
+			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
+				<h1>Unilock Classic Pavers</h1>
+				<img src="./pavers/unilock/unilock_classic.jpg" />
+			</div>
+			<div class="col-sm-6 col-md-8 col-xs-12 productDesc">
+				<a href="http://unilock.com/" target="_blank"><img class="paverLogo" src="pavers/unilock/unilock_logo.png".</p></a></br>
+				<h3>Unilock Classic Pavers come in a wide variety of colors, shapes and sizes to fit many home, commercial or municipal applications. Click on any of the images below to view full product details.</h3></br>
+				<a href="http://unilock.com/products/classic/ada-paver/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/ada.png"/>
+						<p class="imgDescription">Ada Paver</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/anchorlock/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/anchor.png"/>
+						<p class="imgDescription">Anchorlock</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/avante-ashlar/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/avante.jpg"/>
+						<p class="imgDescription">Avante Ashlar</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/brussels-block/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/brussels.jpg"/>
+						<p class="imgDescription">Brussels Block</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/camelot/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/camelot.png"/>
+						<p class="imgDescription">Camelot</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/hollandstone/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/hollandstone.jpg"/>
+						<p class="imgDescription">Hollandstone</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/olde-greenwich-cobble/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/greenwich.png"/>
+						<p class="imgDescription">Olde Greenwich Cobble</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/optiloc/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/optiloc.jpg"/>
+						<p class="imgDescription">Optiloc</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/stonehenge/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/stonehenge.jpg"/>
+						<p class="imgDescription">Stonehenge</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/classic/unigranite/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/unigranite.jpg"/>
+						<p class="imgDescription">Unigranite</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="enduracolor" class="prodImg" style="display:none;">
+			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
+				<h1>Unilock ENDURACOLOR</h1>
+				<img src="./pavers/unilock/enduracolor.jpg" />
+			</div>
+			<div class="col-sm-6 col-md-8 col-xs-12 productDesc">
+				<a href="http://unilock.com/" target="_blank"><img class="paverLogo" src="pavers/unilock/unilock_logo.png".</p></a></br>
+				<h3>Unilock ENDURACOLOR Pavers come in a wide variety of colors, shapes and sizes to fit many home, commercial or municipal applications. Click on any of the images below to view full product details.</h3></br>
+				<a href="http://unilock.com/products/enduracolor/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/artline.jpg"/>
+						<p class="imgDescription">Artline</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/beacon-hill-flagstone/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/beaconHill.jpeg"/>
+						<p class="imgDescription">Beacon Hill</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/avante-ashlar/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/avante.jpg"/>
+						<p class="imgDescription">Avante Ashlar</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/bristol-valley/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/BristolValley.jpg"/>
+						<p class="imgDescription">Bristol Valley</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/brussels-premier/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/brusselsPerimeter.png"/>
+						<p class="imgDescription">Brussels Perimeter</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/canterbury-premier/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/Canterbury.png"/>
+						<p class="imgDescription">Canterbury Premier</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/hollandstone-premier/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/HollandPremier.png"/>
+						<p class="imgDescription">Holland Premier</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/il-campo/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/Campo.jpg"/>
+						<p class="imgDescription">Campo</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/promenade-paver-2/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/Promenade.jpg"/>
+						<p class="imgDescription">Promenade Paver</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/thornbury/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/thornbury.jpg"/>
+						<p class="imgDescription">Thornbury</p>
+					</div>
+				</a>
+				<a href="http://unilock.com/products/enduracolor/trevia/?region=2" target="_blank">
+					<div class="imgWrap">
+						<img src="pavers/unilock/trevia.png"/>
+						<p class="imgDescription">Trevia</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--Template
+		<div id="" class="prodImg" style="display:none;">
+			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
+				<h1>Heading</h1>
+				<img src="./pavers/" />
+			</div>
+			<div class="col-sm-6 col-md-8 col-xs-12 productDesc">
+				<a href="" target="_blank"><img class="paverLogo" src="pavers/".</p></a></br>
+				<h4>Selecting Colors: </h4>
+				<p>Colors are shown as accurately as possible. Due to the nature of the product color preference and variables in monitor displays, colors may not match exactly. Final color selection should be made from actual samples.</p></br>
+				<h4>Choosing Blends</h4>
+				<p>General Blah blah</p></br>
+				<div class="imgWrap">
+					<a href=""><img src=""/></a>
+					<p class="imgDescription"></p>
+				</div>
+			</div>
+		<!--div id="holland" class="prodImg" style="display:none;">
 			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
 				<h1>Holland Pavers</h1>
 				<img src="./pavers/wausau/Holland/PAVER PATIO.png" />
@@ -97,7 +276,7 @@
 				</div>
 			</div>
 			
-		</div>
+		</div-->
 		<div id="englishEdge" class="prodImg" style="display:none;">
 			<div class="col-sm-6 col-md-4 col-xs-12 productImg">
 				<h1>English Edge</h1>

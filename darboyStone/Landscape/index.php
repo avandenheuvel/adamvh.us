@@ -18,12 +18,23 @@
 
 
 	<link href="../styles/bootstrap.css"  rel="stylesheet"/>
-	<link href="../styles/adamvh.css" rel="stylesheet" />
+	<link href="../styles/adamvh.css" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Oswald:700|Merriweather' rel='stylesheet' type='text/css'>
 	
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
 	<script src="../includes/scripts.js" type="text/javascript"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58890484-2', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
 	
 </head>
 <body>
@@ -80,7 +91,7 @@
 				</div-->
 				
 				<div class="col-xs-12 bannerContent">
-					<p>Stop in today to see our wide array of landscaping ideas displayed in our outdoor idea gallery to help you visualize your landscape project. Darboy Stone & Brick carries everything you need to finish the job.</p>
+					<p>Darboy Stone & Brick carries a large assortment of landscaping products including: Decorative stone, paving brick, retaining walls, exposed aggregate, mulch, topsoil, screenings and more. View some of our products by selecting a tab below, or stop into our <a href="../about.php">Showroom</a> to meet with a professional sales associate. We have an outdoor idea gallery so you can see for yourself and better visualize your landscape project. </p>
 				</div>
 			</div>	
 		</div>

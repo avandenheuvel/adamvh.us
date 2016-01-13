@@ -138,7 +138,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Want to become a member? Here's our signup form</p>
-                        <a href="pdfs/DNQG Registration 2015.pdf" class="btn btn-default">Sign up Now</a>
+                        <a href="pdfs/DNQG Registration 2016.docx" class="btn btn-default">Sign up Now</a>
                     </div>
                 </div>
             </div>

@@ -24,6 +24,17 @@
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
 	<script src="../includes/scripts.js" type="text/javascript"></script>
 	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58890484-2', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	
 </head>
 <body>
 		
@@ -228,7 +239,7 @@
 			</div><!--End Thumbnail row-->
         
          <div class="row bannerInfo">
-		 	<h1>The Fox Valley's premier provider of Stone & Brick</h1>
+		 	<h1>Northeast Wisconsin's premier provider of Stone & Brick</h1>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Maintenance Free</h3>
 		 		<p>Brick never needs painting or cleaning. It doesn't rot, fade, peel or dent. Save money on maintenance and avoid headaches by choosing brick.</p>

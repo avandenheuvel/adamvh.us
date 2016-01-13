@@ -25,6 +25,17 @@
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
 	<script src="../includes/scripts.js" type="text/javascript"></script>
 	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58890484-2', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	
 </head>
 <body>
 		
@@ -195,7 +206,7 @@
 				
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#freeStandingModal">Free Standing</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#freeStandingModal">Electric</a>
 				
 				<!-- Modal -->
 				<div id="freeStandingModal" class="modal fade" role="dialog">
@@ -205,16 +216,16 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Free Standing Fireplace</h4>
+				        <h4 class="modal-title">Electric fireplaces</h4>
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-							<p>Feel free to browse these gas fireplace installations.</p>
+							<p>Feel free to browse these Electric fireplace models.</p>
 							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
 								meet with a professional salesperson and view our current selection of granite.</p>
 						</div>
 				      	<?php
-				      		generate_Thumb('./freeStanding/imgThumb/', './freeStanding/img/','1');
+				      		generate_Thumb('./electric/imgThumb/', './electric/img/','1');
 						?>
 				        <!--p>Some text in the modal.</p-->
 				      </div>
@@ -236,7 +247,7 @@
 			</div><!--End Thumbnail row-->
         
          <div class="row bannerInfo">
-		 	<h1>The Fox Valley's premier provider of Fireplaces</h1>
+		 	<h1>Northeast Wisconsin's premier provider of Fireplaces</h1>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Gas</h3>
 		 		<p>The perfect blend of efficiency and convenience. With a large variety of burning fireplaces in our showroom, you're sure to find the model that's perfect for your home.</p>
@@ -306,8 +317,8 @@
 		 			out partners websites.</h3>
 	 		</div>
 		 	<div class="col-xs-12 col-md-8 logo">
-		 		<a href="http://www.heatnglo.com" target="_blank"><img src="./pictures/kozyHeat.jpg" /></a>	
-		 		<a href="http://www.kozyheat.com/" target="_blank"><img src="./pictures/heatnGlow_Logo.jpg" /></a>
+		 		<a href="http://www.heatnglo.com" target="_blank"><img src="./pictures/heatnGlow_Logo.jpg" /></a>	
+		 		<a href="http://www.kozyheat.com/" target="_blank"><img src="./pictures/kozyHeat.jpg" /></a>
 		 		<a href="http://www.quadrafire.com/" target="_blank"><img src="./pictures/quadraFire.jpg" /></a>
 		 		<a href="http://www.kingsmanind.com/" target="_blank"><img src="./pictures/kingsman.png" /></a>	
 		 		<a href="http://www.regency-fire.com/Home.aspx " target="_blank"><img src="./pictures/regency.jpg" /></a>	

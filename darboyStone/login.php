@@ -52,7 +52,7 @@ if(!isset($_SESSION['user'])){
 			showForm($message);
 			exit();
 	    }
-		header("Location: http://adamvh.us/darboyStone");
+		header("Location: http://darboyStone.com");
 		showForm($message);
 	    mysqli_close($db);
 	}

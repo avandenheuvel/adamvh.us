@@ -28,6 +28,17 @@
 	  	new WOW().init();
 	  </script>
 	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58890484-2', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar">
 	<div class="frontText">
@@ -46,6 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a target="https://www.facebook.com/darboystone/" title="follow me on facebook" href="https://www.facebook.com/darboystone/"><img class="fbImg" alt="follow me on facebook" src="http://darboystone.com/img/facebook.png" border=0></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -120,7 +132,7 @@
 	<div class="container-fluid">
 				
 		<section id="banner" class="row firstrow activity-section">
-			<div class="wow slideInLeft col-xs-12" data-wow-delay="1s" data-wow-duration="1s">
+			<div class="wow slideInLeft col-xs-12" data-wow-duration="1s">
 				<h1>Welcome To Darboy Stone & Brick - Your Idea Store!</h1>
 			</div>
             <!--div class="activity-element col-sm-4">
@@ -151,7 +163,7 @@
 
         <!--Thumbnail section-->
 		<div id="products" class="row activity-section">
-			<div class="wow slideInDown activity-element col-xs-12">
+			<div class="wow pulse activity-element col-xs-12" data-wow-delay="1s">
                 <h2>Our Products</h2>
                 <h4>We proudly supply North East Wisconsin with a large variety of high quality products. Please visit our product pages to learn more about our offerings or see some fine examples to inspire your next project.</h4>
             </div>
@@ -199,7 +211,7 @@
             </div>
         </section>
 
-        <div id="contact" class="wow slideInUp row getStarted activity-section">
+        <div id="contact" class="wow pulse row getStarted activity-section" data-wow-delay="1s">
 			  <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  	<h1>Let's get started</h1>
 			  	<p>Contact a Darboy Stone and Brick Representative today</p>
@@ -223,7 +235,7 @@
 		<div id="findUs" class="row activity-section">
 			<div class="row">
 				<div class="col-xs-12 wow pulse" data-wow-delay="1s">
-					<h1>Come on in to our Showroom!</h1>
+					<h1>Come on in to our <a href="./about.php">Showroom!</a></h1>
 				</div>
 			</div>
 		</div>
@@ -333,8 +345,14 @@
 						<h3>Contact:</h3>
 						<p>W3277 Creekview Lane</p>
 						<p>Appleton, WI 54915</p>
-						<p>Phone:(920)734-2882</p>
-						<p>E-mail:customerservice@darboystone.com</p>
+						<script type="text/javascript">
+							var first = "customerservice";
+							var last = "darboystone.com";
+							var tel = "(920)734-2882";
+							document.write('<a href="#"><p>&#9743;'+tel+ '</p></a>');
+							document.write('<a href="mailto:'+first + '@' + last+'"><p>&#9993;'+first + '@' + last+'</p><\/a>');
+						</script>
+						<a target="https://www.facebook.com/darboystone/" title="follow me on facebook" href="https://www.facebook.com/darboystone/"><img alt="follow me on facebook" src="http://darboystone.com/img/facebook.png" border=0></a>
 						<h3>Hours:</h3>
 						<p>Monday- 7:00AM-5:00PM</p>
 						<p>Tuesday- 7:00AM-5:00PM</p>
@@ -406,7 +424,27 @@
 				});
 			});
 		});
+		(function ($) {
+		  $(document).ready(function(){
 		
+		    // hide .navbar first
+		    $(".pull-left").hide();
+		
+		    // fade in .navbar
+		    $(function () {
+		        $(window).scroll(function () {
+		
+		                 // set distance user needs to scroll before we start fadeIn
+		            if ($(this).scrollTop() > 300) {
+		                $('.pull-left').fadeIn();
+		            } else {
+		                $('.pull-left').fadeOut();
+		            }
+		        });
+		    });
+		
+		});
+		}(jQuery));
     </script>
 <?php 
 	include("./footer.php");

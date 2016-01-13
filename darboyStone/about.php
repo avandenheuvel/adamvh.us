@@ -25,6 +25,17 @@
 	<script src="./js/bootstrap.js" type="text/javascript"></script>
 	<script src="./includes/scripts.js" type="text/javascript"></script>
 	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58890484-2', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	
 </head>
 <body>
 		
@@ -153,8 +164,13 @@
 						<h3>Contact:</h3>
 						<p>W3277 Creekview Lane</p>
 						<p>Appleton, WI 54915</p>
-						<p>Phone:(920)734-2882</p>
-						<p>E-mail:customerservice@darboystone.com</p>
+						<script type="text/javascript">
+							var first = "customerservice";
+							var last = "darboystone.com";
+							var tel = "(920)734-2882";
+							document.write('<a href="#"><p>&#9743;'+tel+ '</p></a>');
+							document.write('<a href="mailto:'+first + '@' + last+'"><p>&#9993;'+first + '@' + last+'</p><\/a>');
+						</script>
 						<h3>Hours:</h3>
 						<p>Monday- 7:00AM-5:00PM</p>
 						<p>Tuesday- 7:00AM-5:00PM</p>

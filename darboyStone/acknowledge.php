@@ -1,6 +1,6 @@
 <?php
-	if (isset($_POST['send'])) {
-		$to = 'customerservice@darboystone.com'; // Use your own email address
+	if (isset($_POST['send']) && $_POST['url'] == '') {
+		$to = 'customerservice@darboystone.com,cpoellet@darboystone.com'; // Use your own email address
 		$headers = 'From: noreply@darboystone.com'. "\r\n" .
    					'Bcc: apvandenheuvel@yahoo.com';
 		$subject = 'Web request';
@@ -29,7 +29,7 @@
 	if (isset($success) && $success) { ?>
 		<script>
 			alert("Thank you! Your message has been sent")
-			window.location = "http://adamvh.us/darboyStone";
+			window.location = "http://darboyStone.com";
 		</script>
 	<?php } else { ?>
 		<h1>Oops!</h1>

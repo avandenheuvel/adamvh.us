@@ -1,9 +1,27 @@
+.antispam{
+	display:none;
+}
+.fbImg{
+  padding: 10px 0px 0px 10px;
+}
+.tab-pane>a{
+  color: goldenrod;
+}
+.tab-pane>a:hover{
+  color: goldenrod;
+  text-decoration: underline;
+}
+
 .lsProductSelect{
   margin-top: 20px;
 }
+
 .paverLogo{
   max-width: 90%;
   margin: 15px;
+}
+.tab-content{
+  padding-bottom: 30px;
 }
 .productImg>img{
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
@@ -47,12 +65,22 @@
   opacity: 1;
 }
 
+.imgWrap:hover:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
 .productDesc>h4, .productDesc>p{
   display: inline;
 }
 @media(min-width: 500px){
   .productDesc{
-    margin-top: 60px;
+    margin-top: 20px;
   }
 }
 .productScroll{
@@ -126,6 +154,13 @@ a{
 }
 a:hover{
   color: whitesmoke;
+}
+#findUs>div>div>h1>a{
+  color:darkgray;
+  font: inherit;
+}
+#findUs>div>div>h1>a:hover{
+  text-decoration: underline;
 }
 .nav-tabs > li.active > a, 
 .nav-tabs > li.active > a:hover, 
@@ -779,6 +814,7 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling:touch;
 }
+
 .modalLink{
   background-color: rgba(0,0,0,0.3);
   text-align: center;
@@ -1044,14 +1080,21 @@ ul, ol {
 .footer{
   background-color: goldenrod;
   color:white;
+  padding:20px 0px;
 }
 
 .footer a:hover{
   text-decoration: underline;
 }
-
-.footer a{
-  margin: 20px;
+.footerLinks{
+  text-align: center;
+}
+.footerLinks>a>p{
+  margin-bottom: 0px;
+}
+.footerLinks>a{
+  display: inline-block;
+  margin: 0px 20px;
 }
 
 @media (max-width: 991px) {

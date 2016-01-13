@@ -45,6 +45,9 @@
 				  <label class="control-label" for="cName">Name:</label>
 				  <input class="form-control" type="text" name="cName" placeholder="Enter Name" id="name"></input>
 				</div>
+				
+				<p class="antispam">Leave this empty: <input type="text" name="url" /></p>
+				
 				<div class="form-group">
 				  <label class="control-label" for="email">Email:</label>
 				  <input class="form-control" type="email" name="email" placeholder="E-mail address" id="email"></input>
@@ -88,14 +91,22 @@
 	<div class="container-fluid">
 		<div class="row topInfo">
 			<div class="col-sm-10 col-xs-12">
-				<a href="<?php echo _ROOT . "about.php"?>" class="col-xs-12 col-md-5"><p>&#10044; W3277 Creekview Lane-Appleton, WI 54915</p></a>
-				<a href="#" class="col-xs-12 col-md-3"><p>&#9743;  (920)734-2882 </p></a>
-				<a href="mailto:customerservice@darboystone.com" class="col-xs-12 col-md-4"><p>&#9993; customerservice@darboystone.com</p></a>
+				
+				
+				<script type="text/javascript">
+					var first = "customerservice";
+					var last = "darboystone.com";
+					var tel = "(920)734-2882";
+					var address = "W3277 Creekview Lane-Appleton, WI 54915";
+					document.write('<a href="<?php echo _ROOT . "about.php"?>" class="col-xs-12 col-md-5"><p>&#10044;'+address+'</p></a>');
+					document.write('<a href="#" class="col-xs-12 col-md-3"><p>&#9743;'+tel+ '</p></a>');
+					document.write('<a class="col-xs-12 col-md-4" href="mailto:'+first + '@' + last+'"><p>&#9993;'+first + '@' + last+'</p><\/a>');
+				</script>
 			</div>
 			<div class="social col-sm-2 col-xs-12">
-				<a target="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420" title="follow me on facebook" href="https://www.facebook.com/pages/DARBOY-STONE-AND-BRICK/145374878832420"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
+				<a target="https://www.facebook.com/darboystone/" title="follow me on facebook" href="https://www.facebook.com/darboystone/"><img class="fbImg" alt="follow me on facebook" src="http://darboystone.com/img/facebook.png" border=0></a>
 				<!--a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter30x30.png" border=0></a-->
-				<a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+				<!--a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a-->
 			</div>
 		</div>
 		<div class="row topBanner">
@@ -139,7 +150,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://darboyStone">Darboy Stone & Brick</a>
+                <a class="navbar-brand" href="<?php echo _ROOT?>">Darboy Stone & Brick</a>
+                <a target="https://www.facebook.com/darboystone/" title="follow me on facebook" href="https://www.facebook.com/darboystone/"><img class="fbImg" alt="follow me on facebook" src="http://darboystone.com/img/facebook.png" border=0></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
