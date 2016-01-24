@@ -365,10 +365,10 @@ Percentage for keyframes:
 	opacity: 0.90;           /* fx, safari, opera */
   
 }
-.navbar>a>img{
+.navbar>a>img, .navImg>img{
   height:40px;
   margin: 10px auto;
-  margin-left: 40px
+  margin-left: 20px
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: goldenrod;
@@ -1095,6 +1095,9 @@ ul, ol {
 .footerLinks>a{
   display: inline-block;
   margin: 0px 20px;
+}
+.userLogin{
+  text-align: center;
 }
 
 @media (max-width: 991px) {

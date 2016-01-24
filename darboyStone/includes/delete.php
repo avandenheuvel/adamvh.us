@@ -5,11 +5,11 @@
 	function deleteFiles($fileName){
 	  //str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )
 	  	$subject=$fileName;
-		$search=["http://adamvh.us","imgThumb"];
+		$search=["http://darboystone.com","imgThumb"];
 		$replace=[$_SERVER['DOCUMENT_ROOT'],"img"];
 		$imgLgFileName = str_replace($search, $replace, $subject);
 	  	
-		$search="http://adamvh.us";
+		$search="http://darboystone.com";
 		$replace=$_SERVER['DOCUMENT_ROOT'];
 		$imgThumbFileName = str_replace($search, $replace, $subject);
 		

@@ -1,6 +1,14 @@
 <footer class="footer">
 	<div class="container">
-		<div class="col-sm-2">
+		<div class="col-sm-10 footerLinks">
+			<a href="<?php echo _ROOT . "Granite"?>" ><p>Granite</p></a>
+			<a href="<?php echo _ROOT . "Brick"?>" ><p>Brick & Stone</p></a>
+			<a href="<?php echo _ROOT . "Landscape"?>" ><p>Landscape Products</p></a>
+			<a href="<?php echo _ROOT . "Fireplace"?>" ><p>Fireplace</p></a>
+			<a href="<?php echo _ROOT . "contact.php"?>" ><p>Contact us</p></a>
+			<a href="<?php echo _ROOT . "about.php"?>" ><p>About Darboy Stone & Brick</p></a>
+		</div>
+		<div class="col-sm-2 userLogin">
 			<?php
 				if(isset ($_SESSION['FirstName'])){
 	            	if($_SESSION['Administrator']==1){
@@ -20,13 +28,6 @@
 				}
 			?>
 		</div>
-		<div class="col-sm-10 footerLinks">
-			<a href="<?php echo _ROOT . "Granite"?>" ><p>Granite</p></a>
-			<a href="<?php echo _ROOT . "Brick"?>" ><p>Brick & Stone</p></a>
-			<a href="<?php echo _ROOT . "Landscape"?>" ><p>Landscape Products</p></a>
-			<a href="<?php echo _ROOT . "Fireplace"?>" ><p>Fireplace</p></a>
-			<a href="<?php echo _ROOT . "contact.php"?>" ><p>Contact us</p></a>
-			<a href="<?php echo _ROOT . "about.php"?>" ><p>About Darboy Stone & Brick</p></a>
-		</div>
+		
 	</div>
 </footer>

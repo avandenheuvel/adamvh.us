@@ -141,8 +141,8 @@ if(!function_exists("generate_Thumb")){
 					//Create the standard image gallery modal thumbnails
 					echo '<a class="img-responsive col-md-4 col-sm-6 col-xs-12 col-lg-3 modalLink clickable" 
 						onclick="getImage(this); return false;" data-toggle="modal" data-target="#lgImageModal" rel="gallery">
-						<img src="',$thumbnail_image,'" /></a>';
-						echo '<a href="',$images_dir.$file,'" class="hidden" />lgImage</a>';//Used as a placeholder for the large image
+						<img src="',$thumbnail_image,'" title="',$file,'"/></a>';//<h3 class="imgLbl">',$file,'</h3>
+						echo '<a href="',$images_dir.$file,'" class="hidden" />lgImage</a>';
 				}else{
 					//echo '<script type="text/javascript">alert("variable modal false ' . $variableModal . '");</script>';
 					/*Create adjustable large image using img name as search term. Calls createModal function in dbQuery.php file

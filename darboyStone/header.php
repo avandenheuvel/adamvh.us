@@ -150,7 +150,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo _ROOT?>">Darboy Stone & Brick</a>
+                <a href="http://darboystone.com" class="pull-left navImg"><img src="<?php echo _ROOT . "img/DSandB_Logo-sm.png"?>"></a>
                 <a target="https://www.facebook.com/darboystone/" title="follow me on facebook" href="https://www.facebook.com/darboystone/"><img class="fbImg" alt="follow me on facebook" src="http://darboystone.com/img/facebook.png" border=0></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->

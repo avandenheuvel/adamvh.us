@@ -7,7 +7,7 @@ function jsErrorAlert($msg){
 
 function uploadImage($fileDir){
 	//http://www.w3schools.com/php/php_file_upload.asp
-	$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/darboyStone/".$fileDir."/img/";
+	$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/".$fileDir."/img/";
 	$target_file = $target_dir . ($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

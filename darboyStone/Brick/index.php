@@ -145,46 +145,61 @@
 				        
 				      	<ul class="nav nav-tabs" data-tabs="tabs">
 						  <li class="active">
-						    <a href="#coronado" data-toggle="tab">Coronado</a>
+						    <a href="#boral" data-toggle="tab">Boral</a>
 						  </li>
-						  <li><a href="#eldorado" data-toggle="tab">Eldorado</a></li>
-						  <li><a href="#owens" data-toggle="tab">Owens Corning</a></li>
+						  <li><a href="#stoneCraft" data-toggle="tab">Stone Craft</a></li>
+						  <li><a href="#halquist" data-toggle="tab">Halquist</a></li>
+						  <li><a href="#quarry" data-toggle="tab">Quarry Ridge</a></li>
 						</ul>
 						
 				      </div>
 				      <div class="modal-body row">
 				      	<div class="col-xs-12 bannerContent">
-					        <p>View our large selection of culture stone from the worlds leading manufacturers</p>
+					        <p>We carry the area's largest selecion of cultured stone product from: <a href="http://www.instoneco.com/cultured_stone/" target="_blank">Boral, </a>
+					        	<a href="http://www.stonecraft.com/products.php" target="_blank">Stone Craft, </a>
+					        	<a href="http://halquiststone.com/building_collections/collectionindex.html">Halquist </a> and 
+					        	<a href="http://www.quarryridgestone.com/products/" target="_blank">Quarry Ridge</a> 
+					        	Feel free to browse some of the images on our site or visit our partners sites for full details.</p>
 						</div>
 						<div class="tab-content">
-							<div class="tab-pane active" id="coronado">
+							<div class="tab-pane active" id="boral">
 								<?php
 									if(isset($_SESSION['Administrator'])){
 							      		if($_SESSION['Administrator']==1){
-							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Coronado &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Boral &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
 							      		}
 									}
-						      		generate_Thumb('./stoneShowroom/Coronado/imgThumb/', './stoneShowroom/Coronado/img/','0');
+						      		generate_Thumb('./stoneShowroom/Boral/imgThumb/', './stoneShowroom/Boral/img/','0');
 								?>
 							</div>
-							<div class="tab-pane" id="eldorado">
+							<div class="tab-pane" id="stoneCraft">
 								<?php
 									if(isset($_SESSION['Administrator'])){
 							      		if($_SESSION['Administrator']==1){
-							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Eldorado &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/Stonecraft &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
 							      		}
 									}
-						      		generate_Thumb('./stoneShowroom/Eldorado/imgThumb/', './stoneShowroom/Eldorado/img/','0');
+						      		generate_Thumb('./stoneShowroom/Stonecraft/imgThumb/', './stoneShowroom/Stonecraft/img/','0');
 								?>
 							</div>
-							<div class="tab-pane" id="owens">
+							<div class="tab-pane" id="halquist">
 								<?php
 									if(isset($_SESSION['Administrator'])){
 							      		if($_SESSION['Administrator']==1){
-							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/OwensCorning &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/StoneCraft &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
 							      		}
 									}
-						      		generate_Thumb('./stoneShowroom/OwensCorning/imgThumb/', './stoneShowroom/OwensCorning/img/','0');
+						      		generate_Thumb('./stoneShowroom/Halquist/imgThumb/', './stoneShowroom/Halquist/img/','0');
+								?>
+							</div>
+							<div class="tab-pane" id="quarry">
+								<?php
+									if(isset($_SESSION['Administrator'])){
+							      		if($_SESSION['Administrator']==1){
+							      			echo '<button type="button" onclick="JSuploadImage(&quot;Brick/stoneShowroom/QuarryRidge &quot;)" style="width:100%" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+							      		}
+									}
+						      		generate_Thumb('./stoneShowroom/QuarryRidge/imgThumb/', './stoneShowroom/QuarryRidge/img/','0');
 								?>
 							</div>
 						</div>
@@ -198,7 +213,7 @@
 				</div>
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#stoneGalleryModal">Stone Gallery</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#stoneGalleryModal">Address Stones</a>
 				
 				<!-- Modal -->
 				<div id="stoneGalleryModal" class="modal fade" role="dialog">
@@ -208,18 +223,19 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Cultured Stone Project Gallery</h4>
+				        <h4 class="modal-title">Address Stones</h4>
 				      </div>
 				      <div class="modal-body row">
 				        <div class="col-xs-12 bannerContent">
-							<p>Feel free to browse projects we've supplied cultured stone for.</p>
+							<p>Feel free to browse our many varieties of address stones.</p>
 							<p><a href="../contact.php">Contact us</a> today or come on in to our <a href="../about.php">showroom</a> to 
-								meet with a professional salesperson and view our current selection of cultured Stone.</p>
+								meet with a professional salesperson.</p>
 						</div>
-				      </div>
-				      <?php
+						<?php
 				      		generate_Thumb('./stoneGallery/imgThumb/', './stoneGallery/img/','0');
 						?>
+				      </div>
+				      
 				      <div class="modal-footer">
 				      	<?php
 				      		//include_once("../includes/uploadImg.php");
