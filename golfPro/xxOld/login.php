@@ -18,20 +18,18 @@ if(!isset($_SESSION['user'])){
 		$password=$_POST['password'];
 	}
 	
-	if (isset($_POST['eMail']) && isset($_POST['password'])) {
-	    $db = mysqli_connect('localhost', 'adamvh99_golfPro', 'apv0703','adamvh99_admin');
-		//This is a work in progress WHERE clause likely not right...
-	    $sql = sprintf("SELECT tblUser.tblUserEmail,
-							tblPrivilege.tblPrivilegeUserRole 
-						FROM tblUser.U, tblPrivilege.P  
-						WHERE U.tblUserEmail='%s' AND
-						U.idtblUser=P.tblUser_idtblUser"
-	        mysqli_real_escape_string($db, $_POST['eMail'])
-	    );
+	if (isset($_POST['username']) && isset($_POST['password'])) {
+	    include('_dbConnect.php');
+	    $sql = sprintf("SELECT user.username user.iduser userAccess.accessLevel
+						FROM user.U, userAccess.A  
+						WHERE U.username='%s' AND
+						A.user_iduser=U.iduser");
+	        mysqli_real_escape_string($db, $_POST['username']);
+	    
 	    $result = mysqli_query($db, $sql);
 	    $row = mysqli_fetch_assoc($result);
 	    if ($row) {
-	        $hash = $row['tblUserPassword'];
+	        $hash = $row['password'];
 	        $isAdmin = $row['isAdmin'];
 	
 	        if (password_verify($_POST['password'], $hash)) {

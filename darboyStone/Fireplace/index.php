@@ -206,10 +206,10 @@
 				
 				
 				<!-- Trigger the modal with a button -->
-				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#freeStandingModal">Electric</a>
+				<a class="modalLink col-xs-6 col-md-3 clickable"data-toggle="modal" data-target="#electricModal">Electric</a>
 				
 				<!-- Modal -->
-				<div id="freeStandingModal" class="modal fade" role="dialog">
+				<div id="electricModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				
 				    <!-- Modal content-->
@@ -233,7 +233,7 @@
 				      	<?php
 				      		if(isset($_SESSION['Administrator'])){
 					      		if($_SESSION['Administrator']==1){
-					      			echo '<button type="button" onclick="addModal(&quot;freeStanding &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
+					      			echo '<button type="button" onclick="addModal(&quot;electric &quot;)" class="btn btn-default">New</button>';//Updated added parameter to add modal was blank
 					      		}
 							}
 				      	?>
