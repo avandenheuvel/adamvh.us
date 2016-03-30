@@ -91,7 +91,7 @@
 				</div-->
 				
 				<div class="col-xs-12 bannerContent">
-					<p>Darboy Stone & Brick carries a large assortment of landscaping products including: Decorative stone, paving brick, retaining walls, exposed aggregate, mulch, topsoil, screenings and more. View some of our products by selecting a tab below, or stop into our <a href="../about.php">Showroom</a> to meet with a professional sales associate. We have an outdoor idea gallery so you can see for yourself and better visualize your landscape project. </p>
+					<p>Darboy Stone & Brick carries a large assortment of landscaping products including: Decorative stone, paving brick, retaining walls, mulch, topsoil, screenings and more. View some of our products by selecting a tab below, or stop into our <a href="../about.php">Showroom</a> to meet with a professional sales associate. We have an outdoor idea gallery so you can see for yourself and better visualize your landscape project. </p>
 				</div>
 			</div>	
 		</div>
@@ -151,7 +151,6 @@
 	                    <li><a href="#lsProducts">Decorative Stone</a></li>
 	                    <li><a href="#lsProducts">Paving Brick</a></li>
 	                    <li><a href="#lsProducts">Retaining Wall</a></li>
-	                    <li><a href="#lsProducts">Exposed aggregate</a></li>
 	                    <li><a href="#lsProducts">Mulch</a></li>
 	                    <li><a href="#lsProducts">Topsoil</a></li>
 	                    <li><a href="#lsProducts">Screenings</a></li>
@@ -173,7 +172,6 @@
 					<li class="active"><a href="#stone" data-toggle="tab">Decorative Stone</a></li>
 	                <li><a href="#paver" data-toggle="tab">Paving Brick</a></li>
 	                <li><a href="#retainer" data-toggle="tab">Retaining Wall</a></li>
-	                <li><a href="#aggregate" data-toggle="tab">Exposed aggregate</a></li>
 	                <li><a href="#mulch" data-toggle="tab">Mulch</a></li>
 	                <li><a href="#topsoil" data-toggle="tab">Topsoil</a></li>
 	                <li><a href="#screening" data-toggle="tab">Screenings</a></li>
@@ -201,9 +199,6 @@
 					</div>
 		        	<div class="tab-pane" id="retainer">
 		        		<?php include("prodRetainer.php");?>
-		        	</div>
-		        	<div class="tab-pane" id="aggregate">
-						<?php include("prodAggregate.php");?>
 		        	</div>
 		        	<div class="tab-pane" id="mulch">
 						<?php include("prodMulch.php");?>

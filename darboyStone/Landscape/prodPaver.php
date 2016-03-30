@@ -7,12 +7,12 @@
 			<a onclick="showProduct('classic','productDisplayPaver'); return false;"><img src="pavers/unilock/unilock_classic.jpg"/></a>
 			<!--a onclick="showProduct('holland','productDisplayPaver'); return false;"><img src="./pavers/wausau/Holland/PAVER PATIO.png"/></a>
 			<a onclick="showProduct('munich','productDisplayPaver'); return false;"><img src="pavers/wausau/Munich/MUNICH_CIRCLE_PAVER_CIRCLE.JPG"/></a>
-			<a onclick="showProduct('terraLok','productDisplayPaver'); return false;"><img src="pavers/wausau/Terra-Lok/TERRA- LOK TUMBLED PAVER SIDEWALK BROWN TAN BLEND.JPG"/></a-->
+			<a onclick="showProduct('terraLok','productDisplayPaver'); return false;"><img src="pavers/wausau/Terra-Lok/TERRA- LOK TUMBLED PAVER SIDEWALK BROWN TAN BLEND.JPG"/></a>
 			<a onclick="showProduct('englishEdge','productDisplayPaver'); return false;"><img src="pavers/pine hall/english edge/pinehall_english_edge.jpg"/></a>
 			<a onclick="showProduct('old','productDisplayPaver'); return false;"><img src="pavers/pine hall/old/pinehall_old_series.jpg"/></a>
 			<a onclick="showProduct('rumbled','productDisplayPaver'); return false;"><img src="pavers/pine hall/rumbled/pinehall_rumbled.jpg"/></a>
 			<a onclick="showProduct('traditional','productDisplayPaver'); return false;"><img src="pavers/pine hall/traditional/pinehall_traditional.jpg"/></a>
-			<a onclick="showProduct('thin','productDisplayPaver'); return false;"><img src="pavers/pine hall/thin/pinehall_thin.jpg"/></a>
+			<a onclick="showProduct('thin','productDisplayPaver'); return false;"><img src="pavers/pine hall/thin/pinehall_thin.jpg"/></a-->
 			
 		</div>
 	</div><!--End Selector-->

@@ -289,7 +289,7 @@
 								['<div class="info_content">' +
 						        '<h3>Antigo Fireplace</h3>' +
 						        '<h4>Showroom Hours:</h4>' + 
-						        '<p>Monday- 8:00AM-5:00PM</p>' +
+						        '<p>Monday- Closed</p>' +
 								'<p>Tuesday- 8:00AM-5:00PM</p>' +
 								'<p>Wednesday- 8:00AM-5:00PM</p>' +
 								'<p>Thursday- 8:00AM-5:00PM</p>' +
@@ -367,7 +367,7 @@
 						<p>Antigo, WI 54409</p>
 						<p>Phone:(715)627-7882</p>
 						<h3>Showroom Hours:</h3> 
-				        <p>Monday- 8:00AM-5:00PM</p>
+				        <p>Monday- Closed</p>
 						<p>Tuesday- 8:00AM-5:00PM</p>
 						<p>Wednesday- 8:00AM-5:00PM</p>
 						<p>Thursday- 8:00AM-5:00PM</p>
