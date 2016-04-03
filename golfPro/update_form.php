@@ -37,6 +37,10 @@ $user->readOne();
             <td><input name='password' class='form-control' value='<?php echo htmlspecialchars($user->password, ENT_QUOTES);  ?>' required /></td>
         </tr>
         <tr>
+            <td>Access</td>
+            <td><input name='auth' class='form-control' value='<?php echo htmlspecialchars($user->auth, ENT_QUOTES);  ?>' required /></td>
+        </tr>
+        <tr>
             <td>
                 <!-- hidden ID field so that we could identify what record is to be updated -->
                 <input type='hidden' name='iduser' value='<?php echo $user_id ?>' /> 

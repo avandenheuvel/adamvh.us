@@ -14,6 +14,7 @@ $user = new User($db);
 $user->username=$_POST['username'];
 $user->email=$_POST['email'];
 $user->password=$_POST['password'];
+$user->auth=$_POST['auth'];
 $user->iduser=$_POST['iduser'];
      
 // update 

@@ -1,0 +1,1 @@
+<h1>General content to be displayed upon first visit to the page.</h1>

@@ -13,6 +13,10 @@
             <td><input name='password' class='form-control' required /></td>
         </tr>
         <tr>
+            <td>Access level</td>
+            <td><textarea name='auth' class='form-control' required></textarea></td>
+        </tr>
+        <tr>
             <td></td>
             <td>                
                 <button type='submit' class='btn btn-primary'>

@@ -27,31 +27,37 @@
 		echo"<ul class='nav navbar-nav navbar-right'>";
 		
 		if(!isset($_SESSION['user'])){
-			echo"<li class='dropdown'>";
-			echo"<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>Login or Sign-up<span class='caret'></span></a>";
-			echo"<ul class='dropdown-menu' role='menu'>";
-				echo"<li><a href='./login.php'>Login</a></li>";
-				echo"<li><a href='./insert.php'>Sign-up</a></li>";
-			echo"</ul>";
-			echo"</li>";
+			echo"	
+			<li class='dropdown'>
+			<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>Login or Sign-up<span class='caret'></span></a>
+			<ul class='dropdown-menu' role='menu'>
+				<li>";
+				include "./user_login_form.php";
+				echo"
+				</li>
+				<li><a href='./insert.php'>Sign-up</a></li>
+			</ul>
+			</li>";
 			
 		}else{
-			echo"<li><a href='#'>Welcome:".$_SESSION['FirstName']."</a></li>";
-			echo"<li class='dropdown'>";
-			  echo"<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>User Functions<span class='caret'></span></a>";
-			  echo"<ul class='dropdown-menu' role='menu'>";
-				echo"<li><a href='./update.php'>Update</a></li>";
-				echo"<li><a href='./Logout.php'>Logout</a></li>";
-				echo"<li class='divider'></li>";
+			echo"<li><a href='#'>Welcome: ".$_SESSION['user']."</a></li>
+			<li><a href='#'>Access level: ".$_SESSION['auth']."</a></li>
+			<li class='dropdown'>
+			  <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>User Functions<span class='caret'></span></a>
+			  <ul class='dropdown-menu' role='menu'>
+				<li><a href='./update.php'>Update</a></li>
+				<li><a href='./logout.php'>Logout</a></li>
+				<li class='divider'></li>";
 				
 				if($_SESSION['Administrator']==1){	
-					echo"<li ><a href='./insert.php'>Add user</a></li>";
-					echo"<li ><a href='./select.php'>Administer users</a></li>";
+					echo"<li ><a href='./insert.php'>Add user</a></li>
+					<li ><a href='./select.php'>Administer users</a></li>";
 				}
-				  echo"</ul>";
-				echo"</li>";
-			echo"</ul>";
-			echo"</div><!-- /.navbar-collapse -->";
+				  echo"
+				  </ul>
+				</li>
+			</ul>
+			</div><!-- /.navbar-collapse -->";
 		}
 		?>
   </div><!-- /.container-fluid -->

@@ -25,7 +25,7 @@ if($num>0){
             echo "<th class='width-30-pct'>Username</th>";
             echo "<th class='width-30-pct'>Email</th>";
             echo "<th>Password</th>";
-            //echo "<th>Created</th>";
+            echo "<th>Access level</th>";
             echo "<th style='text-align:center;'>Action</th>";
         echo "</tr>";
          
@@ -43,6 +43,7 @@ if($num>0){
                 echo "<td>{$username}</td>";
                 echo "<td>{$email}</td>";
                 echo "<td>{$password}</td>";
+                echo "<td>{$auth}</td>";
                 //echo "<td>{$created}</td>";
                 echo "<td style='text-align:center;'>";
                     // add the record id here, it is used for editing and deleting products

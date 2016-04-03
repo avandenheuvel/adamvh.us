@@ -14,6 +14,7 @@
 	$user->username=$_POST['username'];
 	$user->email=$_POST['email'];
 	$user->password=$_POST['password'];
+	$user->auth=$_POST['auth'];
 	 
 	// set your default timezone
 	date_default_timezone_set('America/Chicago');

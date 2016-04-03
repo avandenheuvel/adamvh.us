@@ -1,4 +1,5 @@
 <?php
+session_start();
 class User{
 
     // database connection and table name
@@ -10,7 +11,7 @@ class User{
     public $username;
     public $email;
     public $password;
-    public $userlevel;
+    public $auth;
      
     // constructor with $db as database connection
     public function __construct($db){
@@ -23,7 +24,7 @@ class User{
 	    $query = "INSERT INTO 
 	                " . $this->table_name . "
 	            SET 
-	                username=:username, email=:email, password=:password";//, created=:created";
+	                username=:username, email=:email, password=:password, auth=:auth";//, created=:created";
 	     
 	    // prepare query
 	    $stmt = $this->conn->prepare($query);
@@ -32,6 +33,7 @@ class User{
 	    $stmt->bindParam(":username", $this->username);
 	    $stmt->bindParam(":email", $this->email);
 	    $stmt->bindParam(":password", $this->password);
+		$stmt->bindParam(":auth", $this->auth);
 	    //$stmt->bindParam(":created", $this->created);
 	     
 	    // execute query
@@ -47,7 +49,7 @@ class User{
 	 
 	    // select all query
 	    $query = "SELECT 
-	                iduser, username, email, password 
+	                iduser, username, email, password, auth 
 	            FROM 
 	                " . $this->table_name . "
 	            ORDER BY 
@@ -64,34 +66,49 @@ class User{
 	
     public function login($uname,$email,$upass)
     {
-    	
        try
        {
-          $stmt = $this->db->prepare("SELECT * FROM user WHERE username=:username OR useremail=:email LIMIT 1");
-          $stmt->execute(array(':username'=>$uname, ':email'=>$umail));
+       	  $query = "SELECT * 
+          	FROM " . $this->table_name . " 
+          	WHERE email = :email";
+       	  		
+          $stmt = $this->conn->prepare($query);
+          
+		  // bind values
+		  $stmt->bindParam(":email", $email);
+          $stmt->execute();
           $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
           if($stmt->rowCount() > 0)
           {
              if($upass==$userRow['password'])//password_verify($upass, $userRow['password']))
              {
-                $_SESSION['user_session'] = $userRow['iduser'];
+                $_SESSION['user'] = $userRow['username'];
+                $_SESSION['auth'] = $userRow['auth'];
+                echo $userRow['username'];
                 return true;
              }
              else
-             {
+             {		
+                echo "login failed in user class";
                 return false;
              }
           }
+          //testing remove later
+		  else {
+			  echo 'empty row from user.php query';
+		  }
        }
+	   
        catch(PDOException $e)
        {
            echo $e->getMessage();
        }
+	   
    }
  
    public function is_loggedin()
    {
-      if(isset($_SESSION['user_session']))
+      if(isset($_SESSION['user']))
       {
          return true;
       }
@@ -105,7 +122,7 @@ class User{
    public function logout()
    {
         session_destroy();
-        unset($_SESSION['user_session']);
+        unset($_SESSION['user']);
         return true;
    }
 	
@@ -114,7 +131,7 @@ class User{
 	     
 	    // query to read single record
 	    $query = "SELECT 
-	                username, email, password  
+	                username, email, password, auth  
 	            FROM 
 	                " . $this->table_name . "
 	            WHERE 
@@ -139,6 +156,7 @@ class User{
 	    $this->username = $row['username'];
 	    $this->email = $row['email'];
 	    $this->password = $row['password'];
+		$this->auth = $row['auth'];
 	}
 	
 	// update the product
@@ -150,7 +168,8 @@ class User{
 	            SET 
 	                username = :username, 
 	                email = :email, 
-	                password = :password 
+	                password = :password, 
+	                auth = :auth
 	            WHERE
 	                iduser = :iduser";
 	 
@@ -161,6 +180,7 @@ class User{
 	    $stmt->bindParam(':username', $this->username);
 	    $stmt->bindParam(':email', $this->email);
 	    $stmt->bindParam(':password', $this->password);
+		$stmt->bindParam(':auth', $this->auth);
 	    $stmt->bindParam(':iduser', $this->iduser);
 	     
 	    // execute the query

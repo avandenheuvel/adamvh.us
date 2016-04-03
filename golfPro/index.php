@@ -26,6 +26,21 @@
 	<div class="container">
 		<?php
 			include "header.php";
+			if(!isset($_SESSION['user'])){
+				echo "
+					<script>
+					$(document).ready(function(){
+						$('#page-content').load('content_general.php', function(){
+				            // hide loader image
+				            $('#loader-image').hide(); 
+				             
+				            // fade in effect
+				            $('#page-content').fadeIn('slow');
+			            });
+		            });
+					</script>	
+				";
+			}
 		?>
 		<div class="content">
 			<div class='page-header'>
@@ -34,12 +49,12 @@
 			
 			<!-- this is where the contents will be shown. -->
 			<div id='page-content'></div>
+			
+			<!-- This is where we'll pop-up a modal for user interation-->
+			<div id='page-modal'></div>
 						
 			<div class='margin-bottom-1em overflow-hidden'>
-				<!--Temporarily added login button here for testing-->
-				<div id='user-login' class='btn btn-primary pull-right'>
-			        <span class='glyphicon glyphicon-list'></span> User Login
-			    </div>
+				
 			    <!-- when clicked, it will show the User's list -->
 			    <div id='read-users' class='btn btn-primary pull-right display-none'>
 			        <span class='glyphicon glyphicon-list'></span> Read Users
@@ -65,6 +80,14 @@
 	     
 	    // change title tag
 	    document.title=page_title;
+	}
+	
+	// change the username in header after login
+	function changeUserTitle(user_name){
+		//change user name
+		$('#user-title').text(user_name);
+		// change user name tag
+		document.title=user_name;
 	}
 	
 	$(document).ready(function(){
@@ -108,7 +131,7 @@
 		            $('#read-user').hide();
 		         
 		            // 'data' is the text returned, you can do any conditions based on that
-		            alert(data);
+		            
 		            showUsers();
 		        });
 		             
@@ -143,9 +166,8 @@
 		    });
 		}); 
 		
-		// view Users on load of the page
-		$('#loader-image').show();
-		showUsers();
+		// Check if the user is logged in and display appropriate information.
+		
 		 
 		// clicking the 'read Users' button
 		$('#read-users').click(function(){
@@ -181,18 +203,15 @@
 		    });
 		}
 		
-		
-		
-		//WORKING ON LOGIN FUNCTION
+		//User log in function
 		$(document).on('submit', '#user-login-form', function() {
-		 
+		 	
 		    // show a loader img
 		    $('#loader-image').show();
 		     
 		    // post the data from the form
 		    $.post("user_login.php", $(this).serialize())
 		        .done(function(data) {
-		            //alert('Login attempt'); 
 		            //show create User button
 		            $('#create-user').show();
 		             
@@ -200,17 +219,19 @@
 		            $('#read-users').hide();
 		             
 		            // 'data' is the text returned, you can do any conditions based on that
+		            
+		            changeUserTitle(data); 
 		            showUsers();
-		        });
-		             
+		        });    
 		    return false;
 		});
 	    // will show the user-login form
 	    $('#user-login').click(function(){
 	        // change page title
 	        changePageTitle('Please Login');
+	        changeUserTitle('Testing123');
 	         
-	        // show create User form
+	        // show User login form
 	        // show a loader image
 	        $('#loader-image').show();
 	         
@@ -232,12 +253,6 @@
 	            });
 	        });
 	    });
-		
-		
-		
-		
-		
-		
 		
      	// will run if create User form was submitted
 		$(document).on('submit', '#create-user-form', function() {
