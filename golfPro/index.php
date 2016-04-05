@@ -26,6 +26,8 @@
 	<div class="container">
 		<?php
 			include "header.php";
+			//Check if the user is logged in and present available functions
+			//If not, display home page.
 			if(!isset($_SESSION['user'])){
 				echo "
 					<script>
@@ -165,8 +167,6 @@
 		        });
 		    });
 		}); 
-		
-		// Check if the user is logged in and display appropriate information.
 		
 		 
 		// clicking the 'read Users' button

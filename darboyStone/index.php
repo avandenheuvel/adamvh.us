@@ -29,6 +29,7 @@
 	  </script>
 	
 	<script>
+	//function used to notify google analytics.
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -132,8 +133,11 @@
 	<div class="container-fluid">
 				
 		<section id="banner" class="row firstrow activity-section">
-			<div class="wow slideInLeft col-xs-12" data-wow-duration="1s">
+			<div class="col-sm-12 col-md-8" >
 				<h1>Welcome To Darboy Stone & Brick - Your Idea Store!</h1>
+			</div>
+			<div class="wow pulse col-col-xs-6 col-centered col-md-4" data-wow-delay="2s">
+				<img src="img/Best in the valley.png" />
 			</div>
             <!--div class="activity-element col-sm-4">
                 <h2>VALUE</h2>
@@ -167,7 +171,7 @@
                 <h2>Our Products</h2>
                 <h4>We proudly supply North East Wisconsin with a large variety of high quality products. Please visit our product pages to learn more about our offerings or see some fine examples to inspire your next project.</h4>
             </div>
-            <div class="wow slideInLeft col-xs-12 col-sm-6 col-md-3"  data-wow-duration="2s" data-wow-delay="1s">
+            <div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/fireplace.jpg" />
 					<h3>Fireplace</h3>
@@ -175,7 +179,7 @@
 					<a class="btn btn-default" href="./Fireplace">Fireplace</a>
 				 </div>
 			 </div>
-			 <div class="wow slideInLeft col-xs-12 col-sm-6 col-md-3" data-wow-duration="1.5s" data-wow-delay="0.5s">
+			 <div class="col-xs-12 col-sm-6 col-md-3" >
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/landscape.JPG" />
 					<h3>Landscape</h3>
@@ -183,7 +187,7 @@
 					<a class="btn btn-default" href="./Landscape">Landscape</a>
 				 </div>
 			 </div>
-            <div class="wow slideInRight col-xs-12 col-sm-6 col-md-3"  data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/brick.JPG" />
 					<h3>Brick & Stone</h3>
@@ -191,7 +195,7 @@
 					<a class="btn btn-default" href="./Brick">Brick</a>
 				 </div>
 			 </div>
-            <div class="wow slideInRight col-xs-12 col-sm-6 col-md-3"  data-wow-duration="2s" data-wow-delay="1s">
+            <div class="col-xs-12 col-sm-6 col-md-3">
 		  		<div class="panel panel-default linkCircle">
 			  		<img class="img-circle"src="./img/granite.jpg" />
 					<h3>Granite</h3>
@@ -392,6 +396,29 @@
 		  } else {
 		    $('#cf4a').fadeIn();
 		  }
+		})
+		
+		/*
+		 * Hide header when user scrolls. reappear when scrolled up or hovered
+		 */
+		$(function(){
+		var lastScrollTop = 0, delta = 5;
+		$(window).scroll(function(event){
+		   var st = $(this).scrollTop();
+		
+		   if(Math.abs(lastScrollTop - st) <= delta)
+		      return;
+		
+		   if (st > lastScrollTop){
+		       // downscroll code
+		       $(".navbar").css({top:'-45px'})
+		       .hover(function(){$(".navbar").css({top: '0px'})})
+		   } else {
+		      // upscroll code
+		      $(".navbar").css({top:'0px'});
+		   }
+		   lastScrollTop = st;
+		});
 		});
 		
 	    /*
@@ -427,14 +454,14 @@
 		(function ($) {
 		  $(document).ready(function(){
 		
-		    // hide .navbar first
+		    // hide background fader images when scrolled down first
 		    $(".pull-left").hide();
 		
 		    // fade in .navbar
 		    $(function () {
 		        $(window).scroll(function () {
 		
-		                 // set distance user needs to scroll before we start fadeIn
+		            // set distance user needs to scroll before we start fadeIn
 		            if ($(this).scrollTop() > 300) {
 		                $('.pull-left').fadeIn();
 		            } else {

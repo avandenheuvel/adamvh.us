@@ -83,6 +83,7 @@ class User{
              if($upass==$userRow['password'])//password_verify($upass, $userRow['password']))
              {
                 $_SESSION['user'] = $userRow['username'];
+				$_SESSION['id'] = $userRow['iduser'];
                 $_SESSION['auth'] = $userRow['auth'];
                 echo $userRow['username'];
                 return true;

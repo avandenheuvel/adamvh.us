@@ -367,7 +367,6 @@ Percentage for keyframes:
 	-khtml-opacity: 0.90;      /* khtml, old safari */
 	-moz-opacity: 0.90;       /* mozilla, netscape */
 	opacity: 0.90;           /* fx, safari, opera */
-  
 }
 .navbar>a>img, .navImg>img{
   height:40px;
