@@ -26,6 +26,8 @@
 	<div class="container">
 		<?php
 			include "header.php";
+			include "Calendar/Calendar.php";
+			Calendar_Month_Weekday::build();
 			//Check if the user is logged in and present available functions
 			//If not, display home page.
 			if(!isset($_SESSION['user'])){
@@ -87,7 +89,7 @@
 	// change the username in header after login
 	function changeUserTitle(user_name){
 		//change user name
-		$('#user-title').text(user_name);
+		$('#user-title').text("Welcome: "+user_name);
 		// change user name tag
 		document.title=user_name;
 	}

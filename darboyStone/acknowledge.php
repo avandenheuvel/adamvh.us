@@ -28,7 +28,7 @@
 	$success = mail($to, $subject, $message, $headers);
 	if (isset($success) && $success) { ?>
 		<script>
-			alert("Thank you! Your message has been sent")
+			alert("Thank you! Your message has been sent and one of our associates will contact you shortly.")
 			window.location = "http://darboyStone.com";
 		</script>
 	<?php } else { ?>

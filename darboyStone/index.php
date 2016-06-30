@@ -411,7 +411,7 @@
 		
 		   if (st > lastScrollTop){
 		       // downscroll code
-		       $(".navbar").css({top:'-45px'})
+		       $(".navbar").css({top:'-50px'})
 		       .hover(function(){$(".navbar").css({top: '0px'})})
 		   } else {
 		      // upscroll code

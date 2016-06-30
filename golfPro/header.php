@@ -27,7 +27,8 @@
 		echo"<ul class='nav navbar-nav navbar-right'>";
 		
 		if(!isset($_SESSION['user'])){
-			echo"	
+			echo"
+			<li><a id='user-title' href='#'>Login</a></li>	
 			<li class='dropdown'>
 			<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>Login or Sign-up<span class='caret'></span></a>
 			<ul class='dropdown-menu' role='menu'>
@@ -40,7 +41,7 @@
 			</li>";
 			
 		}else{
-			echo"<li><a href='#'>Welcome: ".$_SESSION['user']."</a></li>
+			echo"<li><a id='user-title' href='#'>Welcome: ".$_SESSION['user']."</a></li>
 			<li><a href='#'>Access level: ".$_SESSION['auth']."</a></li>
 			<li class='dropdown'>
 			  <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>User Functions<span class='caret'></span></a>

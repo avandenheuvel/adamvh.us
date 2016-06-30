@@ -323,6 +323,7 @@
 		 		<a href="http://www.kingsmanind.com/" target="_blank"><img src="./pictures/kingsman.png" /></a>	
 		 		<a href="http://www.regency-fire.com/Home.aspx " target="_blank"><img src="./pictures/regency.jpg" /></a>	
 		 		<a href="http://www.heatilator.com/" target="_blank"><img src="./pictures/heatilator.jpg" /></a>
+		 		<a href="http://mendotahearth.com/" target="_blank"><img src="pictures/mendota_hearth.jpg" /></a>
 		 		<a href="http://www.icc-rsf.com/en/rsf-woodburning-fireplaces" target="_blank"><img src="./pictures/rsf.jpg" /></a>
 		 		<a href="http://www.renaissancefireplaces.com/" target="_blank"><img src="./pictures/renaissance.jpg" /></a>
 		 		<a href="http://www.osburn-mfg.com/en" target="_blank"><img src="./pictures/osburn.jpg" /></a> 				 				 				 		

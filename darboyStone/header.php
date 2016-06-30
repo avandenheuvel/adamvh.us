@@ -157,7 +157,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http:darboyStone/about.php">About</a>
+                        <a href="<?php echo _ROOT . "about.php"?>">About</a>
                     </li>
                                        
                     <li>

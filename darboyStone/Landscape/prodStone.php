@@ -89,7 +89,7 @@
 	</div>
 	<div id="clearGranite" style="display:none;">
 		<div class="col-sm-6 col-md-4 col-xs-12 productImg">
-			<h1>Barkstone</h1>
+			<h1>Clear Granite</h1>
 			<img src="./stone/clear Granite.jpg" />
 			<p>Note that stone is a product of nature and natural color may vary.</p>
 		</div>
