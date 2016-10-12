@@ -243,7 +243,6 @@
 				
 				  </div>
 				</div>
-				 
 			</div><!--End Thumbnail row-->
         
          <div class="row bannerInfo">

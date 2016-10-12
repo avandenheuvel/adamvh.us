@@ -63,7 +63,8 @@
                 	<img src="Pictures/2014 raffle quilt -3 Orig.jpg"  style="min-width:500px;"/>
             	</div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                    <h2>2016 Quilt show!</h2>
+                    <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
             <div class="item">
@@ -71,7 +72,8 @@
                 	<img src="Pictures/A_Winner_DSC02402.JPG" style="min-width:500px;"/>
                 </div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                    <h2>October 29th & 30th</h2>
+                    <a href="./2016-quilt-show" class="btn btn-primary">Sign up today</a>
                 </div>
             </div>
             <div class="item">
@@ -79,7 +81,8 @@
                 	<img src="Pictures/A_Winner_DSC02404.JPG" style="min-width:500px;"/>
                 </div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                    <h2>2016 Quilt show!</h2>
+                    <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
             <div class="item">
@@ -87,7 +90,8 @@
                 	<img src="Pictures/A_Winner_DSC02405.JPG" style="min-width:500px;"/>
                 </div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                    <h2>October 29th & 30th</h2>
+                    <a href="./2016-quilt-show" class="btn btn-primary">Sign up today</a>
                 </div>
             </div>
             <div class="item">
@@ -95,7 +99,8 @@
                 	<img src="Pictures/A_Winner_DSC02408.JPG" style="min-width:500px;"/>
                 </div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                    <h2>2016 Quilt show!</h2>
+                    <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
         </div>
@@ -160,8 +165,9 @@
                         <h4><i class="fa fa-fw fa-compass"></i> Quilt Shows</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Check out our photo gallery from this years quilt show</p>
+                        <p>Register for the 2016 quilt show or view pictures from our previous shows</p>
                         <a href="2014-Gallery.php" class="btn btn-default">2014 Gallery</a>
+                        <a href="./2016-quilt-show" class="btn btn-default">2016 Info</a>
                     </div>
                 </div>
             </div>
@@ -199,7 +205,7 @@
                     <p>Dues for 2015 are $35 per calendar year, $45 if receiving the mailed monthly newsletter. The dues and the Membership Registration Form may be sent to the Membership Chairman or mailed to the address on the membership form. For a Darting Needles Membership application</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="pdfs/DNQG Registration 2015.pdf">Sign up Today</a>
+                    <a class="btn btn-lg btn-default btn-block" href="pdfs/2017 Registration.docx">Sign up Today</a>
                 </div>
             </div>
         </div>

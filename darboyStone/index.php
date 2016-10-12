@@ -139,6 +139,7 @@
 			<div class="wow pulse col-col-xs-6 col-centered col-md-4" data-wow-delay="2s">
 				<img src="img/Best in the valley.png" />
 			</div>
+			
             <!--div class="activity-element col-sm-4">
                 <h2>VALUE</h2>
                 <p>Supplying high quality: Brick, Stone, Granite, Fireplace and Landscape products at a great price</p>
@@ -150,19 +151,12 @@
             <div class="activity-element col-sm-4">
                 <h2>SERVICE</h2>
                 <p>Our friendly, knowledgable sales staff and experienced installers make it easy to turn your ideas into reality.</p>
-            </div-->
+            </div>
             <div class="down-button2">
 				<a href="#products">
 					<img src="./img/downArrow-75px.png" />
 				</a>
-			</div>
-            
-        </section>
-        
-		
-        <section class="row">
-            <div class="fill-screen fixed-attachment" style="background-image: url(./img/unilockCover.png)">
-            </div>
+			</div-->
         </section>
 
         <!--Thumbnail section-->

@@ -1,3 +1,34 @@
+/*Media query added for promo logos*/
+#sqrBanner { display:none; }
+#wideBanner { display:block; }
+#stampBanner{display:none;}
+
+@media (max-width: 749px) {
+  #sqrBanner { display:block; }
+  #wideBanner{ display:none; }
+  #tallBanner{display:none;}
+  #stampBanner{display:block;}
+}
+
+#sqrBanner, #wideBanner{
+	width:100%;
+}
+
+#stampBanner{
+	max-width:30%;
+	margin-left:40px;
+	padding-top:50px;
+}
+#tallBanner{
+	height: 100%;
+    width: auto;
+    position: relative;
+    min-width: 0px;
+    float: right;
+    padding-right: 50px;
+    margin-top: -40px;
+}
+
 .antispam{
 	display:none;
 }
@@ -825,6 +856,7 @@ body {
   top:0px;
   color: whitesmoke;
   list-style: none;
+  z-index:1;
 }
 .modalLink:hover{
   color: whitesmoke;

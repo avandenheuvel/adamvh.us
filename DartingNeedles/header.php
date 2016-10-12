@@ -82,6 +82,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quilt Shows <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
+                                <a href="<?php echo _ROOT ."./2016-quilt-show"?>">2016 Quilt Show</a>
+                            </li>
+                            <li>
                                 <a href="<?php echo _ROOT ."./2014-Gallery.php"?>">2014 Quilt Show Gallery</a>
                             </li>
                             <li>

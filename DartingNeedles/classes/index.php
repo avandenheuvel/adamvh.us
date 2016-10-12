@@ -28,6 +28,7 @@
     <link href="../_styles.css" rel="stylesheet"/>
     
     <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/scrolltop.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -150,7 +151,7 @@
                     </div>
                     <li class="list-group-item">
                     	<h5>Discounts and many more benefits available for members. For more information contact: <i class="fa fa-envelope-o"></i> 
-                    <a href="mailto:kimfoxquilts@gmail.com">Kimberly Fox</a></h5>
+                    <a href="mailto:ccookquilts@new.rr.com">Carrie Cook</a></h5>
                     	<!--a href="../pdfs/DNQG Registration 2016.docx" class="btn btn-primary">Sign Up!</a-->
                 </div>
                 <p>

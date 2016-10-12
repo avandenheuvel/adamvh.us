@@ -1,3 +1,16 @@
+.list-inline{display:block;}
+.list-inline li{display:inline-block;}
+.list-inline li a:hover{
+	-ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.list-inline li:after{content:'|'; margin:0 10px;}
+
 .navbar-default {
 	background-color: #916ba5;
 	border-color: #d9b6da;
@@ -50,6 +63,13 @@
 	margin-left:auto;
 	margin-right:auto;
 	padding:20px 0px;
+}
+.carousel-caption{
+	padding-bottom:60px;
+}
+
+.pad-after{
+	margin-bottom:10px;
 }
 
 

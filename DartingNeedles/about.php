@@ -111,7 +111,7 @@
                     <div class="panel-body">
                         <h4>Quilt Show</h4>
                         <p>Darting Needles hosts a quilt show bi-annually. </p>
-                        <a href="./2014-Gallery.php" class="btn btn-primary">Learn More</a>
+                        <a href="./2016-quilt-show" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
