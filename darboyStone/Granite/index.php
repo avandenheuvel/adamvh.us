@@ -314,6 +314,7 @@
         
          <div class="row bannerInfo">
 		 	<h1>Northeast Wisconsins's premier provider of Granite</h1>
+		 	<div><img src="../img/Best in the valley.png" class="img-responsive img-centered"></div>
 		 	<div class="col-xs-12 col-md-4">
 		 		<h3>Selection</h3>
 		 		<p>Our granite experts pre-select only premium grade granite. Second best is never good enough and any off grade material is rejected before it makes our display cases. We offer you, our customer, the opportunity to view the largest selection of granite in all of Northeast Wisconsin</p>

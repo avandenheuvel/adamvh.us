@@ -9,7 +9,7 @@
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
 }
-.list-inline li:after{content:'|'; margin:0 10px;}
+.list-inline li:after{/*content:'|'; margin:0 10px;*/}
 
 .navbar-default {
 	background-color: #916ba5;

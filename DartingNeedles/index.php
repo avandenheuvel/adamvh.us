@@ -62,46 +62,46 @@
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
                 	<img src="Pictures/2014 raffle quilt -3 Orig.jpg"  style="min-width:500px;"/>
             	</div>
-                <div class="carousel-caption">
+                <!--div class="carousel-caption">
                     <h2>2016 Quilt show!</h2>
                     <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
-                </div>
+                </div-->
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
                 	<img src="Pictures/A_Winner_DSC02402.JPG" style="min-width:500px;"/>
                 </div>
-                <div class="carousel-caption">
+                <!--div class="carousel-caption">
                     <h2>October 29th & 30th</h2>
                     <a href="./2016-quilt-show" class="btn btn-primary">Sign up today</a>
-                </div>
+                </div-->
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
                 	<img src="Pictures/A_Winner_DSC02404.JPG" style="min-width:500px;"/>
                 </div>
-                <div class="carousel-caption">
+                <!--div class="carousel-caption">
                     <h2>2016 Quilt show!</h2>
                     <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
-                </div>
+                </div-->
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
                 	<img src="Pictures/A_Winner_DSC02405.JPG" style="min-width:500px;"/>
                 </div>
-                <div class="carousel-caption">
+                <!--div class="carousel-caption">
                     <h2>October 29th & 30th</h2>
                     <a href="./2016-quilt-show" class="btn btn-primary">Sign up today</a>
-                </div>
+                </div-->
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');">
                 	<img src="Pictures/A_Winner_DSC02408.JPG" style="min-width:500px;"/>
                 </div>
-                <div class="carousel-caption">
+                <!--div class="carousel-caption">
                     <h2>2016 Quilt show!</h2>
                     <a href="./2016-quilt-show" class="btn btn-primary">Learn more</a>
-                </div>
+                </div-->
             </div>
         </div>
 
@@ -143,17 +143,17 @@
                     </div>
                     <div class="panel-body">
                         <p>Want to become a member? Here's our signup form</p>
-                        <a href="pdfs/DNQG Registration 2016.docx" class="btn btn-default">Sign up Now</a>
+                        <a href="pdfs/2017 Registration.docx" class="btn btn-default">Sign up Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> 2016 Program List</h4>
+                        <h4><i class="fa fa-fw fa-gift"></i> 2017 Program List</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Darting needles members meet on the <strong>third Monday of each month.</strong> Meetings often include guest speakers or fun group activities. Classes are also scheduled throughout the year. Feel free to browse our upcoming class and meeting schedules.</p>
+                        <p>Darting needles members meet on the <strong>2nd Thursday of each month.</strong> Meetings often include guest speakers or fun group activities. Classes are also scheduled throughout the year. Feel free to browse our upcoming class and meeting schedules.</p>
                         <a href="./meetings" class="btn btn-default">Meetings</a>
                         <a href="./classes" class="btn btn-default">Classes</a>
                     </div>
@@ -202,7 +202,7 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Dues for 2015 are $35 per calendar year, $45 if receiving the mailed monthly newsletter. The dues and the Membership Registration Form may be sent to the Membership Chairman or mailed to the address on the membership form. For a Darting Needles Membership application</p>
+                    <p>Dues for 2017 are $35 per calendar year, $45 if receiving the mailed monthly newsletter. The dues and the Membership Registration Form may be sent to the Membership Chairman or mailed to the address on the membership form. For a Darting Needles Membership application</p>
                 </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="pdfs/2017 Registration.docx">Sign up Today</a>
@@ -216,7 +216,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <a href="http://adamvh.us">adamVh.us</a></p>
+                    <p>Website by: <a href="http://adamvh.us">adamVh.us</a></p>
                 </div>
             </div>
         </footer>

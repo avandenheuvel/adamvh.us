@@ -67,7 +67,7 @@
         
         <div class="row">
         	<div class="col-md-8">
-        		<h3>Meetings are held at 7:00PM on the third Monday of each month at <a href="../contact.php">First United Methodist Church</a></h3>
+        		<h3>Meetings are held at 7:00PM on the second Thursday of each month at <a href="../contact.php">First United Methodist Church</a></h3>
         		<table class="table table-hover">
         			<thead>
         				<tr>
@@ -84,57 +84,56 @@
 	        				<td>Topic</td>
 	    				</tr>
 	    				-->
-	    				<span class="nav"><tr class="clickableRow nav-quiltBingo" href="#quiltBingo"></span>
-	        				<td>January</td>
-	        				<td>-</td>
-	        				<td>Quilt Bingo</td>
+	    				<span class="nav"><tr class="clickableRow nav-#panelParade" href="#panelParade"></span>
+	        				<td>January 12th</td>
+	        				<td>Zita Gehl </td>
+	        				<td>Panel Parade</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-mosaic" href="#mosaic"></span>
-	        				<td>February 15th</td>
-	        				<td>Patricia Sanabria-Frederich</td>
-	        				<td>Mosaic Tile Quilts</td>
+	    				<span class="nav"><tr class="clickableRow nav-stripStash" href="#stripStash"></span>
+	        				<td>February 9th</td>
+	        				<td>Gudrun Erla</td>
+	        				<td>Strip your Stash</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-bull" href="#bull"></span>
-	        				<td>March 20th</td>
-	        				<td>Mark Lipinski</td>
-	        				<td>Trunk show & Lecture</td>
+	    				<span class="nav"><tr class="clickableRow nav-bagLady" href="#bagLady"></span>
+	        				<td>March 9th</td>
+	        				<td>Sara Lawson</td>
+	        				<td>Beautiful Bags</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-paintingSilk" href="#paintingSilk"></span>
-	        				<td>April 18th</td>
-	        				<td>Sandy Melroy</td>
-	        				<td>Painting on Silk</td>
+	    				<span class="nav"><tr class="clickableRow nav-gloriousLandscapes" href="#gloriousLandscapes"></span>
+	        				<td>April 13th</td>
+	        				<td>Joen Wolfrom</td>
+	        				<td>Glorious Landscapes</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-potrait" href="#potrait"></span>
-	        				<td>May 16th</td>
-	        				<td>Laurie Ceesay</td>
-	        				<td>Portrait Quilt & trunk show</td>
+	    				<span class="nav"><tr class="clickableRow nav-pegSpradlin" href="#pegSpradlin"></span>
+	        				<td>May 11th</td>
+	        				<td>Peg Spradlin</td>
+	        				<td>Trunk Show</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-barn" href="#barn"></span>
-	        				<td>June 20th</td>
-	        				<td>Suzi Parron</td>
-	        				<td>Barn Quilts</td>
+	    				<span class="nav"><tr class="clickableRow nav-quiltingCozy" href="#quiltingCozy"></span>
+	        				<td>June 8th</td>
+	        				<td>Charie Hudson </td>
+	        				<td>Quilting Cozy</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-feedSacks" href="#feedSacks"></span>
-	        				<td>July 18th</td>
-	        				<td>Donna Wisnoski</td>
-	        				<td>The HIstory of Feed Sacks</td>
+	    				<span class="nav"><tr class="clickableRow nav-dollHistory" href="#dollHistory"></span>
+	        				<td>July 13th</td>
+	        				<td>Nancy Kunst Smith</td>
+	        				<td>History of Dolls & Quilts</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-potluck" href="#potluck"></span>
-	        				<td>August</td>
-	        				<td>-</td>
-	        				<td>Potluck & Rummage Sale</td>
+	    				<span class="nav"><tr class="clickableRow nav-imagination" href="#imagination"></span>
+	        				<td>August 10th</td>
+	        				<td>Lynn Gilles</td>
+	        				<td>Quilting with Imagination</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-creativity" href="#creativity"></span>
-	        				<td>Sept 19th</td>
-	        				<td>Rayna Gillman</td>
-	        				<td>Pushing Creativity</td>
+	    				<span class="nav"><tr class="clickableRow nav-illusion" href="#illusion"></span>
+	        				<td>September 14th</td>
+	        				<td>Karen Combs</td>
+	        				<td>Quilts of Illusion</td>
 	    				</tr>
-	    				<span class="nav"><tr class="clickableRow nav-history" href="#history"></span>
-	        				<td>October 17</td>
-	        				<td>Gail Barber</td>
-	        				<td>A History Lesson in Quilting</td>
+	    				<span class="nav"><tr class="clickableRow nav-rummageSale" href="#rummageSale"></span>
+	        				<td>October 12th</td>
+	        				<td> - </td>
+	        				<td>Rummage Sale</td>
 	    				</tr>
-	    				
     				</tbody>
         		</table>
         	</div>
@@ -167,170 +166,176 @@
                 <h4>Date</h4>
                 <p>Guest speaker</p>
                 <p>Event details</p>
-                <a class="btn btn-primary" href="program_2015-02-20_lecture_Sue Hoffman.php">View Project</i></a>
+                <a class="btn btn-primary" href="program_2015-02-20_lecture_Sue Hoffman.php" target="_blank">View Project</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/#" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/#" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
+        <hr>
          -->
-        <div class="row" id="quiltBingo">
+         <div class="row" id="panelParade">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Quilt Bingo</h3>
-                <h4>Monday, January 18th</h4>
+                <h3>Panel Parade</h3>
+                <h4>Thursday, January 12th</h4>
+                <p>Zita Gehl from Fabric Creations in Manitowoc</p>
                 <ul>
-                	<li>
-                		Enjoy catching up after the Holidays with old friends and get to know some new ones! It will be fast and fun!
-                	</li>
-                	<li>
-                		Bring a fat quarter for an additional card
-                	</li>
+                	<li>Please participate and bring any quilts you have made using a panel in January 2017.</li>
+                	<li>Learn from the DNQG’s plentiful library resources</li>
+                	<li>Power Point and Panel Parade</li>
                 </ul>
+                <a class="btn btn-primary" href="http://www.fabriccreationsmanitowoc.com/" target="_blank">Fabric Creations</i></a>
             </div>
             <div class="col-md-6">
                 <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/jan18.png" alt="">
+                    <img class="img-responsive img-hover" src="Pictures/01122017.png" alt="">
                 </a>
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="mosaic">
+        <hr>
+        <div class="row" id="stripStash">
+        	<div class="col-md-1"></div>
+            
+            <div class="col-md-4">
+                <h3>Strip your Stash</h3>
+                <h4>February 9th</h4>
+                <p>Gurdrun Erla</p>
+                <p>From GE Designs joins our Thursday Guild meeting</p>
+                <a class="btn btn-primary" href="http://gequiltdesigns.com">GE Designs</i></a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="Pictures/020917.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <div class="row" id="bagLady">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Mosaic Tile Quilts</h3>
-                <h4>Monay, February 15th</h4>
-                <p>Patricia Sanabria-Frederich</p>
-                <p>Lecture about mosaic tile quilts</p>
+                <h3>Beautiful Bags and More</h3>
+                <h4>March 9th</h4>
+                <p>Sara Lawson</p>
+                <p>Calling All Bag Ladies:  Beautiful Bags and More</p>
+                <a class="btn btn-primary" href="http://www.sewsweetness.com" target="_blank">Sew Sweetness</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/feb15.jpg" alt="">
-                </a>
+                 <img class="img-responsive img-hover" src="Pictures/030917.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="bull">
+        <hr>
+        
+        <div class="row" id="gloriousLandscapes">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Trunk Show and Lecture</h3>
-                <h4>Monday, March 21st</h4>
-                <p>Mark Lipinski</p>
-                <p>Bull in a China Shop or The Unexpected Journey of an Out of Control Quilter Traveling the World and What He Encountered Along the Way: A Trunk Show & Lecture </p>
+                <h3>Glorious Landscapes</h3>
+                <h4>April 13th</h4>
+                <p>Joen Wolfrom</p>
+                <p>Lecture on colorful landscape quilting</p>
+                <a class="btn btn-primary" href="http://www.joenwolfrom.com" target="_blank">joenwolfrom.com</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/mar21.jpg" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/041317.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="paintingSilk">
+        <hr>
+        
+        <div class="row" id="pegSpradlin">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Painting on Silk</h3>
-                <h4>Monday, April 18th</h4>
-                <p>Guest speaker</p>
-                <p>Painting on Silk and Incorporating in Quilting.  Hands on Meeting!</p>
+                <h3>Peg Spradlin</h3>
+                <h4>May 11th</h4>
+                <p>Award Winning Quilt Designer and Pattern Tester – Her Story</p>
+                <a class="btn btn-primary" href="http://handicraftsbypeg.com">handicraftsbypeg.com</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/apr18.jpg" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/051117.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="potrait">
+        <hr>
+        
+        <div class="row" id="quiltingCozy">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Portrait Quilt and trunk Show</h3>
-                <h4>Monday, May 15th</h4>
-                <p>Laurie Ceesay</p>
-                <p>Join Laurie for a portrait quilt and trunk show.</p>
+                <h3>How to Create a Quilting Cozy</h3>
+                <h4>June 8th</h4>
+                <p>Charie Hudson - Author</p>
+                <p><strong>How to Create a Quilting Cozy…</strong>based on her popular novels of the Helen Crowder Adventure Series.</p>
+                <a class="btn btn-primary" href="http://www.charliehudson.net/" target="_blank">http://www.charliehudson.net/</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/may16.jpg" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/060817.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="barn">
+        <hr>
+        
+        <div class="row" id="dollHistory">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Barn Quilts</h3>
-                <h4>Monday, June 20th</h4>
-                <p>Suzi Parron</p>
-                <p>Barn Quilts and the American Quilt Trail Movement</p>
+                <h3>The History of Dolls & Their Quilts</h3>
+                <h4>July 13th</h4>
+                <p>Nancy Kunst Smith</p>
+                <p>Come on out for a Thursday night guild meeting with special guest Nancy Kunst Smith and learn about the history of dolls and their quilts.s</p>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/jun20.png" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/071317.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="feedSacks">
+        <hr>
+        
+        <div class="row" id="imagination">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>The History of Feed Sacks</h3>
-                <h4>Monsay, July 18th</h4>
-                <p>Donna Wisnoski</p>
-                <p>Join Donna for a lively discussion about the history of feed sacks</p>
+                <h3>Quilting with Imagination</h3>
+                <h4>August 12th</h4>
+                <p>Lynn Gilles</p>
+                <p>This month's guild meeting will include a special guest speaker, Lynn Gilles. Come join us to learn more about how to quilt with imagination.</p>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/jul18.jpg" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/081117.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="potluck">
+        <hr>
+        
+        <div class="row" id="illusion">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Potluck and Rummage Sale</h3>
-                <h4>Monday, August 15th</h4>
+                <h3>Quilts of Illusion. </h3>
+                <h4>September 14th</h4>
+                <p>Karen Combs</p>
+                <p>This months guild meeting will include a lecture by Karen Combs about using optical illusions in your quilt projects.</p>
+                <a class="btn btn-primary" href="http://www.karencombs.com" target="_blank">www.karencombs.com</i></a>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/aug15.png" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/091417.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="creativity">
+        <hr>
+        <div class="row" id="rummageSale">
         	<div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>Pushing Creativity with ‘what if’</h3>
-                <h4>Monday, September 19th</h4>
-                <p>Rayna Gillman</p>
-                <p>Two powerful words that can push the boundaries of your work and increase creative courage. A look at this artist's journey from traditional to self-expression.</p>
+                <h3>Guild Rummage & Craft Sale</h3>
+                <h4>October 12th</h4>
+                <p>Get ready for the holidays and purchase your gifts. We'll see you there</p>
             </div>
             <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/sep19.png" alt="">
-                </a>
+                <img class="img-responsive img-hover" src="Pictures/101217.png" alt="">
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row" id="history">
-        	<div class="col-md-1"></div>
-            <div class="col-md-4">
-                <h3>Quiltmakers and Their Influences on Our Lives: A History Lesson</h3>
-                <h4>Monday, October 17</h4>
-                <p>Gail Garber</p>
-                <p>This light and lively lecture traces through some of Gail’s quilting past, with emphasis on friends who have had a strong influence on her quilts. It shows the progression from Gail’s early quilting days as a traditional quilter, through her experimentation phase, and culminates in the contemporary art quilts for which she is now known.</p>
-            </div>
-            <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover promo" src="Pictures/oct17.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
+        <hr>
+        
         
         <!--Button to return to top of page-->
         <div class="scroll-top page-scroll nav">
@@ -368,7 +373,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <a href="http://adamvh.us">adamVh</a></p>
+                    <p>Website by: <a href="http://adamvh.us">adamVh</a></p>
                 </div>
             </div>
         </footer>

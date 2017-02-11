@@ -155,7 +155,7 @@
                 <h3>Monthly <a href="./meetings">meetings</a> held:</h3>
                 <p>First United Methodist Church</p>
                 <p>325 E. Franklin St.</p>
-                <p>Appleton, WI</p>
+                <p>Appleton, WI 54911</p>
             </div>
         </div>
         <!-- /.row -->
@@ -206,7 +206,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <a href="http://adamvh.us">adamVh</a></p>
+                    <p>Website by: <a href="http://adamvh.us">adamVh</a></p>
                 </div>
             </div>
         </footer>

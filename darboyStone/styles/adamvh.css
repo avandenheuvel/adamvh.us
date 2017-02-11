@@ -662,7 +662,8 @@ body {
 .bannerContent p, h1{
 	padding-left:30px;
 	padding-right:30px;
-  text-align: left;
+	padding-top: 40px;
+	text-align: left;
 }
 #banner>div>h1{
   text-align: center;
@@ -794,7 +795,7 @@ body {
 .activity-section{
 	background-color:white;
   text-align: center;
-  padding:30px 10px
+  padding:0px 10px
 }
 .activity-element>h1{
 	text-align:center;

@@ -1,6 +1,6 @@
 <?php
 	if (isset($_POST['send']) && $_POST['url'] == '') {
-		$to = 'apvandenheuvel@yahoo.com'; // Use your own email address
+		$to = 'apvandenheuvel@yahoo.com,info@adamvh.us'; 
 		$headers = 'From: webrequest@adamvh.us'. "\r\n";
 		$subject = 'Web request for adamVh.us';
 		$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";

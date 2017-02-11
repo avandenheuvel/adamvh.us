@@ -28,6 +28,7 @@
     <link href="../_styles.css" rel="stylesheet"/>
     
     <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/scrolltop.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -132,6 +133,56 @@
 	        				<td>-</td>
 	        				<td>Holiday Party</td>
 	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-quiltBingo" href="#quiltBingo"></span>
+	        				<td>January 2016</td>
+	        				<td>-</td>
+	        				<td>Quilt Bingo</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-mosaic" href="#mosaic"></span>
+	        				<td>February 2016</td>
+	        				<td>Patricia Sanabria-Frederich</td>
+	        				<td>Mosaic Tile Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-bull" href="#bull"></span>
+	        				<td>March 2016</td>
+	        				<td>Mark Lipinski</td>
+	        				<td>Trunk show & Lecture</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-paintingSilk" href="#paintingSilk"></span>
+	        				<td>April 2016</td>
+	        				<td>Sandy Melroy</td>
+	        				<td>Painting on Silk</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-potrait" href="#potrait"></span>
+	        				<td>May 2016</td>
+	        				<td>Laurie Ceesay</td>
+	        				<td>Portrait Quilt & trunk show</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-barn" href="#barn"></span>
+	        				<td>June 2016</td>
+	        				<td>Suzi Parron</td>
+	        				<td>Barn Quilts</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-feedSacks" href="#feedSacks"></span>
+	        				<td>July 2016</td>
+	        				<td>Donna Wisnoski</td>
+	        				<td>The HIstory of Feed Sacks</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-potluck" href="#potluck"></span>
+	        				<td>August 2016</td>
+	        				<td>-</td>
+	        				<td>Potluck & Rummage Sale</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-creativity" href="#creativity"></span>
+	        				<td>Sept 2016</td>
+	        				<td>Rayna Gillman</td>
+	        				<td>Pushing Creativity</td>
+	    				</tr>
+	    				<span class="nav"><tr class="clickableRow nav-history" href="#history"></span>
+	        				<td>October 2016</td>
+	        				<td>Gail Barber</td>
+	        				<td>A History Lesson in Quilting</td>
+	    				</tr>
 	    				
 	    				<!--Template
 	    				<span class="nav"><tr class="clickableRow nav-"" href="#"></span>
@@ -162,25 +213,6 @@
                 </div>
         	</div>
         </div>
-		
-		<!-- Project Template 
-        <div class="row" id="idfor Autoscroll function">
-        	<div class="col-md-1"></div>
-            <div class="col-md-4">
-                <h3>Title</h3>
-                <h4>Date</h4>
-                <p>Guest speaker</p>
-                <p>Event details</p>
-                <a class="btn btn-primary" href="program_2015-02-20_lecture_Sue Hoffman.php">View Project</i></a>
-            </div>
-            <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="Pictures/#" alt="">
-                </a>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <!-- /.row -->
 		
 		<!--Project-->
 			<div class="row" id="quiltBingo">
@@ -373,7 +405,160 @@
             <div class="col-md-1"></div>
         </div>
         <hr>
-        
+        <div class="row" id="quiltBingo">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Quilt Bingo</h3>
+                <h4>Monday, January 18th</h4>
+                <ul>
+                	<li>
+                		Enjoy catching up after the Holidays with old friends and get to know some new ones! It will be fast and fun!
+                	</li>
+                	<li>
+                		Bring a fat quarter for an additional card
+                	</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jan18.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="mosaic">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Mosaic Tile Quilts</h3>
+                <h4>Monay, February 15th</h4>
+                <p>Patricia Sanabria-Frederich</p>
+                <p>Lecture about mosaic tile quilts</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/feb15.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="bull">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Trunk Show and Lecture</h3>
+                <h4>Monday, March 21st</h4>
+                <p>Mark Lipinski</p>
+                <p>Bull in a China Shop or The Unexpected Journey of an Out of Control Quilter Traveling the World and What He Encountered Along the Way: A Trunk Show & Lecture </p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/mar21.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="paintingSilk">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Painting on Silk</h3>
+                <h4>Monday, April 18th</h4>
+                <p>Guest speaker</p>
+                <p>Painting on Silk and Incorporating in Quilting.  Hands on Meeting!</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/apr18.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="potrait">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Portrait Quilt and trunk Show</h3>
+                <h4>Monday, May 15th</h4>
+                <p>Laurie Ceesay</p>
+                <p>Join Laurie for a portrait quilt and trunk show.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/may16.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="barn">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Barn Quilts</h3>
+                <h4>Monday, June 20th</h4>
+                <p>Suzi Parron</p>
+                <p>Barn Quilts and the American Quilt Trail Movement</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jun20.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="feedSacks">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>The History of Feed Sacks</h3>
+                <h4>Monsay, July 18th</h4>
+                <p>Donna Wisnoski</p>
+                <p>Join Donna for a lively discussion about the history of feed sacks</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/jul18.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="potluck">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Potluck and Rummage Sale</h3>
+                <h4>Monday, August 15th</h4>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/aug15.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="creativity">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Pushing Creativity with ‘what if’</h3>
+                <h4>Monday, September 19th</h4>
+                <p>Rayna Gillman</p>
+                <p>Two powerful words that can push the boundaries of your work and increase creative courage. A look at this artist's journey from traditional to self-expression.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/sep19.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="history">
+        	<div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3>Quiltmakers and Their Influences on Our Lives: A History Lesson</h3>
+                <h4>Monday, October 17</h4>
+                <p>Gail Garber</p>
+                <p>This light and lively lecture traces through some of Gail’s quilting past, with emphasis on friends who have had a strong influence on her quilts. It shows the progression from Gail’s early quilting days as a traditional quilter, through her experimentation phase, and culminates in the contemporary art quilts for which she is now known.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive img-hover promo" src="Pictures/oct17.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
         
         <!--Button to return to top of page-->
         <div class="scroll-top page-scroll nav">

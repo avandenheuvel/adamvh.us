@@ -267,7 +267,7 @@
                     <p>Dues for 2015 are $35 per calendar year, $45 if receiving the mailed monthly newsletter. The dues and the Membership Registration Form may be sent to the Membership Chairman or mailed to the address on the membership form. For a Darting Needles Membership application</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="../pdfs/DNQG Registration 2015.pdf">Sign up Today</a>
+                    <a class="btn btn-lg btn-default btn-block" href="../pdfs/2017 Registration.docx">Sign up Today</a>
                 </div>
             </div>
         </div>
